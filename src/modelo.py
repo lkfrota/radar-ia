@@ -9,6 +9,7 @@ import time
 
 FAKE = os.environ.get("RADAR_FAKE") == "1"
 MODELO = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
+TIMEOUT_MS = 180_000  # 3 min por chamada
 _PAUSA = 6.5  # a camada gratuita limita requisições por minuto
 
 _cliente = None
@@ -18,7 +19,10 @@ def _client():
     global _cliente
     if _cliente is None:
         from google import genai
-        _cliente = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+        from google.genai import types
+        # sem teto, uma chamada travada (comum em vídeo) prende a rodada inteira
+        _cliente = genai.Client(api_key=os.environ["GEMINI_API_KEY"],
+                                http_options=types.HttpOptions(timeout=TIMEOUT_MS))
     return _cliente
 
 
@@ -31,6 +35,7 @@ def gerar_json(prompt, esquema, video_url=None):
         partes.append(types.Part(file_data=types.FileData(file_uri=video_url)))
     partes.append(types.Part(text=prompt))
     for tentativa in range(3):
+        print(f"  gemini: chamada {'(vídeo) ' if video_url else ''}tentativa {tentativa + 1}", flush=True)
         try:
             r = _client().models.generate_content(
                 model=MODELO,

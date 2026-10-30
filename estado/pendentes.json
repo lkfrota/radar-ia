@@ -1,1 +1,185 @@
-[]
+[
+  {
+    "url": "https://huggingface.co/papers/2610.34298",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.35,
+    "titulo": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
+    "paragrafos": [
+      "Agentes de IA baseados em linguagem realizam tarefas usando ferramentas externas e ambientes interativos. Isso significa que a interface (o modo como o modelo de IA se comunica com as capacidades de execução) faz parte do processo de tomada de decisão. A pesquisa comparou dois padrões de interface: o Model Context Protocol (MCP, um protocolo padronizado de contexto para modelos) e as interfaces de linha de comando (CLI, formato baseado em textos e comandos diretos).",
+      "O estudo utilizou o método MICA para testar se essas diferenças de interface mudam o comportamento do agente, mantendo as mesmas capacidades técnicas de fundo. Ao testar seis modelos de IA em três ambientes interativos, os pesquisadores descobriram que interfaces diferentes geram grandes variações no desempenho das tarefas e no custo de processamento.",
+      "Esses efeitos afetam a seleção de ações e as rotas de falha e recuperação dos agentes. Divergências estruturais foram encontradas em mais de 94% dos episódios testados, mostrando que escolhas iniciais de interface propagam erros ou acertos para o resto da interação.",
+      "Para resolver isso, os autores criaram o método DART, que separa a execução da ação e repara a interface sem perder a lógica de comando validada. O DART melhorou as notas em todos os cenários avaliados e reduziu o consumo de tokens (unidades de texto processadas pela IA) de forma significativa."
+    ],
+    "por_que_importa": "Importa para o seu perfil em agentes de IA, pois mostra que a forma como você conecta ferramentas de engenharia ao modelo muda drasticamente a eficiência e o custo operacional.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "fonte": "Anthropic News",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.05,
+    "titulo": "Donating Agent Skills to the Agentic AI Foundation",
+    "paragrafos": [
+      "A empresa Anthropic anunciou a doação do padrão aberto Agent Skills para a Agentic AI Foundation (AAIF), que faz parte da Linux Foundation. O Agent Skills é um formato que ensina conhecimentos específicos e fluxos de trabalho especializados para agentes de IA de forma padronizada.",
+      "Uma 'skill' (habilidade) é basicamente uma pasta contendo um arquivo chamado SKILL.md, que instrui o agente sobre uma tarefa ou domínio específico, junto com scripts e materiais de referência. Criado originalmente para o assistente Claude Code, o padrão ganhou adoção rápida com milhões de instalações em plataformas de desenvolvimento.",
+      "A doação para a AAIF visa manter o projeto neutro, aberto e impulsionado pela comunidade, sem ficar preso a uma única empresa tecnológica. Engenheiros de várias companhias atuarão como mantenedores oficiais para guiar versões futuras e diretrizes de segurança.",
+      "Com essa governança neutra, o ecossistema de ferramentas ganha estabilidade e previsibilidade para adotar padrões abertos de automação baseados em IA."
+    ],
+    "por_que_importa": "Importa para o seu perfil em agentes de IA, pois padronizar fluxos de trabalho especializados facilita a criação de assistentes industriais ou de dados sem amarras a um único fornecedor.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=niRV-yuu5q4",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "agentes de ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.85,
+    "titulo": "O novo jeito de programar com IA do Google no Claude Code",
+    "paragrafos": [
+      "O Google disponibilizou publicamente o Elephant-Goldfish Model (EGM), um modelo de desenvolvimento de sistemas com inteligência artificial utilizado por seus engenheiros. O método baseia-se em dividir o processo entre o 'elefante', responsável por guardar o contexto geral e as regras sem escrever código, e os 'peixinhos', agentes sem memória que começam do zero para ler especificações e revisar o código de forma independente.",
+      "A estrutura do EGM opera em três comandos principais para iniciar qualquer funcionalidade: ideação por brainstorming, criação de especificações em um documento e revisão crítica com múltiplos agentes que analisam o material sob diferentes perspectivas. Quem elabora o plano inicial não pode ser o mesmo agente que realiza a revisão, garantindo imparcialidade e qualidade na auditoria do projeto.",
+      "Na prática demonstrada no Claude Code, o autor aplicou a metodologia em um sistema de reservas de aulas para resolver a funcionalidade de cancelamento por professores, utilizando comandos específicos como o `egm:brainstorm` e o `egm:draft`. O sistema interage fazendo perguntas para esclarecer ambiguidades e gera um documento de design formal antes de passar para a fase de implementação.",
+      "Após a aprovação da especificação e a execução dos testes automatizados, o modelo confirma se o software cumpre os requisitos esperados, como a notificação de alunos e a geração de créditos. Essa abordagem estruturada ajuda a evitar falhas lógicas e garante que a aplicação funcione corretamente de ponta a ponta."
+    ],
+    "por_que_importa": "Para um engenheiro mecânico que busca otimizar processos ou entender tendências de automação, essa IA demonstra como metodologias rigorosas de planejamento e revisão cruzada podem ser aplicadas para criar sistemas complexos com menos erros humanos.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=xJwegOxj2sc",
+    "fonte": "IA em 6 Minutos (YouTube)",
+    "tema": "agentes de ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.7,
+    "titulo": "Spec Driven Development 2.0: O método do Google para engenharia com Agentes de IA",
+    "paragrafos": [
+      "Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados."
+    ],
+    "por_que_importa": "É apenas uma aposta de correlação sem base nos dados reais do vídeo.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "seguranca de agentes",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 8.65,
+    "titulo": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+    "paragrafos": [
+      "Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados."
+    ],
+    "por_que_importa": "É apenas uma aposta de correlação sem base nos dados reais da notícia.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=qvQa74bR8pE",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "agentes de ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.4,
+    "titulo": "O criador do Clean Code fez uma skill para o Claude Code e é ABSURDO! (ub-mode)",
+    "paragrafos": [
+      "Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados."
+    ],
+    "por_que_importa": "É apenas uma aposta de correlação sem base nos dados reais do vídeo.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=jV-zc6pNofk",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "engenharia reversa",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 7.85,
+    "titulo": "Engenharia Reversa com IA gastando centavos! (DeepSeek + REA)",
+    "paragrafos": [
+      "Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados."
+    ],
+    "por_que_importa": "É apenas uma aposta de correlação sem base nos dados reais do vídeo.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://huggingface.co/papers/2609.05881",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "modelos de linguagem",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 7.65,
+    "titulo": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
+    "paragrafos": [
+      "Pesquisadores testaram centenas de arquivos de grandes modelos de linguagem (LLMs, softwares de inteligência artificial generativa) em formatos compactados chamados GGUF, baixados de registros públicos como a biblioteca Ollama e o Hugging Face. O objetivo era verificar se eles realmente funcionavam para tarefas de programação.",
+      "O estudo descobriu que alguns arquivos oficiais de modelos menores e compactados em baixa resolução (low-bit quantizations, que reduzem a precisão dos pesos numéricos para economizar memória) falharam miseravelmente em testes básicos, mesmo tendo sido baixados corretamente e sem corrupção física dos dados. O problema estava na falta de uma matriz de importância durante a compactação, um detalhe técnico que impedia o modelo de raciocínio lógico.",
+      "Para corrigir isso, os autores lançaram a ferramenta 'quantcheck', recomendando que os desenvolvedores testem a funcionalidade desses arquivos antes de publicá-los em repositórios públicos."
+    ],
+    "por_que_importa": "Isso importa para agentes de IA: assim como um componente mecânico pode vir fora de tolerância de fábrica, arquivos de IA compactados podem falhar silenciosamente se o processo de fabricação digital (quantização) for incorreto.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=___J8OOGAh8",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "automacao de processos",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 7.05,
+    "titulo": "Claude Code + Youtube = Canal no Piloto Automático",
+    "paragrafos": [
+      "O conteúdo completo deste vídeo não foi lido a partir da fonte, estando disponíveis apenas o título e o canal de origem. Portanto, nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "É apenas uma aposta de correlação sem dados técnicos suficientes para ligar diretamente à manutenção industrial ou engenharia.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ztyI5KytPSM",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "modelos de linguagem",
+    "tipo": "video",
+    "categoria": "adjacente",
+    "nota": 6.95,
+    "titulo": "LANÇOU o Gemini 4 Carbon! O novo 1º lugar que quase ninguém pode usar",
+    "paragrafos": [
+      "O conteúdo completo deste vídeo não foi lido a partir da fonte, contando apenas com o título e a indicação do criador. Nenhum detalhe técnico ou dado foi inventado."
+    ],
+    "por_que_importa": "É apenas uma aposta de correlação, pois o vídeo não fornece especificações técnicas verificáveis para a sua rotina de engenharia.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://huggingface.co/papers/2610.38174",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "verificacao de codigo",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 6.75,
+    "titulo": "Scaling Lean Theorem Proving for Real-World Code Verification",
+    "paragrafos": [
+      "O artigo apresenta o EasyProver, um sistema de prova matemática automatizada baseado em agentes de IA recursivos e paralelos. Ele foi capaz de resolver centenas de problemas complexos de lógica, verificação de código e competições de programação sem necessidade de treinamento adicional.",
+      "Como esses testes tradicionais estão ficando fáceis demais, os autores criaram o Aegis, um sistema que converte problemas reais de programação em Rust (uma linguagem de programação focada em segurança) em tarefas de verificação rigorosas, provando matematicamente a exatidão do código.",
+      "O EasyProver conseguiu provar mais da metade dessas exigências complexas em um tempo limite de trinta minutos por teste, servindo como uma ferramenta robusta para validar a confiabilidade de softwares críticos."
+    ],
+    "por_que_importa": "Isso importa para agentes de IA e consultoria de dados: validação matemática formal de código é o equivalente digital de testes não destrutivos e análises de elementos finitos para garantir que um sistema não falhe sob carga.",
+    "dia": "2026-10-30"
+  },
+  {
+    "url": "https://huggingface.co/papers/2610.38681",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "modelos de linguagem",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 6.6,
+    "titulo": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+    "paragrafos": [
+      "O estudo apresenta uma nova técnica de treinamento de inteligência artificial chamada WISD (Weakening-Induced On-Policy Self-Distillation), que permite aprimorar modelos de raciocínio sem precisar de um 'professor' externo mais inteligente ou de dados rotulados por humanos.",
+      "A abordagem consiste em criar uma versão enfraquecida do próprio modelo de IA através de compactação (quantização) ou poda de conexões (magnitude pruning, técnica que remove parâmetros menos importantes). O contraste gerado entre o modelo original e sua versão mais fraca serve como sinal de aprendizado.",
+      "Os testes mostraram que essa auto-destilação aumentou consideravelmente a precisão de modelos em tarefas de matemática e programação, provando ser um método eficiente para otimizar inteligências artificiais de forma autônoma."
+    ],
+    "por_que_importa": "Isso importa para agentes de IA: otimizar modelos gerando versões mais leves e eficientes lembra o processo de otimização topológica na engenharia, onde se remove material desnecessário de uma peça mantendo sua integridade estrutural.",
+    "dia": "2026-10-30"
+  }
+]

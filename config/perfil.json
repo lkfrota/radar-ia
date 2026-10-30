@@ -1,0 +1,20 @@
+{
+  "_obs": "Aprovado pelo Lincoln em 2026-10-29 como ponto de partida; editável pela página Configurar",
+  "interesses": [
+    "Agentes de IA e automação de processos de negócio (Claude Code, Agent SDK, MCP, orquestração)",
+    "Ferramentas de IA para quem não é programador profissional (usar IA para construir ferramentas próprias)",
+    "Análise de dados com IA e consultoria de aplicação de IA em empresas",
+    "IA aplicada à manutenção industrial: manutenção preditiva, confiabilidade, CMMS, SCADA, FMEA",
+    "IA e energia solar fotovoltaica: geração distribuída, dimensionamento, monitoramento de inversores",
+    "Lançamentos e comparativos de modelos (Claude, Gemini, GPT, DeepSeek, modelos abertos) com impacto prático e de custo",
+    "Boas práticas de engenharia com agentes: avaliação, memória, custos, confiabilidade e segurança",
+    "Python e ferramentas de produtividade para automação pessoal"
+  ],
+  "nao_interesses": [
+    "Ofertas e promoções de cursos pagos",
+    "Geração de imagem/vídeo/música para entretenimento",
+    "Fofoca corporativa, bolsa, IPO e finanças de empresas de IA (a menos que mude preço ou acesso a modelos)",
+    "Pesquisa puramente teórica sem aplicação prática visível",
+    "Notícias gerais de tecnologia sem relação com IA"
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {"nome": "Matheus Battisti (YouTube)", "tipo": "youtube", "canal": "MatheusBattisti", "limite": 4},
+  {"nome": "Maestros da IA (YouTube)", "tipo": "youtube", "canal": "maestrosdaia", "limite": 4},
+  {"nome": "IA em 6 Minutos (YouTube)", "tipo": "youtube", "canal": "iaem6minutos", "limite": 4},
+  {"nome": "The Batch (DeepLearning.AI)", "tipo": "pagina", "url": "https://www.deeplearning.ai/the-batch/",
+   "padrao_link": "href=\"(/the-batch/issue-\\d+)\"", "ordem": "numerica_desc", "limite": 2},
+  {"nome": "Anthropic News", "tipo": "pagina", "url": "https://www.anthropic.com/news",
+   "padrao_link": "href=\"(/news/[a-z0-9-]+)\"", "limite": 6},
+  {"nome": "xAI News", "tipo": "pagina", "url": "https://x.ai/news",
+   "padrao_link": "href=\"(/news/[a-z0-9-]+)\"", "limite": 4, "ativo": false,
+   "obs": "x.ai devolve 403 (Cloudflare) para acesso automático em 2026-10-29; reativar se liberar"},
+  {"nome": "Hacker News (descoberta)", "tipo": "hackernews", "score_min": 150, "limite": 8},
+  {"nome": "Hugging Face Papers (descoberta)", "tipo": "hf_papers", "limite": 8}
+]

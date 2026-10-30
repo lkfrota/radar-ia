@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<p class="meta">Atualizado em {{ data }} · {{ itens|length }} itens · marque "lido" para dispensar; o que ficar sem marcar volta amanhã (até 3 dias).</p>
+{% if falhas %}
+<p class="aviso">Fontes que falharam nesta rodada: {% for f in falhas %}{{ f.fonte }}{% if not loop.last %}, {% endif %}{% endfor %}.</p>
+{% endif %}
+{% for it in itens %}
+<article data-url="{{ it.url }}" data-tema="{{ it.tema }}" data-fonte="{{ it.fonte }}">
+  <div class="tag">{{ {"perfil": "No seu perfil", "adjacente": "Perto do seu radar", "exploratorio": "Aposta fora do radar"}.get(it.categoria, "") }}{% if it.pendente %} · de dias anteriores{% endif %}</div>
+  <h2><a href="{{ it.url }}" target="_blank" rel="noopener">{{ it.titulo }}</a></h2>
+  <div class="meta">{{ it.fonte }}{% if it.tipo == "video" %} · vídeo{% endif %}</div>
+  {% for p in it.paragrafos %}<p>{{ p }}</p>{% endfor %}
+  <div class="porque">{{ it.por_que_importa }}</div>
+  <div class="acoes">
+    <button class="like" data-acao="like">👍 Útil</button>
+    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
+    <label><input type="checkbox" data-acao="lido"> lido</label>
+  </div>
+</article>
+{% else %}
+<p class="aviso">Nada novo hoje.</p>
+{% endfor %}
+{% endblock %}

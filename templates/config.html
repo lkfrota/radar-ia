@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block titulo %}Radar de IA · Configurar{% endblock %}
+{% block conteudo %}
+<p class="aviso" id="status">Carregando…</p>
+
+<h2>Acesso</h2>
+<p class="meta">Para salvar alterações e feedback, cole um token do GitHub (fine-grained, só neste repositório, permissão "Contents: read and write"). Fica apenas neste navegador.</p>
+<p><input type="password" id="token" placeholder="github_pat_…" size="40"> <button id="salvar-token">Guardar</button></p>
+
+<h2>Fontes</h2>
+<ul class="lista" id="fontes"></ul>
+<p class="meta">Adicionar (RSS de blog/newsletter, ou canal do YouTube pelo @nome):</p>
+<p>
+  <select id="nova-tipo"><option value="rss">RSS</option><option value="youtube">YouTube</option></select>
+  <input type="text" id="nova-nome" placeholder="Nome">
+  <input type="text" id="nova-ref" placeholder="URL do RSS ou @canal">
+  <button id="add-fonte">Adicionar</button>
+</p>
+
+<h2>Interesses</h2>
+<ul class="lista" id="interesses"></ul>
+<p><input type="text" id="novo-interesse" size="50"> <button id="add-interesse">Adicionar</button></p>
+
+<h2>Não-interesses</h2>
+<ul class="lista" id="nao_interesses"></ul>
+<p><input type="text" id="novo-nao" size="50"> <button id="add-nao">Adicionar</button></p>
+
+<p><button id="gravar"><strong>Gravar alterações</strong></button> <span class="meta">(valem a partir da próxima rodada das 7h)</span></p>
+{% endblock %}

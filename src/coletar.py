@@ -72,6 +72,17 @@ def coletar_rss(fonte, limite):
     return itens
 
 
+def _descricao_youtube(url):
+    """Descrição do vídeo (vem na página do vídeo): dá ao resumo em lote algo além do título."""
+    try:
+        html = _get(url, headers={"Accept-Language": "pt-BR"}).text
+        m = re.search(r'"shortDescription":"(.*?)","isCrawlable"', html, re.S)
+        return json.loads('"' + m.group(1) + '"')[:MAX_TEXTO] if m else ""
+    except Exception as e:
+        print(f"  descrição indisponível ({url}): {e}", file=sys.stderr)
+        return ""
+
+
 def coletar_youtube(fonte, limite):
     """O RSS do YouTube é instável (404/500 frequentes); lê os ids da página do canal
     (ordem = mais novos primeiro) e pega o título pelo oEmbed, que não exige chave."""
@@ -87,7 +98,7 @@ def coletar_youtube(fonte, limite):
         except Exception as e:  # vídeo privado/removido
             print(f"  oembed falhou para {vid}: {e}", file=sys.stderr)
             continue
-        itens.append(Item(url, titulo, fonte["nome"], "video"))
+        itens.append(Item(url, titulo, fonte["nome"], "video", _descricao_youtube(url)))
     return itens
 
 

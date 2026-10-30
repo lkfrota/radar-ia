@@ -42,3 +42,16 @@ def test_feedback(tmp_path):
     assert p["temas"]["t"] == -0.05  # -0.15 + 0.10
     assert [x["url"] for x in pend] == ["v"] and vistos == ["u"]
     assert not list(tmp_path.glob("*.json"))
+
+
+def test_falha_do_modelo_nao_derruba_rodada(monkeypatch):
+    from src import modelo
+    def quebra(*a, **k):
+        raise RuntimeError("504 DEADLINE_EXCEEDED")
+    monkeypatch.setattr(modelo, "FAKE", False)
+    monkeypatch.setattr(modelo, "gerar_json", quebra)
+    v = item("v", 9, 5); v.tipo = "video"; v.nota = 9
+    a = item("a", 9, 5); a.texto = "corpo original do artigo"; a.nota = 7
+    out = montar.redigir_lote([v, a])
+    assert set(out) == {"v", "a"}
+    assert "corpo original" in out["a"]["paragrafos"][0]

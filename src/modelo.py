@@ -33,7 +33,7 @@ class CotaDiaria(Exception):
     """Cota diária do modelo esgotada: insistir não adianta até a renovação."""
 
 
-def gerar_json(prompt, esquema, video_url=None, modelo=None):
+def gerar_json(prompt, esquema, video_url=None, modelo=None, tentativas=3, timeout_ms=None):
     """Chamada com saída estruturada. `esquema` é um schema JSON; video_url opcional
     faz o Gemini assistir um vídeo público do YouTube."""
     from google.genai import types
@@ -41,7 +41,7 @@ def gerar_json(prompt, esquema, video_url=None, modelo=None):
     if video_url:
         partes.append(types.Part(file_data=types.FileData(file_uri=video_url)))
     partes.append(types.Part(text=prompt))
-    for tentativa in range(3):
+    for tentativa in range(tentativas):
         print(f"  gemini: chamada {'(vídeo) ' if video_url else ''}tentativa {tentativa + 1}", flush=True)
         try:
             r = _client().models.generate_content(
@@ -49,14 +49,16 @@ def gerar_json(prompt, esquema, video_url=None, modelo=None):
                 contents=types.Content(parts=partes),
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json", response_schema=esquema,
-                    temperature=0.3),
+                    temperature=0.3,
+                    http_options=types.HttpOptions(timeout=timeout_ms or TIMEOUT_MS)),
             )
             time.sleep(_PAUSA)
             return json.loads(r.text)
         except Exception as e:
             if "PerDay" in str(e):
                 raise CotaDiaria(str(e)[:200]) from e
-            if tentativa == 2:
+            if tentativa == tentativas - 1:
                 raise
-            espera = 30 * (tentativa + 1) if re.search(r"429|quota|rate", str(e), re.I) else 5
+            # 429/503 pedem espera longa; outros erros, tentativa rápida
+            espera = 30 * (tentativa + 1) if re.search(r"429|503|quota|rate|demand", str(e), re.I) else 5
             time.sleep(espera)

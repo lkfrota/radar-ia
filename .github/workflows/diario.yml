@@ -2,7 +2,7 @@ name: radar-diario
 
 on:
   schedule:
-    - cron: "0 10 * * *"   # 10:00 UTC = 7:00 em Brasília
+    - cron: "17 9 * * *"   # 9:17 UTC = 6:17 em Brasília; o GitHub costuma atrasar, e minuto redondo é horário de pico
   workflow_dispatch:
 
 concurrency: radar

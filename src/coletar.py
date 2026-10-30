@@ -57,7 +57,9 @@ def _artigo(url, fonte, descoberta=False):
 
 
 def coletar_rss(fonte, limite):
-    feed = feedparser.parse(fonte["url"], request_headers=UA)
+    feed = feedparser.parse(_get(fonte["url"]).content)
+    if not feed.entries:
+        raise ValueError("feed sem entradas")
     itens = []
     for e in feed.entries[:limite]:
         texto = BeautifulSoup(e.get("summary", ""), "html.parser").get_text(" ", strip=True)

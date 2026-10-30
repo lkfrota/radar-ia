@@ -88,7 +88,8 @@ def _fake(it):
 def _redigir_video(it):
     p = (INSTRUCAO + f"Resuma o vídeo anexado em {paragrafos_alvo(it.nota)}.\n"
          f"Título original: {it.titulo}\nCanal: {it.fonte}")
-    return modelo.gerar_json(p, ESQUEMA, video_url=it.url)
+    # 1 tentativa e teto curto: vídeo é a chamada mais lenta e instável
+    return modelo.gerar_json(p, ESQUEMA, video_url=it.url, tentativas=1, timeout_ms=120_000)
 
 
 def _redigir_em_lote(itens):
@@ -110,15 +111,19 @@ def redigir_lote(itens):
     if modelo.FAKE:
         return {it.url: _fake(it) for it in itens}
     out = {}
+    video_ok = True  # disjuntor: na primeira falha de vídeo, não tenta os demais
     videos = sorted((i for i in itens if i.tipo == "video" and i.nota >= 6),
                     key=lambda i: i.nota, reverse=True)[:MAX_VIDEOS]
     try:
         for it in videos:
+            if not video_ok:
+                break
             try:
                 out[it.url] = _redigir_video(it)
             except modelo.CotaDiaria:
                 raise
             except Exception as e:  # vídeo indisponível/travado: cai para o lote, só com título
+                video_ok = False
                 print(f"vídeo não lido ({it.url}): {str(e)[:120]}", flush=True)
         resto = [i for i in itens if i.url not in out]
         res = _redigir_em_lote(resto)
@@ -126,5 +131,18 @@ def redigir_lote(itens):
             if n in res:
                 out[it.url] = {k: res[n][k] for k in ESQUEMA["required"]}
     except modelo.CotaDiaria as e:
-        print(f"cota diária esgotada, publicando só o que foi redigido: {e}", flush=True)
+        print(f"cota diária esgotada: {e}", flush=True)
+    except Exception as e:  # falha do provedor nunca pode derrubar a rodada
+        print(f"redação em lote falhou: {str(e)[:200]}", flush=True)
+    for it in itens:
+        if it.url not in out:
+            out[it.url] = _reserva(it)
     return out
+
+
+def _reserva(it):
+    """Sem IA: título e trecho original, marcado como tal. Melhor que página vazia."""
+    trecho = (it.texto or "").strip()[:500]
+    return {"titulo": it.titulo,
+            "paragrafos": [trecho + "…" if trecho else "Resumo automático indisponível nesta rodada."],
+            "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte."}

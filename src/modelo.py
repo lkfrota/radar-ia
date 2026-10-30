@@ -9,6 +9,9 @@ import time
 
 FAKE = os.environ.get("RADAR_FAKE") == "1"
 MODELO = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
+# a camada gratuita tem cota diária (20 chamadas) separada por modelo: a triagem usa o
+# modelo lite para não competir com a redação
+MODELO_TRIAGEM = os.environ.get("GEMINI_MODEL_TRIAGEM", "gemini-flash-lite-latest")
 TIMEOUT_MS = 180_000  # 3 min por chamada
 _PAUSA = 6.5  # a camada gratuita limita requisições por minuto
 
@@ -26,7 +29,11 @@ def _client():
     return _cliente
 
 
-def gerar_json(prompt, esquema, video_url=None):
+class CotaDiaria(Exception):
+    """Cota diária do modelo esgotada: insistir não adianta até a renovação."""
+
+
+def gerar_json(prompt, esquema, video_url=None, modelo=None):
     """Chamada com saída estruturada. `esquema` é um schema JSON; video_url opcional
     faz o Gemini assistir um vídeo público do YouTube."""
     from google.genai import types
@@ -38,7 +45,7 @@ def gerar_json(prompt, esquema, video_url=None):
         print(f"  gemini: chamada {'(vídeo) ' if video_url else ''}tentativa {tentativa + 1}", flush=True)
         try:
             r = _client().models.generate_content(
-                model=MODELO,
+                model=modelo or MODELO,
                 contents=types.Content(parts=partes),
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json", response_schema=esquema,
@@ -47,6 +54,8 @@ def gerar_json(prompt, esquema, video_url=None):
             time.sleep(_PAUSA)
             return json.loads(r.text)
         except Exception as e:
+            if "PerDay" in str(e):
+                raise CotaDiaria(str(e)[:200]) from e
             if tentativa == 2:
                 raise
             espera = 30 * (tentativa + 1) if re.search(r"429|quota|rate", str(e), re.I) else 5

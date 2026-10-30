@@ -52,6 +52,9 @@ def paragrafos_alvo(nota_):
     return "1 parágrafo"
 
 
+MAX_VIDEOS = 3       # vídeo é lento e caro em cota: só os de maior nota são "assistidos"
+CORPO_LOTE = 2500    # caracteres de texto por item na chamada em lote
+
 ESQUEMA = {
     "type": "OBJECT",
     "properties": {
@@ -61,34 +64,67 @@ ESQUEMA = {
     },
     "required": ["titulo", "paragrafos", "por_que_importa"],
 }
+ESQUEMA_LOTE = {"type": "ARRAY", "items": {
+    "type": "OBJECT",
+    "properties": {"i": {"type": "INTEGER"}, **ESQUEMA["properties"]},
+    "required": ["i", *ESQUEMA["required"]],
+}}
+
+INSTRUCAO = (
+    "Escreva em português do Brasil, tom direto e claro, para um engenheiro mecânico "
+    "que não é programador profissional. Explique termos técnicos na primeira vez. "
+    "Resuma sem inventar nada além da fonte. Dê também 'por_que_importa': uma frase "
+    "ligando ao perfil dele (manutenção industrial, energia solar, agentes de IA, "
+    "consultoria de dados) ou dizendo honestamente que é só uma aposta de correlação.\n\n"
+)
 
 
-def _prompt(it, alvo, perfil):
-    base = (
-        "Escreva em português do Brasil, tom direto e claro, para um engenheiro mecânico "
-        "que não é programador profissional. Explique termos técnicos na primeira vez. "
-        f"Resuma o conteúdo abaixo em {alvo}, sem inventar nada além da fonte. Dê também "
-        "'por_que_importa': uma frase ligando ao perfil dele (manutenção industrial, "
-        "energia solar, agentes de IA, consultoria de dados) ou dizendo honestamente que é "
-        "só uma aposta de correlação.\n\n"
-        f"Título original: {it.titulo}\nFonte: {it.fonte}\n"
-    )
-    if it.tipo == "video":
-        return base + "O conteúdo é o vídeo anexado."
-    return base + f"Conteúdo:\n{it.texto}"
+def _fake(it):
+    n = 4 if it.nota >= 8 else 2 if it.nota >= 5 else 1
+    return {"titulo": it.titulo, "paragrafos": [f"(simulado) Resumo de {it.titulo}."] * n,
+            "por_que_importa": "(simulado)"}
 
 
-def redigir(it, perfil):
-    alvo = paragrafos_alvo(it.nota)
+def _redigir_video(it):
+    p = (INSTRUCAO + f"Resuma o vídeo anexado em {paragrafos_alvo(it.nota)}.\n"
+         f"Título original: {it.titulo}\nCanal: {it.fonte}")
+    return modelo.gerar_json(p, ESQUEMA, video_url=it.url)
+
+
+def _redigir_em_lote(itens):
+    blocos = []
+    for n, it in enumerate(itens):
+        corpo = it.texto[:CORPO_LOTE] if it.texto else (
+            "(só título e fonte disponíveis: diga em 1 parágrafo curto que o conteúdo "
+            "não foi lido e não invente detalhes)")
+        blocos.append(f"[{n}] Título: {it.titulo}\nFonte: {it.fonte}\n"
+                      f"Tamanho: {paragrafos_alvo(it.nota)}\nConteúdo: {corpo}")
+    res = modelo.gerar_json(INSTRUCAO + "Resuma cada item abaixo no tamanho indicado.\n\n"
+                            + "\n\n".join(blocos), ESQUEMA_LOTE)
+    return {r["i"]: r for r in res}
+
+
+def redigir_lote(itens):
+    """Devolve {url: texto}. Gasta ~1 chamada em lote + até MAX_VIDEOS chamadas de vídeo,
+    para caber na cota diária gratuita. Cota esgotada: devolve o que já conseguiu."""
     if modelo.FAKE:
-        return {"titulo": it.titulo, "paragrafos": [f"(simulado) Resumo de {it.titulo}."] * (
-            4 if it.nota >= 8 else 2 if it.nota >= 5 else 1), "por_que_importa": "(simulado)"}
-    # vídeo só é assistido pelo modelo se a nota justificar; senão resume título/descrição
-    video = it.url if it.tipo == "video" and it.nota >= 6 else None
+        return {it.url: _fake(it) for it in itens}
+    out = {}
+    videos = sorted((i for i in itens if i.tipo == "video" and i.nota >= 6),
+                    key=lambda i: i.nota, reverse=True)[:MAX_VIDEOS]
     try:
-        return modelo.gerar_json(_prompt(it, alvo, perfil), ESQUEMA, video_url=video)
-    except Exception:
-        if not video:
-            raise
-        it.tipo = "video-sem-conteudo"  # cota de vídeo estourou: cai para título
-        return modelo.gerar_json(_prompt(it, alvo, perfil), ESQUEMA)
+        for it in videos:
+            try:
+                out[it.url] = _redigir_video(it)
+            except modelo.CotaDiaria:
+                raise
+            except Exception as e:  # vídeo indisponível/travado: cai para o lote, só com título
+                print(f"vídeo não lido ({it.url}): {str(e)[:120]}", flush=True)
+        resto = [i for i in itens if i.url not in out]
+        res = _redigir_em_lote(resto)
+        for n, it in enumerate(resto):
+            if n in res:
+                out[it.url] = {k: res[n][k] for k in ESQUEMA["required"]}
+    except modelo.CotaDiaria as e:
+        print(f"cota diária esgotada, publicando só o que foi redigido: {e}", flush=True)
+    return out

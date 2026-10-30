@@ -36,15 +36,13 @@ def rodar():
     pontuar.pontuar(itens, perfil)
     escolhidos = montar.selecionar(itens, pesos, set(vistos))
 
-    novos = []
+    textos = montar.redigir_lote(escolhidos)
+    novos = [{"url": it.url, "fonte": it.fonte, "tema": it.tema, "tipo": it.tipo,
+              "categoria": it.categoria, "nota": it.nota, **textos[it.url], "dia": hoje}
+             for it in escolhidos if it.url in textos]
     for it in escolhidos:
-        try:
-            txt = montar.redigir(it, perfil)
-        except Exception as e:
-            print(f"redação falhou para {it.url}: {e}", file=sys.stderr)
-            continue
-        novos.append({"url": it.url, "fonte": it.fonte, "tema": it.tema, "tipo": it.tipo,
-                      "categoria": it.categoria, "nota": it.nota, **txt, "dia": hoje})
+        if it.url not in textos:
+            print(f"sem redação (fica para amanhã): {it.url}", file=sys.stderr)
 
     # Pendentes (não marcados como lidos) ficam no topo por até MAX_DIAS_PENDENTE dias
     todos = [dict(p, pendente=True) for p in pendentes] + novos

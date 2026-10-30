@@ -3,7 +3,7 @@ import hashlib
 
 from . import modelo
 
-LOTE = 25
+LOTE = 40
 
 ESQUEMA = {
     "type": "ARRAY",
@@ -57,7 +57,7 @@ def pontuar(itens, perfil):
         return itens
     for ini in range(0, len(itens), LOTE):
         lote = itens[ini:ini + LOTE]
-        res = modelo.gerar_json(_prompt(perfil, lote), ESQUEMA)
+        res = modelo.gerar_json(_prompt(perfil, lote), ESQUEMA, modelo=modelo.MODELO_TRIAGEM)
         por_i = {r["i"]: r for r in res}
         for n, it in enumerate(lote):
             r = por_i.get(n, {"aderencia": 0, "novidade": 0, "tema": "indefinido"})

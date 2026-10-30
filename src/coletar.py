@@ -49,6 +49,10 @@ def _artigo(url, fonte, descoberta=False):
     """Baixa uma página de artigo e extrai título, data e corpo."""
     html = _get(url).text
     s, corpo = _texto_pagina(html)
+    # corpo do artigo, sem menu/rodapé: <article> ou <main> quando existirem
+    miolo = s.find("article") or s.find("main")
+    if miolo:
+        corpo = re.sub(r"\s+", " ", miolo.get_text(" ", strip=True))
     meta = {m.get("property"): m.get("content") for m in s.find_all("meta") if m.get("property")}
     titulo = meta.get("og:title") or (s.title.string if s.title else url)
     return Item(url=url, titulo=titulo.strip(), fonte=fonte, tipo="artigo",

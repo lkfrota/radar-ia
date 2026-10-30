@@ -52,7 +52,8 @@ def paragrafos_alvo(nota_):
     return "1 parágrafo"
 
 
-MAX_VIDEOS = 3       # vídeo é lento e caro em cota: só os de maior nota são "assistidos"
+MAX_VIDEOS = 1       # vídeo é lento e caro em cota: só os de maior nota são "assistidos"
+LOTE_REDACAO = 6     # itens por chamada: lotes menores falham menos
 CORPO_LOTE = 2500    # caracteres de texto por item na chamada em lote
 
 ESQUEMA = {
@@ -89,7 +90,8 @@ def _redigir_video(it):
     p = (INSTRUCAO + f"Resuma o vídeo anexado em {paragrafos_alvo(it.nota)}.\n"
          f"Título original: {it.titulo}\nCanal: {it.fonte}")
     # 1 tentativa e teto curto: vídeo é a chamada mais lenta e instável
-    return modelo.gerar_json(p, ESQUEMA, video_url=it.url, tentativas=1, timeout_ms=120_000)
+    return modelo.gerar_json(p, ESQUEMA, video_url=it.url, modelo=modelo.MODELO_REDACAO,
+                             tentativas=1, timeout_ms=120_000)
 
 
 def _redigir_em_lote(itens):
@@ -101,7 +103,7 @@ def _redigir_em_lote(itens):
         blocos.append(f"[{n}] Título: {it.titulo}\nFonte: {it.fonte}\n"
                       f"Tamanho: {paragrafos_alvo(it.nota)}\nConteúdo: {corpo}")
     res = modelo.gerar_json(INSTRUCAO + "Resuma cada item abaixo no tamanho indicado.\n\n"
-                            + "\n\n".join(blocos), ESQUEMA_LOTE)
+                            + "\n\n".join(blocos), ESQUEMA_LOTE, modelo=modelo.MODELO_REDACAO)
     return {r["i"]: r for r in res}
 
 
@@ -126,10 +128,12 @@ def redigir_lote(itens):
                 video_ok = False
                 print(f"vídeo não lido ({it.url}): {str(e)[:120]}", flush=True)
         resto = [i for i in itens if i.url not in out]
-        res = _redigir_em_lote(resto)
-        for n, it in enumerate(resto):
-            if n in res:
-                out[it.url] = {k: res[n][k] for k in ESQUEMA["required"]}
+        for ini in range(0, len(resto), LOTE_REDACAO):
+            grupo = resto[ini:ini + LOTE_REDACAO]
+            res = _redigir_em_lote(grupo)
+            for n, it in enumerate(grupo):
+                if n in res:
+                    out[it.url] = {k: res[n][k] for k in ESQUEMA["required"]}
     except modelo.CotaDiaria as e:
         print(f"cota diária esgotada: {e}", flush=True)
     except Exception as e:  # falha do provedor nunca pode derrubar a rodada

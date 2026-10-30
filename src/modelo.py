@@ -12,6 +12,8 @@ MODELO = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 # a camada gratuita tem cota diária (20 chamadas) separada por modelo: a triagem usa o
 # modelo lite para não competir com a redação
 MODELO_TRIAGEM = os.environ.get("GEMINI_MODEL_TRIAGEM", "gemini-flash-lite-latest")
+# redação também em lite: o Flash completo deu 504 repetido em 2026-10-30 (demanda alta)
+MODELO_REDACAO = os.environ.get("GEMINI_MODEL_REDACAO", MODELO_TRIAGEM)
 TIMEOUT_MS = 180_000  # 3 min por chamada
 _PAUSA = 6.5  # a camada gratuita limita requisições por minuto
 

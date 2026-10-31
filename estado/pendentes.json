@@ -181,5 +181,178 @@
     ],
     "por_que_importa": "Isso importa para agentes de IA: otimizar modelos gerando versões mais leves e eficientes lembra o processo de otimização topológica na engenharia, onde se remove material desnecessário de uma peça mantendo sua integridade estrutural.",
     "dia": "2026-10-30"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=0PjtV7KtlB4",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "engenharia com agentes",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.05,
+    "titulo": "Como Ficar 100x Melhor no Claude Code",
+    "paragrafos": [
+      "O engenheiro de software Matt Pocock destaca que o principal erro ao usar inteligência artificial não está na tecnologia em si, mas na forma como nos comunicamos com ela. As pessoas costumam dar instruções vagas e subestimar a barreira de comunicação com os agentes.",
+      "Para superar isso, é preciso entender a Curva de Dunning-Kruger, onde a falsa sensação de competência inicial atrapalha o aprendizado profundo. Na programação ou no uso de IA, a falta de clareza gera resultados frustrantes que não atendem às expectativas.",
+      "A solução passa por um aprendizado prático e estruturado, indo além da teoria básica para antecipar problemas reais. Ferramentas e metodologias iterativas ajudam a refinar o conhecimento e evitar o 'desconhecido desconhecido'.",
+      "A clareza de pensamento e comunicação é fundamental para extrair o máximo de performance de ferramentas de IA como o Claude Code, transformando comandos simples em sistemas robustos."
+    ],
+    "por_que_importa": "Essencial para engenheiros mecânicos e profissionais técnicos que buscam aplicar IA na automação de processos, melhorando a precisão de comandos e a eficiência no desenvolvimento de projetos industriais.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=PhTQOig_QA4",
+    "fonte": "IA em 6 Minutos (YouTube)",
+    "tema": "lancamentos de modelos",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 7.0,
+    "titulo": "NCM matou o LLM: dessa vez, parece que é real",
+    "paragrafos": [
+      "O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=rFAyLqsPyFY",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "lancamentos de modelos",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 6.4,
+    "titulo": "13 notícias de IA que você perdeu essa semana (Gemini 4 Carbon, GPT-6.1 Terra e mais)",
+    "paragrafos": [
+      "O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+    "fonte": "Anthropic News",
+    "tema": "lancamentos de modelos",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 6.4,
+    "titulo": "Expanding our partnership with GSA to bring Claude to all levels of government",
+    "paragrafos": [
+      "A Anthropic ampliou sua parceria com a GSA (Administração de Serviços Gerais dos Estados Unidos), oferecendo um desconto de 40% em ferramentas e APIs (interface de programação de aplicações, que permite que diferentes softwares se comuniquem) do Claude para órgãos públicos federais, estaduais, locais, tribais e territoriais. O acordo também inclui um programa dedicado para ajudar agências públicas a implementarem a tecnologia com suporte a ciclos de compras longos e orçamentos apertados, sem exigência de gastos mínimos antecipados.",
+      "O uso do Claude em órgãos governamentais tem crescido expressivamente, com exemplos práticos de aplicação que incluem a redução de filas e o processamento de registros, além da modernização de sistemas legados. Casos específicos citados envolvem o uso do Claude Code (ferramenta de IA voltada para auxílio em programação) para acelerar o ambiente de trabalho de desenvolvedores e a resposta a incidentes de segurança cibernética em tempo reduzido em comparação aos métodos tradicionais."
+    ],
+    "por_que_importa": "Mostra como agentes de IA e ferramentas avançadas de software começam a ser adotados em larga escala para automação e segurança em estruturas complexas, o que pode espelhar futuras demandas de digitalização em infraestruturas industriais e de energia.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=DL8Op83cqCE",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "agentes de ia",
+    "tipo": "video",
+    "categoria": "adjacente",
+    "nota": 6.35,
+    "titulo": "100 Casos de Uso do JEV que Parecem Mágica",
+    "paragrafos": [
+      "O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://github.com/chris124567/cfsolve",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "automacao de processos",
+    "tipo": "discussao",
+    "categoria": "adjacente",
+    "nota": 6.3,
+    "titulo": "Cloudflare Turnstile solver library (no headless browser required)",
+    "paragrafos": [
+      "O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=bKI-YvBuu2Y",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "engenharia com agentes",
+    "tipo": "video",
+    "categoria": "adjacente",
+    "nota": 6.0,
+    "titulo": "Faça Isso ANTES de Pedir Qualquer Coisa Para a IA",
+    "paragrafos": [
+      "O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=V1LPpsKY8q0",
+    "fonte": "IA em 6 Minutos (YouTube)",
+    "tema": "engenharia com agentes",
+    "tipo": "video",
+    "categoria": "adjacente",
+    "nota": 6.0,
+    "titulo": "99% dos desenvolvedores vão virar usuários. O 1% estará em alta demanda",
+    "paragrafos": [
+      "O conteúdo completo deste vídeo não foi lido, portanto nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "Como você trabalha com engenharia mecânica, a transição de profissionais para usuários de ferramentas automatizadas reflete a mudança de projetistas manuais para operadores de sistemas avançados.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://huggingface.co/papers/2610.23656",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 5.2,
+    "titulo": "ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics",
+    "paragrafos": [
+      "A investigação forense em blockchain (a tecnologia de registro descentralizado de criptomoedas) é complexa e dinâmica, pois criminosos dividem e misturam fundos para esconder o rastro. Para testar a capacidade de inteligências artificiais nessa tarefa, foi criado o ABF-Bench, um ambiente de testes interativo que exige que os agentes de IA citem registros públicos para cada movimento financeiro rastreado.",
+      "O sistema avalia um agente próprio de IA (harness) em comparação com modelos genéricos. O agente especializado obteve 75% de acerto no rastreamento de conexões e identificou serviços de custódia ocultos com alta precisão, superando modelos como o Claude Code, que falharam por excesso de confiança ao citar dados não recuperados."
+    ],
+    "por_que_importa": "Isso importa diretamente para o seu foco em agentes de IA, mostrando como sistemas autônomos podem realizar auditorias complexas com rastreabilidade baseada em evidências.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=sUFZqtiJIFk",
+    "fonte": "IA em 6 Minutos (YouTube)",
+    "tema": "engenharia com agentes",
+    "tipo": "video",
+    "categoria": "adjacente",
+    "nota": 5.0,
+    "titulo": "Qualidade do código ainda importa? Tudo depende disso ...",
+    "paragrafos": [
+      "O conteúdo completo deste vídeo não foi lido, portanto nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "Assim como na manutenção industrial onde a qualidade de um componente mecânico determina sua vida útil, a qualidade do código dita a confiabilidade de sistemas digitais.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+    "fonte": "Anthropic News",
+    "tema": "analise de dados",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 4.9,
+    "titulo": "Open call for guest investigators in the life sciences",
+    "paragrafos": [
+      "A Anthropic abriu uma chamada para pesquisadores das ciências da vida trabalharem por 8 a 12 semanas em parceria direta com sua equipe, usando o modelo Claude para investigar questões em biologia molecular, química medicinal e descoberta de medicamentos. O programa oferece acesso gratuito a modelos de IA e garante que os participantes mantenham os direitos sobre seus dados e pesquisas futuras."
+    ],
+    "por_que_importa": "Esta é uma aposta de correlação pura com o seu perfil, já que o foco em ciências biológicas está distante da sua atuação em engenharia mecânica e consultoria de dados.",
+    "dia": "2026-10-31"
+  },
+  {
+    "url": "https://huggingface.co/papers/2610.38293",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "analise de dados",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 4.9,
+    "titulo": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
+    "paragrafos": [
+      "Previsões de lucros trimestrais exigem que agentes de IA conectem dados financeiros a demonstrativos de resultados de empresas. O EPSBench é um novo benchmark (ambiente de teste padronizado) avaliando modelos de IA em 149 trimestres fiscais com base em relatórios e chamadas de resultados. Os testes mostraram que três dos seis modelos avaliados tiveram erros de previsão comparáveis ao consenso de analistas humanos, mas todos apresentaram limitações na precisão dos intervalos de confiança devido a estimativas conservadoras."
+    ],
+    "por_que_importa": "Conecta-se diretamente ao seu perfil de consultoria de dados, demonstrando como modelos de IA lidam com previsões quantitativas e análise de desempenho corporativo.",
+    "dia": "2026-10-31"
   }
 ]

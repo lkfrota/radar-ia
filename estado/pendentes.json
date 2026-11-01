@@ -354,5 +354,64 @@
     ],
     "por_que_importa": "Conecta-se diretamente ao seu perfil de consultoria de dados, demonstrando como modelos de IA lidam com previsões quantitativas e análise de desempenho corporativo.",
     "dia": "2026-10-31"
+  },
+  {
+    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "modelos abertos",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 7.3,
+    "titulo": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+    "paragrafos": [
+      "Apenas o título e a fonte desta descoberta no Hacker News foram disponibilizados para análise.",
+      "O conteúdo completo do texto não foi lido e detalhes adicionais não serão inventados para preservar a precisão da informação."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem impacto direto imediato na sua rotina de engenharia mecânica.",
+    "dia": "2026-11-01"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Go5V8n021sw",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "futuro da ia",
+    "tipo": "video",
+    "categoria": "adjacente",
+    "nota": 5.7,
+    "titulo": "O PROMPT MORREU: Como Aprender Inteligência Artificial em 2027?",
+    "paragrafos": [
+      "Apenas o título e a fonte deste vídeo do YouTube foram disponibilizados para análise.",
+      "O conteúdo completo do vídeo não foi lido e nenhum detalhe técnico foi inventado."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sobre o futuro da tecnologia e agentes de IA.",
+    "dia": "2026-11-01"
+  },
+  {
+    "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "seguranca de ia",
+    "tipo": "discussao",
+    "categoria": "adjacente",
+    "nota": 5.3,
+    "titulo": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
+    "paragrafos": [
+      "Apenas o título e a fonte desta descoberta no Hacker News foram disponibilizados para análise.",
+      "O conteúdo completo do texto não foi lido e não há invenção de fatos adicionais sobre o caso jurídico."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sobre falhas de segurança em sistemas de inteligência artificial.",
+    "dia": "2026-11-01"
+  },
+  {
+    "url": "https://huggingface.co/papers/2610.40564",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "treinamento de modelos",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 4.9,
+    "titulo": "Training Foundation Models with a Single Algorithm",
+    "paragrafos": [
+      "Um artigo técnico demonstra que treinar modelos de fundação (Foundation models, que são modelos de inteligência artificial de grande escala) não precisa ocorrer em várias etapas separadas (como pré-treinamento, ajuste fino e aprendizado por reforço). Os autores unificaram todas essas fases em um único algoritmo baseado em verossimilhança (método estatístico para estimar parâmetros), tratando o processo apenas como uma escolha de quais dados usar e em quais proporções, o que melhora a eficiência computacional e a precisão."
+    ],
+    "por_que_importa": "Interessa diretamente à sua atuação com agentes de IA e consultoria de dados, pois mostra a simplificação drástica da infraestrutura computacional necessária para criar inteligência artificial.",
+    "dia": "2026-11-01"
   }
 ]

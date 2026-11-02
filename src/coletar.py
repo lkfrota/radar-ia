@@ -6,6 +6,7 @@ o erro vai para o log e a fonte é pulada.
 import json
 import re
 import sys
+from datetime import datetime, timezone
 from dataclasses import dataclass, asdict
 from pathlib import Path
 
@@ -13,6 +14,9 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 
+RAIZ = Path(__file__).resolve().parent.parent
+DIAS_ARQUIVO_VELHO = 3
+AVISOS = []  # avisos não fatais (ex.: arquivo local desatualizado) que viram falhas na página
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) radar-ia/0.1"}
 TIMEOUT = 20
 MAX_TEXTO = 6000  # caracteres de corpo enviados ao modelo por item
@@ -150,7 +154,18 @@ def coletar_hf_papers(fonte, limite):
     return itens
 
 
-COLETORES = {"rss": coletar_rss, "youtube": coletar_youtube, "pagina": coletar_pagina,
+def coletar_arquivo(fonte, limite):
+    """Fonte alimentada por outro programa (ex.: coleta local do The Batch, que o site bloqueia
+    na nuvem). Lê o JSON em entradas/ e avisa se ele não é renovado há dias."""
+    dados = json.loads((RAIZ / fonte["arquivo"]).read_text())
+    idade = (datetime.now(timezone.utc) - datetime.fromisoformat(dados["atualizado"])).days
+    if idade > DIAS_ARQUIVO_VELHO:
+        AVISOS.append({"fonte": fonte["nome"], "erro": f"coleta local parada há {idade} dias (computador desligado?)"})
+    return [Item(i["url"], i["titulo"], fonte["nome"], "artigo", i["texto"][:MAX_TEXTO], i.get("data", ""))
+            for i in dados["itens"][:limite]]
+
+
+COLETORES = {"arquivo": coletar_arquivo, "rss": coletar_rss, "youtube": coletar_youtube, "pagina": coletar_pagina,
              "hackernews": coletar_hackernews, "hf_papers": coletar_hf_papers}
 
 
@@ -167,6 +182,7 @@ def coletar_tudo(fontes):
         except Exception as e:
             print(f"{f['nome']}: FALHOU ({e})", file=sys.stderr)
             falhas.append({"fonte": f["nome"], "erro": str(e)})
+    falhas += AVISOS
     return itens, falhas
 
 

@@ -75,3 +75,15 @@ def test_falha_do_modelo_nao_derruba_rodada(monkeypatch):
     out = montar.redigir_lote([v, a])
     assert set(out) == {"v", "a"}
     assert "corpo original" in out["a"]["paragrafos"][0]
+
+
+def test_fonte_arquivo_avisa_quando_velha(tmp_path, monkeypatch):
+    from src import coletar
+    from datetime import datetime, timedelta, timezone
+    (tmp_path / "e.json").write_text(json.dumps({
+        "atualizado": (datetime.now(timezone.utc) - timedelta(days=5)).isoformat(),
+        "itens": [{"url": "u", "titulo": "t", "texto": "x"}]}))
+    monkeypatch.setattr(coletar, "RAIZ", tmp_path)
+    coletar.AVISOS.clear()
+    itens, falhas = coletar.coletar_tudo([{"nome": "TB", "tipo": "arquivo", "arquivo": "e.json"}])
+    assert [i.url for i in itens] == ["u"] and "5 dias" in falhas[0]["erro"]

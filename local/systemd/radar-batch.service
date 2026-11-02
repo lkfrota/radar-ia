@@ -1,0 +1,8 @@
+[Unit]
+Description=Radar de IA: coleta local do The Batch
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/lincoln/.local/bin/uv run --project /home/lincoln/Desktop/radar-ia python /home/lincoln/Desktop/radar-ia/local/coletar_batch.py

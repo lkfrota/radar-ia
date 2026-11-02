@@ -19,9 +19,10 @@
   },
   {
     "nome": "The Batch (DeepLearning.AI)",
-    "tipo": "rss",
-    "url": "https://charonhub.deeplearning.ai/rss/",
-    "limite": 5
+    "tipo": "arquivo",
+    "arquivo": "entradas/the-batch.json",
+    "limite": 5,
+    "obs": "o site bloqueia a nuvem; local/coletar_batch.py roda no computador do usuário e grava este arquivo"
   },
   {
     "nome": "Anthropic News",

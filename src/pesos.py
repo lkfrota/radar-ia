@@ -1,18 +1,21 @@
 """Processa o feedback gravado pelas páginas (um arquivo JSON por clique em feedback/).
 
 Cada arquivo: {"url", "tema", "fonte", "acao"}. Toda ação dispensa o item da página.
-Tema e fonte são julgados separadamente: "o assunto me interessa" não é "a fonte é boa".
+O tema recebe o sinal inteiro; a fonte, uma fração (ver EFEITOS).
 """
 import json
 from pathlib import Path
 
 LIMITE = 0.5
+# A fonte nunca é julgada por um clique próprio: um item ruim não faz uma fonte ruim. Ela recebe só
+# uma fração do sinal de cada reação, e a qualidade real aparece no acúmulo (muitos "fora do foco"
+# derrubam a fonte aos poucos; muitos "quero mais" a sobem).
 EFEITOS = {  # variação de peso do tema e/ou da fonte
-    "quero_mais": {"tema": 0.15, "fonte": 0.15},
-    "util": {"tema": 0.08},
-    "fora_foco": {"tema": -0.15},
-    "fonte_fraca": {"fonte": -0.15},
+    "quero_mais": {"tema": 0.15, "fonte": 0.05},
+    "util": {"tema": 0.08, "fonte": 0.03},
+    "fora_foco": {"tema": -0.15, "fonte": -0.05},
     "ja_conhecia": {},  # não mexe nos pesos: conta como "conhecido" (reduz o valor de novidade do tema)
+    "fonte_fraca": {"fonte": -0.05},  # botão removido em 2026-11-02; mantido só para cliques já gravados
 }
 LEGADO = {"like": "util", "dislike": "fora_foco", "lido": "ja_conhecia"}  # arquivos da 1ª versão da página
 

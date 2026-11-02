@@ -14,7 +14,8 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 - Gemini grátis: **20 chamadas/dia por modelo**. Triagem e redação usam o modelo lite; Flash completo deu 504/503.
 - Leitura de vídeo pelo Gemini é lenta e instável: no máximo 1 por dia, 1 tentativa. Os demais usam a descrição do vídeo.
 - **The Batch dá 403 nos servidores do GitHub** (IP de nuvem), em qualquer endereço. Funciona na máquina do usuário.
-  Plano (não feito): coleta local agendada que envia os artigos ao repositório. Hoje a fonte falha e aparece no aviso da página.
+  Solução (2026-11-02): `local/coletar_batch.py` roda no computador dele (timer systemd, 6h, `local/instalar_timer.sh`,
+  instalação manual pelo usuário) e grava `entradas/the-batch.json`, lido como fonte do tipo `arquivo`.
 - x.ai/news: 403 (Cloudflare); fonte cadastrada como inativa.
 - RSS do YouTube é instável; usa-se a página do canal + oEmbed + descrição.
 - Cron do GitHub atrasa horas. O usuário disse (2026-11-01) que o horário não importa, só 1 rodada por dia.
@@ -22,8 +23,10 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 
 ## Decisões do usuário
 - 2026-11-01: sem link no site pessoal (`lkfrota/lincoln`); sem inscrição automática em newsletters.
-- 2026-11-01: reações descritivas (quero mais / útil / já conhecia / fora do foco / fonte fraca) no lugar de
+- 2026-11-01: reações descritivas (quero mais / útil / já conhecia / fora do foco) no lugar de
   like/dislike/lido. Substitui a 1ª versão (👍/👎 + "lido"), que misturava tema e fonte.
+- 2026-11-02: removido o botão "Fonte fraca" (julgar a fonte por um item é injusto). A fonte recebe só uma fração
+  do sinal das outras reações (`pesos.py`, EFEITOS); sua qualidade emerge do acúmulo. Substitui a opção de 2026-11-01.
 - 2026-11-01: página com teto de 15 itens; sai o de menor nota para dar vez a novos.
 
 ## Próximo passo planejado

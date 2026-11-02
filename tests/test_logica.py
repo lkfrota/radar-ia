@@ -39,14 +39,14 @@ def _fb(tmp_path, nome, url, acao):
     (tmp_path / nome).write_text(json.dumps({"url": url, "tema": "t", "fonte": "f", "acao": acao}))
 
 
-def test_feedback_separa_tema_e_fonte(tmp_path):
-    _fb(tmp_path, "1.json", "a", "fonte_fraca")
-    _fb(tmp_path, "2.json", "b", "fora_foco")
-    _fb(tmp_path, "3.json", "c", "quero_mais")
+def test_fonte_recebe_so_fracao_do_sinal(tmp_path):
+    _fb(tmp_path, "1.json", "a", "fora_foco")
+    _fb(tmp_path, "2.json", "b", "quero_mais")
+    _fb(tmp_path, "3.json", "c", "util")
     p, pend, vistos = pesos.processar(tmp_path, {"temas": {}, "fontes": {}},
                                       [{"url": u} for u in "abcd"], [])
-    assert p["fontes"]["f"] == 0.0   # -0.15 (fraca) + 0.15 (quero mais)
-    assert p["temas"]["t"] == 0.0    # -0.15 (fora de foco) + 0.15 (quero mais)
+    assert p["temas"]["t"] == 0.08   # -0.15 + 0.15 + 0.08
+    assert p["fontes"]["f"] == 0.03  # -0.05 + 0.05 + 0.03
     assert [x["url"] for x in pend] == ["d"] and sorted(vistos) == ["a", "b", "c"]
     assert not list(tmp_path.glob("*.json"))
 

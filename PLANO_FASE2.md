@@ -15,7 +15,7 @@ Antes disso não há base: sugerir fonte sem sinal seria chute.
   Nada entra na lista sem clique do usuário.
 
 ## 2. Sugerir retirar fontes
-- Fonte com peso ≤ -0.3 (vários "Fonte fraca"), ou com 0 itens publicados em 30 dias,
+- Fonte com peso ≤ -0.3 (acúmulo de "Fora do meu foco" nos itens dela), ou com 0 itens publicados em 30 dias,
   aparece em Configurar como "Candidata a remover", com **Remover** / **Manter**.
 
 ## 3. O que isto custa

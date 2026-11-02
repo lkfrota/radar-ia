@@ -14,7 +14,7 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 - Gemini grátis: **20 chamadas/dia por modelo**. Triagem e redação usam o modelo lite; Flash completo deu 504/503.
 - Leitura de vídeo pelo Gemini é lenta e instável: no máximo 1 por dia, 1 tentativa. Os demais usam a descrição do vídeo.
 - **The Batch dá 403 nos servidores do GitHub** (IP de nuvem), em qualquer endereço. Funciona na máquina do usuário.
-  Solução (2026-11-02): `local/coletar_batch.py` roda no computador dele (timer systemd, 6h, `local/instalar_timer.sh`,
+  Solução (2026-11-02): `local/coletar_batch.py` roda no computador dele (timer systemd, 13h (alterado em 2026-11-02), `local/instalar_timer.sh`,
   instalação manual pelo usuário) e grava `entradas/the-batch.json`, lido como fonte do tipo `arquivo`.
 - x.ai/news: 403 (Cloudflare); fonte cadastrada como inativa.
 - RSS do YouTube é instável; usa-se a página do canal + oEmbed + descrição.

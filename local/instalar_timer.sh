@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Instala o agendamento diário (6h) da coleta local do The Batch no systemd do usuário.
+# Instala o agendamento diário (13h) da coleta local do The Batch no systemd do usuário.
 # Persistent=true: se o computador estava desligado às 6h, roda ao ligar.
 # Para desinstalar: systemctl --user disable --now radar-batch.timer && rm ~/.config/systemd/user/radar-batch.*
 set -euo pipefail

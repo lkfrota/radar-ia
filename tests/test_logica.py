@@ -35,13 +35,33 @@ def test_profundidade():
     assert montar.paragrafos_alvo(2) == "1 parágrafo"
 
 
-def test_feedback(tmp_path):
-    (tmp_path / "1.json").write_text(json.dumps({"url": "u", "tema": "t", "fonte": "f", "acao": "dislike"}))
-    (tmp_path / "2.json").write_text(json.dumps({"url": "v", "tema": "t", "fonte": "f", "acao": "like"}))
-    p, pend, vistos = pesos.processar(tmp_path, {"temas": {}, "fontes": {}}, [{"url": "u"}, {"url": "v"}], [])
-    assert p["temas"]["t"] == -0.05  # -0.15 + 0.10
-    assert [x["url"] for x in pend] == ["v"] and vistos == ["u"]
+def _fb(tmp_path, nome, url, acao):
+    (tmp_path / nome).write_text(json.dumps({"url": url, "tema": "t", "fonte": "f", "acao": acao}))
+
+
+def test_feedback_separa_tema_e_fonte(tmp_path):
+    _fb(tmp_path, "1.json", "a", "fonte_fraca")
+    _fb(tmp_path, "2.json", "b", "fora_foco")
+    _fb(tmp_path, "3.json", "c", "quero_mais")
+    p, pend, vistos = pesos.processar(tmp_path, {"temas": {}, "fontes": {}},
+                                      [{"url": u} for u in "abcd"], [])
+    assert p["fontes"]["f"] == 0.0   # -0.15 (fraca) + 0.15 (quero mais)
+    assert p["temas"]["t"] == 0.0    # -0.15 (fora de foco) + 0.15 (quero mais)
+    assert [x["url"] for x in pend] == ["d"] and sorted(vistos) == ["a", "b", "c"]
     assert not list(tmp_path.glob("*.json"))
+
+
+def test_ja_conhecia_reduz_novidade(tmp_path):
+    _fb(tmp_path, "1.json", "a", "ja_conhecia")
+    p, _, _ = pesos.processar(tmp_path, {"temas": {}, "fontes": {}}, [], [])
+    assert p["temas"] == {} and p["conhecido"] == {"t": 1}
+    assert montar.nota(item("x", 8, 10, tema="t"), p) < montar.nota(item("x", 8, 10, tema="t"), {"temas": {}, "fontes": {}})
+
+
+def test_feedback_legado(tmp_path):
+    _fb(tmp_path, "1.json", "a", "like")
+    p, _, vistos = pesos.processar(tmp_path, {"temas": {}, "fontes": {}}, [], [])
+    assert p["temas"]["t"] == 0.08 and vistos == ["a"]
 
 
 def test_falha_do_modelo_nao_derruba_rodada(monkeypatch):

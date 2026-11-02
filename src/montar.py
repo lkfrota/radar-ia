@@ -10,7 +10,10 @@ LIM_ADJACENTE = 4.0
 def nota(it, pesos):
     """Nota final: mistura aderência/novidade e aplica o aprendizado do feedback
     (peso do tema e da fonte, cada um entre -0.5 e +0.5)."""
-    base = 0.7 * it.aderencia + 0.3 * it.novidade
+    # "já conhecia" (clique do usuário) desvaloriza a novidade daquele tema, 15% por clique
+    conhecido = pesos.get("conhecido", {}).get(it.tema, 0)
+    novidade = it.novidade * max(0.0, 1 - 0.15 * conhecido)
+    base = 0.7 * it.aderencia + 0.3 * novidade
     fator = (1 + pesos["temas"].get(it.tema, 0)) * (1 + pesos["fontes"].get(it.fonte, 0))
     return round(min(10, base * fator), 2)
 

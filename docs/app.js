@@ -30,10 +30,8 @@ function iniciarDigest() {
     const url = art.dataset.url;
     const s = (estado[url] ||= {});
     const marcar = () => {
-      art.classList.toggle("lido", !!s.lido);
-      art.querySelector(".like").classList.toggle("on", s.voto === "like");
-      art.querySelector(".dislike").classList.toggle("on", s.voto === "dislike");
-      art.querySelector("input[data-acao=lido]").checked = !!s.lido;
+      art.classList.toggle("lido", !!s.voto);  // reagir = dispensar
+      art.querySelectorAll("button[data-acao]").forEach((b) => b.classList.toggle("on", b.dataset.acao === s.voto));
     };
     marcar();
 
@@ -47,14 +45,9 @@ function iniciarDigest() {
     };
 
     art.querySelectorAll("button[data-acao]").forEach((b) => b.addEventListener("click", () => {
-      const acao = b.dataset.acao;
-      if (s.voto === acao) return;
-      s.voto = acao; salvar(); marcar(); enviar(acao);
+      if (s.voto === b.dataset.acao) return;
+      s.voto = b.dataset.acao; salvar(); marcar(); enviar(s.voto);
     }));
-    art.querySelector("input[data-acao=lido]").addEventListener("change", (e) => {
-      s.lido = e.target.checked; salvar(); marcar();
-      if (s.lido) enviar("lido");
-    });
   });
 }
 

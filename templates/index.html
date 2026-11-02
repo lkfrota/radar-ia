@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block conteudo %}
-<p class="meta">Atualizado em {{ data }} · {{ itens|length }} itens · marque "lido" para dispensar; o que ficar sem marcar volta amanhã (até 3 dias).</p>
+<p class="meta">Atualizado em {{ data }} · {{ itens|length }} itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
 {% if falhas %}
 <p class="aviso">Fontes que falharam nesta rodada: {% for f in falhas %}{{ f.fonte }}{% if not loop.last %}, {% endif %}{% endfor %}.</p>
 {% endif %}
@@ -13,9 +13,11 @@
   <p class="meta fonte">Fonte: <a href="{{ it.url }}" target="_blank" rel="noopener">{{ it.fonte }} — ler o original ↗</a></p>
   <div class="porque">{{ it.por_que_importa }}</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 {% else %}

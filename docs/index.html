@@ -26,8 +26,8 @@
   .porque { font-size: 15px; color: var(--mut); border-left: 3px solid var(--ac); padding-left: 10px; margin-top: 12px; }
   .acoes { display:flex; gap: 10px; align-items:center; margin-top: 14px; font: 14px system-ui, sans-serif; }
   button { font: inherit; background: none; border: 1px solid var(--linha); color: var(--fg); border-radius: 8px; padding: 4px 12px; cursor: pointer; }
-  button.on.like { border-color: var(--ok); color: var(--ok); } button.on.dislike { border-color: var(--ruim); color: var(--ruim); }
-  label { cursor:pointer; margin-left:auto; }
+  button.on { border-color: var(--ac); color: var(--ac); }
+  .acoes { flex-wrap: wrap; }
   .aviso { font: 14px system-ui, sans-serif; background: var(--card); border: 1px dashed var(--linha); padding: 10px 14px; border-radius: 8px; }
   input[type=text], input[type=password], textarea, select { font: 15px system-ui, sans-serif; background: var(--card); color: var(--fg); border: 1px solid var(--linha); border-radius: 6px; padding: 6px 8px; }
   li.linha { display:flex; gap:8px; align-items:center; margin: 6px 0; font: 15px system-ui, sans-serif; }
@@ -41,7 +41,7 @@
     <nav><a href="index.html">Hoje</a><a href="config.html">Configurar</a></nav>
   </header>
   
-<p class="meta">Atualizado em 01/11/2026 22:44 · 15 itens · marque "lido" para dispensar; o que ficar sem marcar volta amanhã (até 3 dias).</p>
+<p class="meta">Atualizado em 01/11/2026 22:51 · 15 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
 
 
 <article data-url="https://www.youtube.com/watch?v=niRV-yuu5q4" data-tema="agentes de ia" data-fonte="Matheus Battisti (YouTube)">
@@ -52,9 +52,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=niRV-yuu5q4" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
   <div class="porque">Para um engenheiro mecânico que busca otimizar processos ou entender tendências de automação, essa IA demonstra como metodologias rigorosas de planejamento e revisão cruzada podem ser aplicadas para criar sistemas complexos com menos erros humanos.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -66,9 +68,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=xJwegOxj2sc" target="_blank" rel="noopener">IA em 6 Minutos (YouTube) — ler o original ↗</a></p>
   <div class="porque">É apenas uma aposta de correlação sem base nos dados reais do vídeo.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -80,9 +84,11 @@
   <p class="meta fonte">Fonte: <a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
   <div class="porque">É apenas uma aposta de correlação sem base nos dados reais da notícia.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -94,9 +100,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=qvQa74bR8pE" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
   <div class="porque">É apenas uma aposta de correlação sem base nos dados reais do vídeo.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -108,9 +116,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=0PjtV7KtlB4" target="_blank" rel="noopener">Maestros da IA (YouTube) — ler o original ↗</a></p>
   <div class="porque">Essencial para engenheiros mecânicos e profissionais técnicos que buscam aplicar IA na automação de processos, melhorando a precisão de comandos e a eficiência no desenvolvimento de projetos industriais.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -122,9 +132,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=jV-zc6pNofk" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
   <div class="porque">É apenas uma aposta de correlação sem base nos dados reais do vídeo.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -136,9 +148,11 @@
   <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2609.05881" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
   <div class="porque">Isso importa para agentes de IA: assim como um componente mecânico pode vir fora de tolerância de fábrica, arquivos de IA compactados podem falhar silenciosamente se o processo de fabricação digital (quantização) for incorreto.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -150,9 +164,11 @@
   <p class="meta fonte">Fonte: <a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
   <div class="porque">É só uma aposta de correlação sem impacto direto imediato na sua rotina de engenharia mecânica.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -164,9 +180,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=___J8OOGAh8" target="_blank" rel="noopener">Maestros da IA (YouTube) — ler o original ↗</a></p>
   <div class="porque">É apenas uma aposta de correlação sem dados técnicos suficientes para ligar diretamente à manutenção industrial ou engenharia.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -178,9 +196,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=PhTQOig_QA4" target="_blank" rel="noopener">IA em 6 Minutos (YouTube) — ler o original ↗</a></p>
   <div class="porque">É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -192,9 +212,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=ztyI5KytPSM" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
   <div class="porque">É apenas uma aposta de correlação, pois o vídeo não fornece especificações técnicas verificáveis para a sua rotina de engenharia.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -206,9 +228,11 @@
   <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.38174" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
   <div class="porque">Isso importa para agentes de IA e consultoria de dados: validação matemática formal de código é o equivalente digital de testes não destrutivos e análises de elementos finitos para garantir que um sistema não falhe sob carga.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -220,9 +244,11 @@
   <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.38681" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
   <div class="porque">Isso importa para agentes de IA: otimizar modelos gerando versões mais leves e eficientes lembra o processo de otimização topológica na engenharia, onde se remove material desnecessário de uma peça mantendo sua integridade estrutural.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -234,9 +260,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=rFAyLqsPyFY" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
   <div class="porque">É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 
@@ -248,9 +276,11 @@
   <p class="meta fonte">Fonte: <a href="https://www.anthropic.com/news/expanding-partnership-gsa" target="_blank" rel="noopener">Anthropic News — ler o original ↗</a></p>
   <div class="porque">Mostra como agentes de IA e ferramentas avançadas de software começam a ser adotados em larga escala para automação e segurança em estruturas complexas, o que pode espelhar futuras demandas de digitalização em infraestruturas industriais e de energia.</div>
   <div class="acoes">
-    <button class="like" data-acao="like">👍 Útil</button>
-    <button class="dislike" data-acao="dislike">👎 Irrelevante</button>
-    <label><input type="checkbox" data-acao="lido"> lido</label>
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+    <button data-acao="fonte_fraca">Fonte fraca</button>
   </div>
 </article>
 

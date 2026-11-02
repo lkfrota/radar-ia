@@ -10,6 +10,7 @@ from . import coletar, montar, pesos as pesos_mod, pontuar
 
 RAIZ = Path(__file__).resolve().parent.parent
 MAX_DIAS_PENDENTE = 3
+MAX_PENDENTES = 5  # sem teto, itens não lidos se acumulam e estouram os 10-15 min de leitura
 MAX_VISTOS = 1500
 
 
@@ -29,6 +30,7 @@ def rodar():
     pesos, pendentes, vistos = pesos_mod.processar(RAIZ / "feedback", pesos, pendentes, vistos)
     limite = (date.today() - timedelta(days=MAX_DIAS_PENDENTE)).isoformat()
     pendentes = [p for p in pendentes if p["dia"] > limite]
+    pendentes = sorted(pendentes, key=lambda p: p["nota"], reverse=True)[:MAX_PENDENTES]
 
     itens, falhas = coletar.coletar_tudo(fontes)
     ja = set(vistos) | {p["url"] for p in pendentes}

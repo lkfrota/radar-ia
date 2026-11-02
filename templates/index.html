@@ -10,6 +10,7 @@
   <h2><a href="{{ it.url }}" target="_blank" rel="noopener">{{ it.titulo }}</a></h2>
   <div class="meta">{{ it.fonte }}{% if it.tipo == "video" %} · vídeo{% endif %}</div>
   {% for p in it.paragrafos %}<p>{{ p }}</p>{% endfor %}
+  <p class="meta fonte">Fonte: <a href="{{ it.url }}" target="_blank" rel="noopener">{{ it.fonte }} — ler o original ↗</a></p>
   <div class="porque">{{ it.por_que_importa }}</div>
   <div class="acoes">
     <button class="like" data-acao="like">👍 Útil</button>

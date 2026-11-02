@@ -10,7 +10,7 @@ from . import coletar, montar, pesos as pesos_mod, pontuar
 
 RAIZ = Path(__file__).resolve().parent.parent
 MAX_DIAS_PENDENTE = 3
-MAX_PENDENTES = 5  # sem teto, itens não lidos se acumulam e estouram os 10-15 min de leitura
+MAX_PAGINA = 15  # teto da página (~10-15 min de leitura): itens de menor nota saem para dar vez aos novos
 MAX_VISTOS = 1500
 
 
@@ -30,7 +30,6 @@ def rodar():
     pesos, pendentes, vistos = pesos_mod.processar(RAIZ / "feedback", pesos, pendentes, vistos)
     limite = (date.today() - timedelta(days=MAX_DIAS_PENDENTE)).isoformat()
     pendentes = [p for p in pendentes if p["dia"] > limite]
-    pendentes = sorted(pendentes, key=lambda p: p["nota"], reverse=True)[:MAX_PENDENTES]
 
     itens, falhas = coletar.coletar_tudo(fontes)
     ja = set(vistos) | {p["url"] for p in pendentes}
@@ -48,6 +47,9 @@ def rodar():
 
     # Pendentes (não marcados como lidos) ficam no topo por até MAX_DIAS_PENDENTE dias
     todos = [dict(p, pendente=True) for p in pendentes] + novos
+    # o teto vale para o conjunto: velhos e novos disputam por nota. Quem sai continua em
+    # `vistos` e não volta.
+    todos = sorted(todos, key=lambda t: t["nota"], reverse=True)[:MAX_PAGINA]
     vistos += [n["url"] for n in novos]
 
     env = Environment(loader=FileSystemLoader(RAIZ / "templates"), autoescape=select_autoescape())

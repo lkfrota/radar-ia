@@ -41,16 +41,31 @@
     <nav><a href="index.html">Hoje</a><a href="config.html">Configurar</a></nav>
   </header>
   
-<p class="meta">Atualizado em 01/11/2026 23:09 · 15 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
+<p class="meta">Atualizado em 02/11/2026 19:31 · 15 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
 
 
-<article data-url="https://huggingface.co/papers/2610.34298" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
+<article data-url="https://www.youtube.com/watch?v=47N3ExwgoGs" data-tema="agentes de ia" data-fonte="Matheus Battisti (YouTube)">
   <div class="tag">No seu perfil</div>
-  <h2><a href="https://huggingface.co/papers/2610.34298" target="_blank" rel="noopener">Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents</a></h2>
+  <h2><a href="https://www.youtube.com/watch?v=47N3ExwgoGs" target="_blank" rel="noopener">Criar jogos com IA ficou ABSURDO!</a></h2>
+  <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
+  <p>O vídeo apresenta um pacote totalmente gratuito chamado Claude Code Game Studios, projetado para estruturar a criação de jogos usando inteligência artificial de forma semelhante a um estúdio real.</p><p>O sistema organiza agentes em uma hierarquia dividida entre diretores, líderes e especialistas técnicos, cobrindo áreas como design, código, arte, áudio, história, QA e release.</p><p>O fluxo de trabalho utiliza comandos simples no terminal, guiando o usuário desde a inicialização do projeto até o planejamento, brainstorming e divisão de tarefas para desenvolvimento passo a passo.</p><p>O criador demonstra o funcionamento prático criando o jogo &#39;Fogo-Fátuo&#39;, um roguelike inspirado no folclore brasileiro desenvolvido na engine Godot com o auxílio dos agentes de IA.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=47N3ExwgoGs" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
+  <div class="porque">Ferramentas de IA com agentes estruturados e suporte em tempo real podem otimizar fluxos complexos, servindo de base para automações em consultoria de dados e manutenção industrial.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+  </div>
+</article>
+
+<article data-url="https://huggingface.co/papers/2610.37651" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://huggingface.co/papers/2610.37651" target="_blank" rel="noopener">GEPA-Curator: Curated Learning for Self Improving Agents</a></h2>
   <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Agentes de IA baseados em linguagem realizam tarefas usando ferramentas externas e ambientes interativos. Isso significa que a interface (o modo como o modelo de IA se comunica com as capacidades de execução) faz parte do processo de tomada de decisão. A pesquisa comparou dois padrões de interface: o Model Context Protocol (MCP, um protocolo padronizado de contexto para modelos) e as interfaces de linha de comando (CLI, formato baseado em textos e comandos diretos).</p><p>O estudo utilizou o método MICA para testar se essas diferenças de interface mudam o comportamento do agente, mantendo as mesmas capacidades técnicas de fundo. Ao testar seis modelos de IA em três ambientes interativos, os pesquisadores descobriram que interfaces diferentes geram grandes variações no desempenho das tarefas e no custo de processamento.</p><p>Esses efeitos afetam a seleção de ações e as rotas de falha e recuperação dos agentes. Divergências estruturais foram encontradas em mais de 94% dos episódios testados, mostrando que escolhas iniciais de interface propagam erros ou acertos para o resto da interação.</p><p>Para resolver isso, os autores criaram o método DART, que separa a execução da ação e repara a interface sem perder a lógica de comando validada. O DART melhorou as notas em todos os cenários avaliados e reduziu o consumo de tokens (unidades de texto processadas pela IA) de forma significativa.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.34298" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Importa para o seu perfil em agentes de IA, pois mostra que a forma como você conecta ferramentas de engenharia ao modelo muda drasticamente a eficiência e o custo operacional.</div>
+  <p>Modelos de Linguagem de Grande Escala, conhecidos como LLMs, são amplamente utilizados em fluxos de trabalho autônomos de múltiplos turnos que exigem interação contínua com ambientes complexos. Otimizadores de comandos reflexivos existentes, chamados de GEPA, aprendem com falhas de execuções anteriores, mas as falhas de agentes também podem vir de fraquezas nos comandos, limitações de infraestrutura, execução estocástica ou juízes barulhentos.</p><p>O artigo argumenta que essas falhas podem não fornecer sinais de aprendizado úteis e podem até ser prejudiciais. Portanto, é essencial selecionar quais tarefas são fornecidas ao otimizador de comandos para melhorar o desempenho.</p><p>Para resolver isso, os autores introduzem o GEPA-Curator, uma estrutura que aprimora o otimizador de comandos para selecionar quais experiências de agentes devem moldar a otimização. O sistema possui dois componentes: a curadoria de tarefas, que filtra tarefas com sinais de aprendizado não confiáveis, e a recuperação de sucesso anterior, que busca trajetórias bem-sucedidas do passado para fornecer contexto adicional.</p><p>O GEPA-Curator foi avaliado em quatro benchmarks, superando o desempenho médio dos modelos de referência com ganhos de até 20.7% sobre o GEPA tradicional e 21.2% sobre o ACE, utilizando modelos como Gemini 3.1 Pro e Claude Opus 5 como otimizadores.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.37651" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Isso importa para o seu trabalho com agentes de IA, pois melhora a confiabilidade do aprendizado autônomo ao filtrar ruídos e falhas irrelevantes.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>
@@ -59,13 +74,13 @@
   </div>
 </article>
 
-<article data-url="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" data-tema="agentes de ia" data-fonte="Anthropic News">
+<article data-url="https://huggingface.co/papers/2610.40488" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
   <div class="tag">No seu perfil</div>
-  <h2><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Donating Agent Skills to the Agentic AI Foundation</a></h2>
-  <div class="meta">Anthropic News</div>
-  <p>A empresa Anthropic anunciou a doação do padrão aberto Agent Skills para a Agentic AI Foundation (AAIF), que faz parte da Linux Foundation. O Agent Skills é um formato que ensina conhecimentos específicos e fluxos de trabalho especializados para agentes de IA de forma padronizada.</p><p>Uma &#39;skill&#39; (habilidade) é basicamente uma pasta contendo um arquivo chamado SKILL.md, que instrui o agente sobre uma tarefa ou domínio específico, junto com scripts e materiais de referência. Criado originalmente para o assistente Claude Code, o padrão ganhou adoção rápida com milhões de instalações em plataformas de desenvolvimento.</p><p>A doação para a AAIF visa manter o projeto neutro, aberto e impulsionado pela comunidade, sem ficar preso a uma única empresa tecnológica. Engenheiros de várias companhias atuarão como mantenedores oficiais para guiar versões futuras e diretrizes de segurança.</p><p>Com essa governança neutra, o ecossistema de ferramentas ganha estabilidade e previsibilidade para adotar padrões abertos de automação baseados em IA.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Anthropic News — ler o original ↗</a></p>
-  <div class="porque">Importa para o seu perfil em agentes de IA, pois padronizar fluxos de trabalho especializados facilita a criação de assistentes industriais ou de dados sem amarras a um único fornecedor.</div>
+  <h2><a href="https://huggingface.co/papers/2610.40488" target="_blank" rel="noopener">rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>O estudo investiga se agentes de pesquisa possuem o que chamamos de &#39;gosto&#39; — a capacidade de julgar quais experimentos científicos valem a pena ser executados antes que seus resultados sejam conhecidos. Seis modelos de inteligência artificial de ponta analisaram sete artigos recentes de processamento de linguagem natural.</p><p>Trabalhando sozinhos ou em equipes, os modelos propuseram experimentos viáveis mínimos, conhecidos como MVEs, previram se passariam em limites estabelecidos e os ordenaram. Um executor separado testou todos os experimentos, incluindo os piores classificados, e três modelos auditores julgaram os resultados.</p><p>Dos 415 experimentos propostos, 194 foram considerados sólidos, valiosos e novos, mas menos da metade (73) foi julgada como inovadora além do artigo base. As primeiras escolhas dos agentes coincidiram mais vezes com os experimentos mais valiados do que escolhas aleatórias.</p><p>No entanto, as previsões dos agentes não foram measuravelmente mais precisas do que as de uma instância nova do mesmo modelo usando apenas o artigo original, e equipes de agentes custaram mais caro sem melhorar a qualidade das propostas.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.40488" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Isso importa para a sua atuação em consultoria de dados, pois mostra os limites atuais da automação na tomada de decisões estratégicas de pesquisa.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>
@@ -74,13 +89,13 @@
   </div>
 </article>
 
-<article data-url="https://www.youtube.com/watch?v=niRV-yuu5q4" data-tema="agentes de ia" data-fonte="Matheus Battisti (YouTube)">
+<article data-url="https://huggingface.co/papers/2610.37903" data-tema="modelos abertos" data-fonte="Hugging Face Papers (descoberta)">
   <div class="tag">No seu perfil</div>
-  <h2><a href="https://www.youtube.com/watch?v=niRV-yuu5q4" target="_blank" rel="noopener">O novo jeito de programar com IA do Google no Claude Code</a></h2>
-  <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>O Google disponibilizou publicamente o Elephant-Goldfish Model (EGM), um modelo de desenvolvimento de sistemas com inteligência artificial utilizado por seus engenheiros. O método baseia-se em dividir o processo entre o &#39;elefante&#39;, responsável por guardar o contexto geral e as regras sem escrever código, e os &#39;peixinhos&#39;, agentes sem memória que começam do zero para ler especificações e revisar o código de forma independente.</p><p>A estrutura do EGM opera em três comandos principais para iniciar qualquer funcionalidade: ideação por brainstorming, criação de especificações em um documento e revisão crítica com múltiplos agentes que analisam o material sob diferentes perspectivas. Quem elabora o plano inicial não pode ser o mesmo agente que realiza a revisão, garantindo imparcialidade e qualidade na auditoria do projeto.</p><p>Na prática demonstrada no Claude Code, o autor aplicou a metodologia em um sistema de reservas de aulas para resolver a funcionalidade de cancelamento por professores, utilizando comandos específicos como o `egm:brainstorm` e o `egm:draft`. O sistema interage fazendo perguntas para esclarecer ambiguidades e gera um documento de design formal antes de passar para a fase de implementação.</p><p>Após a aprovação da especificação e a execução dos testes automatizados, o modelo confirma se o software cumpre os requisitos esperados, como a notificação de alunos e a geração de créditos. Essa abordagem estruturada ajuda a evitar falhas lógicas e garante que a aplicação funcione corretamente de ponta a ponta.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=niRV-yuu5q4" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">Para um engenheiro mecânico que busca otimizar processos ou entender tendências de automação, essa IA demonstra como metodologias rigorosas de planejamento e revisão cruzada podem ser aplicadas para criar sistemas complexos com menos erros humanos.</div>
+  <h2><a href="https://huggingface.co/papers/2610.37903" target="_blank" rel="noopener">Think Twice: The Metis-1.6 Technical Report</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>O projeto Metis é uma aposta de que melhores dados, métodos de treinamento e novas arquiteturas superam a simples contagem de parâmetros, custando muito menos. O Metis-1.6 apresenta dois modelos de linguagem construídos do zero por um único pesquisador: Praxis e Logos.</p><p>Ambos rodam uma pilha híbrida de Mamba-2 e atenção do tipo mistura de especialistas duas vezes para cada token, permitindo que cada token receba uma segunda olhada. Eles foram treinados com fraqueza em código e seguimento de instruções, mas alcançaram resultados notáveis em matemática.</p><p>O relatório destaca o que deu errado durante o processo: o otimizador configurado nunca rodou, a atenção foi treinada com AdamW em todo o pré-treinamento, uma memória n-gram de parâmetros aprendeu a se desligar sozinha e escolhas de ajuste fino prejudicaram a capacidade do modelo.</p><p>O autor conclui apresentando as ablações que dão base para o Metis-1.7, uma arquitetura em loop voltada para maior eficiência com menor custo computacional.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.37903" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação para o seu perfil de engenheiro mecânico.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>
@@ -89,43 +104,13 @@
   </div>
 </article>
 
-<article data-url="https://www.youtube.com/watch?v=xJwegOxj2sc" data-tema="agentes de ia" data-fonte="IA em 6 Minutos (YouTube)">
+<article data-url="https://huggingface.co/papers/2610.37481" data-tema="etica e seguranca" data-fonte="Hugging Face Papers (descoberta)">
   <div class="tag">No seu perfil</div>
-  <h2><a href="https://www.youtube.com/watch?v=xJwegOxj2sc" target="_blank" rel="noopener">Spec Driven Development 2.0: O método do Google para engenharia com Agentes de IA</a></h2>
-  <div class="meta">IA em 6 Minutos (YouTube) · vídeo</div>
-  <p>Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=xJwegOxj2sc" target="_blank" rel="noopener">IA em 6 Minutos (YouTube) — ler o original ↗</a></p>
-  <div class="porque">É apenas uma aposta de correlação sem base nos dados reais do vídeo.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais">Quero mais assim</button>
-    <button data-acao="util">Útil</button>
-    <button data-acao="ja_conhecia">Já conhecia</button>
-    <button data-acao="fora_foco">Fora do meu foco</button>
-  </div>
-</article>
-
-<article data-url="https://phorion.io/blog/offical-claude-code-vsx-compromise/" data-tema="seguranca de agentes" data-fonte="Hacker News (descoberta)">
-  <div class="tag">No seu perfil</div>
-  <h2><a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/" target="_blank" rel="noopener">Backdoor in Claude Code for VS Code extension on the Cursor Marketplace</a></h2>
-  <div class="meta">Hacker News (descoberta)</div>
-  <p>Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados.</p>
-  <p class="meta fonte">Fonte: <a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
-  <div class="porque">É apenas uma aposta de correlação sem base nos dados reais da notícia.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais">Quero mais assim</button>
-    <button data-acao="util">Útil</button>
-    <button data-acao="ja_conhecia">Já conhecia</button>
-    <button data-acao="fora_foco">Fora do meu foco</button>
-  </div>
-</article>
-
-<article data-url="https://www.youtube.com/watch?v=qvQa74bR8pE" data-tema="agentes de ia" data-fonte="Matheus Battisti (YouTube)">
-  <div class="tag">No seu perfil</div>
-  <h2><a href="https://www.youtube.com/watch?v=qvQa74bR8pE" target="_blank" rel="noopener">O criador do Clean Code fez uma skill para o Claude Code e é ABSURDO! (ub-mode)</a></h2>
-  <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=qvQa74bR8pE" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">É apenas uma aposta de correlação sem base nos dados reais do vídeo.</div>
+  <h2><a href="https://huggingface.co/papers/2610.37481" target="_blank" rel="noopener">Follow the Gradient: Tracing Safety Degradation Back to Training Data</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>O ajuste fino de Modelos de Linguagem de Grande Escala com dados de instrução pode corroer silenciosamente sua segurança, mesmo quando nenhum exemplo de treinamento parece prejudicial. Como esses dados parecem benignos, os filtros de conteúdo padrão falham em detectá-los.</p><p>Os autores desenvolveram o SimpleLoRIF, um método de incorporação de gradiente escalável que identifica exemplos de ajuste fino cujos gradientes se alinham a comportamentos inseguros, restringindo a retropropagação aos últimos quatro blocos do transformador.</p><p>Validado em desalinhamento emergente, o método conectou dados de código inseguro a comportamentos nocivos gerados após o ajuste fino. Com ele, os pesquisadores criaram o SafeTulu, removendo os 20% de exemplos mais alinhados a respostas inseguras.</p><p>O treinamento com o SafeTulu reduziu a taxa de sucesso de ataques adversariais em até 22% em diferentes arquiteturas de modelos, preservando ou melhorando a capacidade geral do sistema.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.37481" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Isso importa para o seu trabalho com agentes de IA, garantindo maior robustez e segurança contra falhas induzidas em modelos ajustados.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>
@@ -135,7 +120,7 @@
 </article>
 
 <article data-url="https://www.youtube.com/watch?v=0PjtV7KtlB4" data-tema="engenharia com agentes" data-fonte="Maestros da IA (YouTube)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://www.youtube.com/watch?v=0PjtV7KtlB4" target="_blank" rel="noopener">Como Ficar 100x Melhor no Claude Code</a></h2>
   <div class="meta">Maestros da IA (YouTube) · vídeo</div>
   <p>O engenheiro de software Matt Pocock destaca que o principal erro ao usar inteligência artificial não está na tecnologia em si, mas na forma como nos comunicamos com ela. As pessoas costumam dar instruções vagas e subestimar a barreira de comunicação com os agentes.</p><p>Para superar isso, é preciso entender a Curva de Dunning-Kruger, onde a falsa sensação de competência inicial atrapalha o aprendizado profundo. Na programação ou no uso de IA, a falta de clareza gera resultados frustrantes que não atendem às expectativas.</p><p>A solução passa por um aprendizado prático e estruturado, indo além da teoria básica para antecipar problemas reais. Ferramentas e metodologias iterativas ajudam a refinar o conhecimento e evitar o &#39;desconhecido desconhecido&#39;.</p><p>A clareza de pensamento e comunicação é fundamental para extrair o máximo de performance de ferramentas de IA como o Claude Code, transformando comandos simples em sistemas robustos.</p>
@@ -149,28 +134,13 @@
   </div>
 </article>
 
-<article data-url="https://www.youtube.com/watch?v=jV-zc6pNofk" data-tema="engenharia reversa" data-fonte="Matheus Battisti (YouTube)">
+<article data-url="https://www.youtube.com/watch?v=x2h38zvQA3I" data-tema="lancamento de modelos" data-fonte="Maestros da IA (YouTube)">
   <div class="tag">No seu perfil</div>
-  <h2><a href="https://www.youtube.com/watch?v=jV-zc6pNofk" target="_blank" rel="noopener">Engenharia Reversa com IA gastando centavos! (DeepSeek + REA)</a></h2>
-  <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=jV-zc6pNofk" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">É apenas uma aposta de correlação sem base nos dados reais do vídeo.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais">Quero mais assim</button>
-    <button data-acao="util">Útil</button>
-    <button data-acao="ja_conhecia">Já conhecia</button>
-    <button data-acao="fora_foco">Fora do meu foco</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2609.05881" data-tema="modelos de linguagem" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil</div>
-  <h2><a href="https://huggingface.co/papers/2609.05881" target="_blank" rel="noopener">Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Pesquisadores testaram centenas de arquivos de grandes modelos de linguagem (LLMs, softwares de inteligência artificial generativa) em formatos compactados chamados GGUF, baixados de registros públicos como a biblioteca Ollama e o Hugging Face. O objetivo era verificar se eles realmente funcionavam para tarefas de programação.</p><p>O estudo descobriu que alguns arquivos oficiais de modelos menores e compactados em baixa resolução (low-bit quantizations, que reduzem a precisão dos pesos numéricos para economizar memória) falharam miseravelmente em testes básicos, mesmo tendo sido baixados corretamente e sem corrupção física dos dados. O problema estava na falta de uma matriz de importância durante a compactação, um detalhe técnico que impedia o modelo de raciocínio lógico.</p><p>Para corrigir isso, os autores lançaram a ferramenta &#39;quantcheck&#39;, recomendando que os desenvolvedores testem a funcionalidade desses arquivos antes de publicá-los em repositórios públicos.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2609.05881" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Isso importa para agentes de IA: assim como um componente mecânico pode vir fora de tolerância de fábrica, arquivos de IA compactados podem falhar silenciosamente se o processo de fabricação digital (quantização) for incorreto.</div>
+  <h2><a href="https://www.youtube.com/watch?v=x2h38zvQA3I" target="_blank" rel="noopener">O Modelo que pretende DESTRONAR o Claude (Kimi K3.1 Pro)</a></h2>
+  <div class="meta">Maestros da IA (YouTube) · vídeo</div>
+  <p>O conteúdo completo deste vídeo não foi lido a partir da fonte e detalhes adicionais não foram inventados.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=x2h38zvQA3I" target="_blank" rel="noopener">Maestros da IA (YouTube) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação para o seu perfil de engenheiro mecânico.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>
@@ -180,7 +150,7 @@
 </article>
 
 <article data-url="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" data-tema="modelos abertos" data-fonte="Hacker News (descoberta)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" target="_blank" rel="noopener">Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard</a></h2>
   <div class="meta">Hacker News (descoberta)</div>
   <p>Apenas o título e a fonte desta descoberta no Hacker News foram disponibilizados para análise.</p><p>O conteúdo completo do texto não foi lido e detalhes adicionais não serão inventados para preservar a precisão da informação.</p>
@@ -194,13 +164,13 @@
   </div>
 </article>
 
-<article data-url="https://www.youtube.com/watch?v=___J8OOGAh8" data-tema="automacao de processos" data-fonte="Maestros da IA (YouTube)">
+<article data-url="https://rikiyat.github.io/blog/weight-space-programming/" data-tema="lancamento de modelos" data-fonte="Hacker News (descoberta)">
   <div class="tag">No seu perfil</div>
-  <h2><a href="https://www.youtube.com/watch?v=___J8OOGAh8" target="_blank" rel="noopener">Claude Code + Youtube = Canal no Piloto Automático</a></h2>
-  <div class="meta">Maestros da IA (YouTube) · vídeo</div>
-  <p>O conteúdo completo deste vídeo não foi lido a partir da fonte, estando disponíveis apenas o título e o canal de origem. Portanto, nenhum detalhe adicional foi inventado.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=___J8OOGAh8" target="_blank" rel="noopener">Maestros da IA (YouTube) — ler o original ↗</a></p>
-  <div class="porque">É apenas uma aposta de correlação sem dados técnicos suficientes para ligar diretamente à manutenção industrial ou engenharia.</div>
+  <h2><a href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank" rel="noopener">Astra can read and write weights to improve Qwen</a></h2>
+  <div class="meta">Hacker News (descoberta)</div>
+  <p>O conteúdo completo desta descoberta não foi lido a partir da fonte e detalhes adicionais não foram inventados.</p>
+  <p class="meta fonte">Fonte: <a href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação para o seu perfil de engenheiro mecânico.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>
@@ -210,7 +180,7 @@
 </article>
 
 <article data-url="https://www.youtube.com/watch?v=PhTQOig_QA4" data-tema="lancamentos de modelos" data-fonte="IA em 6 Minutos (YouTube)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://www.youtube.com/watch?v=PhTQOig_QA4" target="_blank" rel="noopener">NCM matou o LLM: dessa vez, parece que é real</a></h2>
   <div class="meta">IA em 6 Minutos (YouTube) · vídeo</div>
   <p>O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado.</p>
@@ -224,13 +194,13 @@
   </div>
 </article>
 
-<article data-url="https://www.youtube.com/watch?v=ztyI5KytPSM" data-tema="modelos de linguagem" data-fonte="Matheus Battisti (YouTube)">
-  <div class="tag">Perto do seu radar</div>
-  <h2><a href="https://www.youtube.com/watch?v=ztyI5KytPSM" target="_blank" rel="noopener">LANÇOU o Gemini 4 Carbon! O novo 1º lugar que quase ninguém pode usar</a></h2>
+<article data-url="https://www.youtube.com/watch?v=rFAyLqsPyFY" data-tema="lancamentos de modelos" data-fonte="Matheus Battisti (YouTube)">
+  <div class="tag">No seu perfil · de dias anteriores</div>
+  <h2><a href="https://www.youtube.com/watch?v=rFAyLqsPyFY" target="_blank" rel="noopener">13 notícias de IA que você perdeu essa semana (Gemini 4 Carbon, GPT-6.1 Terra e mais)</a></h2>
   <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>O conteúdo completo deste vídeo não foi lido a partir da fonte, contando apenas com o título e a indicação do criador. Nenhum detalhe técnico ou dado foi inventado.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=ztyI5KytPSM" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">É apenas uma aposta de correlação, pois o vídeo não fornece especificações técnicas verificáveis para a sua rotina de engenharia.</div>
+  <p>O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=rFAyLqsPyFY" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>
@@ -239,13 +209,13 @@
   </div>
 </article>
 
-<article data-url="https://huggingface.co/papers/2610.38174" data-tema="verificacao de codigo" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">Perto do seu radar</div>
-  <h2><a href="https://huggingface.co/papers/2610.38174" target="_blank" rel="noopener">Scaling Lean Theorem Proving for Real-World Code Verification</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>O artigo apresenta o EasyProver, um sistema de prova matemática automatizada baseado em agentes de IA recursivos e paralelos. Ele foi capaz de resolver centenas de problemas complexos de lógica, verificação de código e competições de programação sem necessidade de treinamento adicional.</p><p>Como esses testes tradicionais estão ficando fáceis demais, os autores criaram o Aegis, um sistema que converte problemas reais de programação em Rust (uma linguagem de programação focada em segurança) em tarefas de verificação rigorosas, provando matematicamente a exatidão do código.</p><p>O EasyProver conseguiu provar mais da metade dessas exigências complexas em um tempo limite de trinta minutos por teste, servindo como uma ferramenta robusta para validar a confiabilidade de softwares críticos.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.38174" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Isso importa para agentes de IA e consultoria de dados: validação matemática formal de código é o equivalente digital de testes não destrutivos e análises de elementos finitos para garantir que um sistema não falhe sob carga.</div>
+<article data-url="https://www.anthropic.com/news/expanding-partnership-gsa" data-tema="lancamentos de modelos" data-fonte="Anthropic News">
+  <div class="tag">No seu perfil · de dias anteriores</div>
+  <h2><a href="https://www.anthropic.com/news/expanding-partnership-gsa" target="_blank" rel="noopener">Expanding our partnership with GSA to bring Claude to all levels of government</a></h2>
+  <div class="meta">Anthropic News</div>
+  <p>A Anthropic ampliou sua parceria com a GSA (Administração de Serviços Gerais dos Estados Unidos), oferecendo um desconto de 40% em ferramentas e APIs (interface de programação de aplicações, que permite que diferentes softwares se comuniquem) do Claude para órgãos públicos federais, estaduais, locais, tribais e territoriais. O acordo também inclui um programa dedicado para ajudar agências públicas a implementarem a tecnologia com suporte a ciclos de compras longos e orçamentos apertados, sem exigência de gastos mínimos antecipados.</p><p>O uso do Claude em órgãos governamentais tem crescido expressivamente, com exemplos práticos de aplicação que incluem a redução de filas e o processamento de registros, além da modernização de sistemas legados. Casos específicos citados envolvem o uso do Claude Code (ferramenta de IA voltada para auxílio em programação) para acelerar o ambiente de trabalho de desenvolvedores e a resposta a incidentes de segurança cibernética em tempo reduzido em comparação aos métodos tradicionais.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.anthropic.com/news/expanding-partnership-gsa" target="_blank" rel="noopener">Anthropic News — ler o original ↗</a></p>
+  <div class="porque">Mostra como agentes de IA e ferramentas avançadas de software começam a ser adotados em larga escala para automação e segurança em estruturas complexas, o que pode espelhar futuras demandas de digitalização em infraestruturas industriais e de energia.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>
@@ -254,13 +224,43 @@
   </div>
 </article>
 
-<article data-url="https://huggingface.co/papers/2610.38681" data-tema="modelos de linguagem" data-fonte="Hugging Face Papers (descoberta)">
+<article data-url="https://www.youtube.com/watch?v=DL8Op83cqCE" data-tema="agentes de ia" data-fonte="Maestros da IA (YouTube)">
+  <div class="tag">Perto do seu radar · de dias anteriores</div>
+  <h2><a href="https://www.youtube.com/watch?v=DL8Op83cqCE" target="_blank" rel="noopener">100 Casos de Uso do JEV que Parecem Mágica</a></h2>
+  <div class="meta">Maestros da IA (YouTube) · vídeo</div>
+  <p>O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=DL8Op83cqCE" target="_blank" rel="noopener">Maestros da IA (YouTube) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+  </div>
+</article>
+
+<article data-url="https://github.com/chris124567/cfsolve" data-tema="automacao de processos" data-fonte="Hacker News (descoberta)">
+  <div class="tag">Perto do seu radar · de dias anteriores</div>
+  <h2><a href="https://github.com/chris124567/cfsolve" target="_blank" rel="noopener">Cloudflare Turnstile solver library (no headless browser required)</a></h2>
+  <div class="meta">Hacker News (descoberta)</div>
+  <p>O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado.</p>
+  <p class="meta fonte">Fonte: <a href="https://github.com/chris124567/cfsolve" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais">Quero mais assim</button>
+    <button data-acao="util">Útil</button>
+    <button data-acao="ja_conhecia">Já conhecia</button>
+    <button data-acao="fora_foco">Fora do meu foco</button>
+  </div>
+</article>
+
+<article data-url="https://syscall.sh/" data-tema="python e ferramentas" data-fonte="Hacker News (descoberta)">
   <div class="tag">Perto do seu radar</div>
-  <h2><a href="https://huggingface.co/papers/2610.38681" target="_blank" rel="noopener">Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>O estudo apresenta uma nova técnica de treinamento de inteligência artificial chamada WISD (Weakening-Induced On-Policy Self-Distillation), que permite aprimorar modelos de raciocínio sem precisar de um &#39;professor&#39; externo mais inteligente ou de dados rotulados por humanos.</p><p>A abordagem consiste em criar uma versão enfraquecida do próprio modelo de IA através de compactação (quantização) ou poda de conexões (magnitude pruning, técnica que remove parâmetros menos importantes). O contraste gerado entre o modelo original e sua versão mais fraca serve como sinal de aprendizado.</p><p>Os testes mostraram que essa auto-destilação aumentou consideravelmente a precisão de modelos em tarefas de matemática e programação, provando ser um método eficiente para otimizar inteligências artificiais de forma autônoma.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.38681" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Isso importa para agentes de IA: otimizar modelos gerando versões mais leves e eficientes lembra o processo de otimização topológica na engenharia, onde se remove material desnecessário de uma peça mantendo sua integridade estrutural.</div>
+  <h2><a href="https://syscall.sh/" target="_blank" rel="noopener">Show HN: I&#39;ve updated my Linux System Call website and API</a></h2>
+  <div class="meta">Hacker News (descoberta)</div>
+  <p>O conteúdo completo desta página não foi lido, pois apenas o título e a fonte estavam disponíveis. Portanto, nenhum detalhe adicional foi inventado.</p>
+  <p class="meta fonte">Fonte: <a href="https://syscall.sh/" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É apenas uma aposta de correlação para o seu dia a dia de engenharia.</div>
   <div class="acoes">
     <button data-acao="quero_mais">Quero mais assim</button>
     <button data-acao="util">Útil</button>

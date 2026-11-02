@@ -1,186 +1,88 @@
 [
   {
-    "url": "https://huggingface.co/papers/2610.34298",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 9.35,
-    "titulo": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
-    "paragrafos": [
-      "Agentes de IA baseados em linguagem realizam tarefas usando ferramentas externas e ambientes interativos. Isso significa que a interface (o modo como o modelo de IA se comunica com as capacidades de execução) faz parte do processo de tomada de decisão. A pesquisa comparou dois padrões de interface: o Model Context Protocol (MCP, um protocolo padronizado de contexto para modelos) e as interfaces de linha de comando (CLI, formato baseado em textos e comandos diretos).",
-      "O estudo utilizou o método MICA para testar se essas diferenças de interface mudam o comportamento do agente, mantendo as mesmas capacidades técnicas de fundo. Ao testar seis modelos de IA em três ambientes interativos, os pesquisadores descobriram que interfaces diferentes geram grandes variações no desempenho das tarefas e no custo de processamento.",
-      "Esses efeitos afetam a seleção de ações e as rotas de falha e recuperação dos agentes. Divergências estruturais foram encontradas em mais de 94% dos episódios testados, mostrando que escolhas iniciais de interface propagam erros ou acertos para o resto da interação.",
-      "Para resolver isso, os autores criaram o método DART, que separa a execução da ação e repara a interface sem perder a lógica de comando validada. O DART melhorou as notas em todos os cenários avaliados e reduziu o consumo de tokens (unidades de texto processadas pela IA) de forma significativa."
-    ],
-    "por_que_importa": "Importa para o seu perfil em agentes de IA, pois mostra que a forma como você conecta ferramentas de engenharia ao modelo muda drasticamente a eficiência e o custo operacional.",
-    "dia": "2026-10-30"
-  },
-  {
-    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-    "fonte": "Anthropic News",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 9.05,
-    "titulo": "Donating Agent Skills to the Agentic AI Foundation",
-    "paragrafos": [
-      "A empresa Anthropic anunciou a doação do padrão aberto Agent Skills para a Agentic AI Foundation (AAIF), que faz parte da Linux Foundation. O Agent Skills é um formato que ensina conhecimentos específicos e fluxos de trabalho especializados para agentes de IA de forma padronizada.",
-      "Uma 'skill' (habilidade) é basicamente uma pasta contendo um arquivo chamado SKILL.md, que instrui o agente sobre uma tarefa ou domínio específico, junto com scripts e materiais de referência. Criado originalmente para o assistente Claude Code, o padrão ganhou adoção rápida com milhões de instalações em plataformas de desenvolvimento.",
-      "A doação para a AAIF visa manter o projeto neutro, aberto e impulsionado pela comunidade, sem ficar preso a uma única empresa tecnológica. Engenheiros de várias companhias atuarão como mantenedores oficiais para guiar versões futuras e diretrizes de segurança.",
-      "Com essa governança neutra, o ecossistema de ferramentas ganha estabilidade e previsibilidade para adotar padrões abertos de automação baseados em IA."
-    ],
-    "por_que_importa": "Importa para o seu perfil em agentes de IA, pois padronizar fluxos de trabalho especializados facilita a criação de assistentes industriais ou de dados sem amarras a um único fornecedor.",
-    "dia": "2026-10-30"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=niRV-yuu5q4",
+    "url": "https://www.youtube.com/watch?v=47N3ExwgoGs",
     "fonte": "Matheus Battisti (YouTube)",
     "tema": "agentes de ia",
     "tipo": "video",
     "categoria": "perfil",
-    "nota": 8.85,
-    "titulo": "O novo jeito de programar com IA do Google no Claude Code",
+    "nota": 10,
+    "titulo": "Criar jogos com IA ficou ABSURDO!",
     "paragrafos": [
-      "O Google disponibilizou publicamente o Elephant-Goldfish Model (EGM), um modelo de desenvolvimento de sistemas com inteligência artificial utilizado por seus engenheiros. O método baseia-se em dividir o processo entre o 'elefante', responsável por guardar o contexto geral e as regras sem escrever código, e os 'peixinhos', agentes sem memória que começam do zero para ler especificações e revisar o código de forma independente.",
-      "A estrutura do EGM opera em três comandos principais para iniciar qualquer funcionalidade: ideação por brainstorming, criação de especificações em um documento e revisão crítica com múltiplos agentes que analisam o material sob diferentes perspectivas. Quem elabora o plano inicial não pode ser o mesmo agente que realiza a revisão, garantindo imparcialidade e qualidade na auditoria do projeto.",
-      "Na prática demonstrada no Claude Code, o autor aplicou a metodologia em um sistema de reservas de aulas para resolver a funcionalidade de cancelamento por professores, utilizando comandos específicos como o `egm:brainstorm` e o `egm:draft`. O sistema interage fazendo perguntas para esclarecer ambiguidades e gera um documento de design formal antes de passar para a fase de implementação.",
-      "Após a aprovação da especificação e a execução dos testes automatizados, o modelo confirma se o software cumpre os requisitos esperados, como a notificação de alunos e a geração de créditos. Essa abordagem estruturada ajuda a evitar falhas lógicas e garante que a aplicação funcione corretamente de ponta a ponta."
+      "O vídeo apresenta um pacote totalmente gratuito chamado Claude Code Game Studios, projetado para estruturar a criação de jogos usando inteligência artificial de forma semelhante a um estúdio real.",
+      "O sistema organiza agentes em uma hierarquia dividida entre diretores, líderes e especialistas técnicos, cobrindo áreas como design, código, arte, áudio, história, QA e release.",
+      "O fluxo de trabalho utiliza comandos simples no terminal, guiando o usuário desde a inicialização do projeto até o planejamento, brainstorming e divisão de tarefas para desenvolvimento passo a passo.",
+      "O criador demonstra o funcionamento prático criando o jogo 'Fogo-Fátuo', um roguelike inspirado no folclore brasileiro desenvolvido na engine Godot com o auxílio dos agentes de IA."
     ],
-    "por_que_importa": "Para um engenheiro mecânico que busca otimizar processos ou entender tendências de automação, essa IA demonstra como metodologias rigorosas de planejamento e revisão cruzada podem ser aplicadas para criar sistemas complexos com menos erros humanos.",
-    "dia": "2026-10-30"
+    "por_que_importa": "Ferramentas de IA com agentes estruturados e suporte em tempo real podem otimizar fluxos complexos, servindo de base para automações em consultoria de dados e manutenção industrial.",
+    "dia": "2026-11-02"
   },
   {
-    "url": "https://www.youtube.com/watch?v=xJwegOxj2sc",
-    "fonte": "IA em 6 Minutos (YouTube)",
+    "url": "https://huggingface.co/papers/2610.37651",
+    "fonte": "Hugging Face Papers (descoberta)",
     "tema": "agentes de ia",
-    "tipo": "video",
+    "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 8.7,
-    "titulo": "Spec Driven Development 2.0: O método do Google para engenharia com Agentes de IA",
+    "nota": 10,
+    "titulo": "GEPA-Curator: Curated Learning for Self Improving Agents",
     "paragrafos": [
-      "Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados."
+      "Modelos de Linguagem de Grande Escala, conhecidos como LLMs, são amplamente utilizados em fluxos de trabalho autônomos de múltiplos turnos que exigem interação contínua com ambientes complexos. Otimizadores de comandos reflexivos existentes, chamados de GEPA, aprendem com falhas de execuções anteriores, mas as falhas de agentes também podem vir de fraquezas nos comandos, limitações de infraestrutura, execução estocástica ou juízes barulhentos.",
+      "O artigo argumenta que essas falhas podem não fornecer sinais de aprendizado úteis e podem até ser prejudiciais. Portanto, é essencial selecionar quais tarefas são fornecidas ao otimizador de comandos para melhorar o desempenho.",
+      "Para resolver isso, os autores introduzem o GEPA-Curator, uma estrutura que aprimora o otimizador de comandos para selecionar quais experiências de agentes devem moldar a otimização. O sistema possui dois componentes: a curadoria de tarefas, que filtra tarefas com sinais de aprendizado não confiáveis, e a recuperação de sucesso anterior, que busca trajetórias bem-sucedidas do passado para fornecer contexto adicional.",
+      "O GEPA-Curator foi avaliado em quatro benchmarks, superando o desempenho médio dos modelos de referência com ganhos de até 20.7% sobre o GEPA tradicional e 21.2% sobre o ACE, utilizando modelos como Gemini 3.1 Pro e Claude Opus 5 como otimizadores."
     ],
-    "por_que_importa": "É apenas uma aposta de correlação sem base nos dados reais do vídeo.",
-    "dia": "2026-10-30"
+    "por_que_importa": "Isso importa para o seu trabalho com agentes de IA, pois melhora a confiabilidade do aprendizado autônomo ao filtrar ruídos e falhas irrelevantes.",
+    "dia": "2026-11-02"
   },
   {
-    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "seguranca de agentes",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 8.65,
-    "titulo": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-    "paragrafos": [
-      "Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados."
-    ],
-    "por_que_importa": "É apenas uma aposta de correlação sem base nos dados reais da notícia.",
-    "dia": "2026-10-30"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=qvQa74bR8pE",
-    "fonte": "Matheus Battisti (YouTube)",
+    "url": "https://huggingface.co/papers/2610.40488",
+    "fonte": "Hugging Face Papers (descoberta)",
     "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 8.4,
-    "titulo": "O criador do Clean Code fez uma skill para o Claude Code e é ABSURDO! (ub-mode)",
-    "paragrafos": [
-      "Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados."
-    ],
-    "por_que_importa": "É apenas uma aposta de correlação sem base nos dados reais do vídeo.",
-    "dia": "2026-10-30"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=jV-zc6pNofk",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "engenharia reversa",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 7.85,
-    "titulo": "Engenharia Reversa com IA gastando centavos! (DeepSeek + REA)",
-    "paragrafos": [
-      "Como apenas o título e a fonte estavam disponíveis, este resumo informa que o conteúdo completo não foi lido e detalhes adicionais não foram inventados."
-    ],
-    "por_que_importa": "É apenas uma aposta de correlação sem base nos dados reais do vídeo.",
-    "dia": "2026-10-30"
-  },
-  {
-    "url": "https://huggingface.co/papers/2609.05881",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "modelos de linguagem",
     "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 7.65,
-    "titulo": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
+    "nota": 10,
+    "titulo": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
     "paragrafos": [
-      "Pesquisadores testaram centenas de arquivos de grandes modelos de linguagem (LLMs, softwares de inteligência artificial generativa) em formatos compactados chamados GGUF, baixados de registros públicos como a biblioteca Ollama e o Hugging Face. O objetivo era verificar se eles realmente funcionavam para tarefas de programação.",
-      "O estudo descobriu que alguns arquivos oficiais de modelos menores e compactados em baixa resolução (low-bit quantizations, que reduzem a precisão dos pesos numéricos para economizar memória) falharam miseravelmente em testes básicos, mesmo tendo sido baixados corretamente e sem corrupção física dos dados. O problema estava na falta de uma matriz de importância durante a compactação, um detalhe técnico que impedia o modelo de raciocínio lógico.",
-      "Para corrigir isso, os autores lançaram a ferramenta 'quantcheck', recomendando que os desenvolvedores testem a funcionalidade desses arquivos antes de publicá-los em repositórios públicos."
+      "O estudo investiga se agentes de pesquisa possuem o que chamamos de 'gosto' — a capacidade de julgar quais experimentos científicos valem a pena ser executados antes que seus resultados sejam conhecidos. Seis modelos de inteligência artificial de ponta analisaram sete artigos recentes de processamento de linguagem natural.",
+      "Trabalhando sozinhos ou em equipes, os modelos propuseram experimentos viáveis mínimos, conhecidos como MVEs, previram se passariam em limites estabelecidos e os ordenaram. Um executor separado testou todos os experimentos, incluindo os piores classificados, e três modelos auditores julgaram os resultados.",
+      "Dos 415 experimentos propostos, 194 foram considerados sólidos, valiosos e novos, mas menos da metade (73) foi julgada como inovadora além do artigo base. As primeiras escolhas dos agentes coincidiram mais vezes com os experimentos mais valiados do que escolhas aleatórias.",
+      "No entanto, as previsões dos agentes não foram measuravelmente mais precisas do que as de uma instância nova do mesmo modelo usando apenas o artigo original, e equipes de agentes custaram mais caro sem melhorar a qualidade das propostas."
     ],
-    "por_que_importa": "Isso importa para agentes de IA: assim como um componente mecânico pode vir fora de tolerância de fábrica, arquivos de IA compactados podem falhar silenciosamente se o processo de fabricação digital (quantização) for incorreto.",
-    "dia": "2026-10-30"
+    "por_que_importa": "Isso importa para a sua atuação em consultoria de dados, pois mostra os limites atuais da automação na tomada de decisões estratégicas de pesquisa.",
+    "dia": "2026-11-02"
   },
   {
-    "url": "https://www.youtube.com/watch?v=___J8OOGAh8",
-    "fonte": "Maestros da IA (YouTube)",
-    "tema": "automacao de processos",
-    "tipo": "video",
+    "url": "https://huggingface.co/papers/2610.37903",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "modelos abertos",
+    "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 7.05,
-    "titulo": "Claude Code + Youtube = Canal no Piloto Automático",
+    "nota": 8.8,
+    "titulo": "Think Twice: The Metis-1.6 Technical Report",
     "paragrafos": [
-      "O conteúdo completo deste vídeo não foi lido a partir da fonte, estando disponíveis apenas o título e o canal de origem. Portanto, nenhum detalhe adicional foi inventado."
+      "O projeto Metis é uma aposta de que melhores dados, métodos de treinamento e novas arquiteturas superam a simples contagem de parâmetros, custando muito menos. O Metis-1.6 apresenta dois modelos de linguagem construídos do zero por um único pesquisador: Praxis e Logos.",
+      "Ambos rodam uma pilha híbrida de Mamba-2 e atenção do tipo mistura de especialistas duas vezes para cada token, permitindo que cada token receba uma segunda olhada. Eles foram treinados com fraqueza em código e seguimento de instruções, mas alcançaram resultados notáveis em matemática.",
+      "O relatório destaca o que deu errado durante o processo: o otimizador configurado nunca rodou, a atenção foi treinada com AdamW em todo o pré-treinamento, uma memória n-gram de parâmetros aprendeu a se desligar sozinha e escolhas de ajuste fino prejudicaram a capacidade do modelo.",
+      "O autor conclui apresentando as ablações que dão base para o Metis-1.7, uma arquitetura em loop voltada para maior eficiência com menor custo computacional."
     ],
-    "por_que_importa": "É apenas uma aposta de correlação sem dados técnicos suficientes para ligar diretamente à manutenção industrial ou engenharia.",
-    "dia": "2026-10-30"
+    "por_que_importa": "É só uma aposta de correlação para o seu perfil de engenheiro mecânico.",
+    "dia": "2026-11-02"
   },
   {
-    "url": "https://www.youtube.com/watch?v=ztyI5KytPSM",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "modelos de linguagem",
-    "tipo": "video",
-    "categoria": "adjacente",
-    "nota": 6.95,
-    "titulo": "LANÇOU o Gemini 4 Carbon! O novo 1º lugar que quase ninguém pode usar",
-    "paragrafos": [
-      "O conteúdo completo deste vídeo não foi lido a partir da fonte, contando apenas com o título e a indicação do criador. Nenhum detalhe técnico ou dado foi inventado."
-    ],
-    "por_que_importa": "É apenas uma aposta de correlação, pois o vídeo não fornece especificações técnicas verificáveis para a sua rotina de engenharia.",
-    "dia": "2026-10-30"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.38174",
+    "url": "https://huggingface.co/papers/2610.37481",
     "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "verificacao de codigo",
+    "tema": "etica e seguranca",
     "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 6.75,
-    "titulo": "Scaling Lean Theorem Proving for Real-World Code Verification",
+    "categoria": "perfil",
+    "nota": 8.48,
+    "titulo": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
     "paragrafos": [
-      "O artigo apresenta o EasyProver, um sistema de prova matemática automatizada baseado em agentes de IA recursivos e paralelos. Ele foi capaz de resolver centenas de problemas complexos de lógica, verificação de código e competições de programação sem necessidade de treinamento adicional.",
-      "Como esses testes tradicionais estão ficando fáceis demais, os autores criaram o Aegis, um sistema que converte problemas reais de programação em Rust (uma linguagem de programação focada em segurança) em tarefas de verificação rigorosas, provando matematicamente a exatidão do código.",
-      "O EasyProver conseguiu provar mais da metade dessas exigências complexas em um tempo limite de trinta minutos por teste, servindo como uma ferramenta robusta para validar a confiabilidade de softwares críticos."
+      "O ajuste fino de Modelos de Linguagem de Grande Escala com dados de instrução pode corroer silenciosamente sua segurança, mesmo quando nenhum exemplo de treinamento parece prejudicial. Como esses dados parecem benignos, os filtros de conteúdo padrão falham em detectá-los.",
+      "Os autores desenvolveram o SimpleLoRIF, um método de incorporação de gradiente escalável que identifica exemplos de ajuste fino cujos gradientes se alinham a comportamentos inseguros, restringindo a retropropagação aos últimos quatro blocos do transformador.",
+      "Validado em desalinhamento emergente, o método conectou dados de código inseguro a comportamentos nocivos gerados após o ajuste fino. Com ele, os pesquisadores criaram o SafeTulu, removendo os 20% de exemplos mais alinhados a respostas inseguras.",
+      "O treinamento com o SafeTulu reduziu a taxa de sucesso de ataques adversariais em até 22% em diferentes arquiteturas de modelos, preservando ou melhorando a capacidade geral do sistema."
     ],
-    "por_que_importa": "Isso importa para agentes de IA e consultoria de dados: validação matemática formal de código é o equivalente digital de testes não destrutivos e análises de elementos finitos para garantir que um sistema não falhe sob carga.",
-    "dia": "2026-10-30"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.38681",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "modelos de linguagem",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 6.6,
-    "titulo": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
-    "paragrafos": [
-      "O estudo apresenta uma nova técnica de treinamento de inteligência artificial chamada WISD (Weakening-Induced On-Policy Self-Distillation), que permite aprimorar modelos de raciocínio sem precisar de um 'professor' externo mais inteligente ou de dados rotulados por humanos.",
-      "A abordagem consiste em criar uma versão enfraquecida do próprio modelo de IA através de compactação (quantização) ou poda de conexões (magnitude pruning, técnica que remove parâmetros menos importantes). O contraste gerado entre o modelo original e sua versão mais fraca serve como sinal de aprendizado.",
-      "Os testes mostraram que essa auto-destilação aumentou consideravelmente a precisão de modelos em tarefas de matemática e programação, provando ser um método eficiente para otimizar inteligências artificiais de forma autônoma."
-    ],
-    "por_que_importa": "Isso importa para agentes de IA: otimizar modelos gerando versões mais leves e eficientes lembra o processo de otimização topológica na engenharia, onde se remove material desnecessário de uma peça mantendo sua integridade estrutural.",
-    "dia": "2026-10-30"
+    "por_que_importa": "Isso importa para o seu trabalho com agentes de IA, garantindo maior robustez e segurança contra falhas induzidas em modelos ajustados.",
+    "dia": "2026-11-02"
   },
   {
     "url": "https://www.youtube.com/watch?v=0PjtV7KtlB4",
@@ -198,6 +100,49 @@
     ],
     "por_que_importa": "Essencial para engenheiros mecânicos e profissionais técnicos que buscam aplicar IA na automação de processos, melhorando a precisão de comandos e a eficiência no desenvolvimento de projetos industriais.",
     "dia": "2026-10-31"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=x2h38zvQA3I",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "lancamento de modelos",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.0,
+    "titulo": "O Modelo que pretende DESTRONAR o Claude (Kimi K3.1 Pro)",
+    "paragrafos": [
+      "O conteúdo completo deste vídeo não foi lido a partir da fonte e detalhes adicionais não foram inventados."
+    ],
+    "por_que_importa": "É só uma aposta de correlação para o seu perfil de engenheiro mecânico.",
+    "dia": "2026-11-02"
+  },
+  {
+    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "modelos abertos",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 7.3,
+    "titulo": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+    "paragrafos": [
+      "Apenas o título e a fonte desta descoberta no Hacker News foram disponibilizados para análise.",
+      "O conteúdo completo do texto não foi lido e detalhes adicionais não serão inventados para preservar a precisão da informação."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem impacto direto imediato na sua rotina de engenharia mecânica.",
+    "dia": "2026-11-01"
+  },
+  {
+    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "lancamento de modelos",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 7.3,
+    "titulo": "Astra can read and write weights to improve Qwen",
+    "paragrafos": [
+      "O conteúdo completo desta descoberta não foi lido a partir da fonte e detalhes adicionais não foram inventados."
+    ],
+    "por_que_importa": "É só uma aposta de correlação para o seu perfil de engenheiro mecânico.",
+    "dia": "2026-11-02"
   },
   {
     "url": "https://www.youtube.com/watch?v=PhTQOig_QA4",
@@ -271,147 +216,17 @@
     "dia": "2026-10-31"
   },
   {
-    "url": "https://www.youtube.com/watch?v=bKI-YvBuu2Y",
-    "fonte": "Maestros da IA (YouTube)",
-    "tema": "engenharia com agentes",
-    "tipo": "video",
-    "categoria": "adjacente",
-    "nota": 6.0,
-    "titulo": "Faça Isso ANTES de Pedir Qualquer Coisa Para a IA",
-    "paragrafos": [
-      "O conteúdo completo deste item não foi lido, pois apenas o título e a fonte estavam disponíveis, e nenhum detalhe adicional foi inventado."
-    ],
-    "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente na sua rotina de engenharia mecânica.",
-    "dia": "2026-10-31"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=V1LPpsKY8q0",
-    "fonte": "IA em 6 Minutos (YouTube)",
-    "tema": "engenharia com agentes",
-    "tipo": "video",
-    "categoria": "adjacente",
-    "nota": 6.0,
-    "titulo": "99% dos desenvolvedores vão virar usuários. O 1% estará em alta demanda",
-    "paragrafos": [
-      "O conteúdo completo deste vídeo não foi lido, portanto nenhum detalhe adicional foi inventado."
-    ],
-    "por_que_importa": "Como você trabalha com engenharia mecânica, a transição de profissionais para usuários de ferramentas automatizadas reflete a mudança de projetistas manuais para operadores de sistemas avançados.",
-    "dia": "2026-10-31"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.23656",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 5.2,
-    "titulo": "ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics",
-    "paragrafos": [
-      "A investigação forense em blockchain (a tecnologia de registro descentralizado de criptomoedas) é complexa e dinâmica, pois criminosos dividem e misturam fundos para esconder o rastro. Para testar a capacidade de inteligências artificiais nessa tarefa, foi criado o ABF-Bench, um ambiente de testes interativo que exige que os agentes de IA citem registros públicos para cada movimento financeiro rastreado.",
-      "O sistema avalia um agente próprio de IA (harness) em comparação com modelos genéricos. O agente especializado obteve 75% de acerto no rastreamento de conexões e identificou serviços de custódia ocultos com alta precisão, superando modelos como o Claude Code, que falharam por excesso de confiança ao citar dados não recuperados."
-    ],
-    "por_que_importa": "Isso importa diretamente para o seu foco em agentes de IA, mostrando como sistemas autônomos podem realizar auditorias complexas com rastreabilidade baseada em evidências.",
-    "dia": "2026-10-31"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=sUFZqtiJIFk",
-    "fonte": "IA em 6 Minutos (YouTube)",
-    "tema": "engenharia com agentes",
-    "tipo": "video",
-    "categoria": "adjacente",
-    "nota": 5.0,
-    "titulo": "Qualidade do código ainda importa? Tudo depende disso ...",
-    "paragrafos": [
-      "O conteúdo completo deste vídeo não foi lido, portanto nenhum detalhe adicional foi inventado."
-    ],
-    "por_que_importa": "Assim como na manutenção industrial onde a qualidade de um componente mecânico determina sua vida útil, a qualidade do código dita a confiabilidade de sistemas digitais.",
-    "dia": "2026-10-31"
-  },
-  {
-    "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-    "fonte": "Anthropic News",
-    "tema": "analise de dados",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 4.9,
-    "titulo": "Open call for guest investigators in the life sciences",
-    "paragrafos": [
-      "A Anthropic abriu uma chamada para pesquisadores das ciências da vida trabalharem por 8 a 12 semanas em parceria direta com sua equipe, usando o modelo Claude para investigar questões em biologia molecular, química medicinal e descoberta de medicamentos. O programa oferece acesso gratuito a modelos de IA e garante que os participantes mantenham os direitos sobre seus dados e pesquisas futuras."
-    ],
-    "por_que_importa": "Esta é uma aposta de correlação pura com o seu perfil, já que o foco em ciências biológicas está distante da sua atuação em engenharia mecânica e consultoria de dados.",
-    "dia": "2026-10-31"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.38293",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "analise de dados",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 4.9,
-    "titulo": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
-    "paragrafos": [
-      "Previsões de lucros trimestrais exigem que agentes de IA conectem dados financeiros a demonstrativos de resultados de empresas. O EPSBench é um novo benchmark (ambiente de teste padronizado) avaliando modelos de IA em 149 trimestres fiscais com base em relatórios e chamadas de resultados. Os testes mostraram que três dos seis modelos avaliados tiveram erros de previsão comparáveis ao consenso de analistas humanos, mas todos apresentaram limitações na precisão dos intervalos de confiança devido a estimativas conservadoras."
-    ],
-    "por_que_importa": "Conecta-se diretamente ao seu perfil de consultoria de dados, demonstrando como modelos de IA lidam com previsões quantitativas e análise de desempenho corporativo.",
-    "dia": "2026-10-31"
-  },
-  {
-    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+    "url": "https://syscall.sh/",
     "fonte": "Hacker News (descoberta)",
-    "tema": "modelos abertos",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 7.3,
-    "titulo": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-    "paragrafos": [
-      "Apenas o título e a fonte desta descoberta no Hacker News foram disponibilizados para análise.",
-      "O conteúdo completo do texto não foi lido e detalhes adicionais não serão inventados para preservar a precisão da informação."
-    ],
-    "por_que_importa": "É só uma aposta de correlação sem impacto direto imediato na sua rotina de engenharia mecânica.",
-    "dia": "2026-11-01"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Go5V8n021sw",
-    "fonte": "Maestros da IA (YouTube)",
-    "tema": "futuro da ia",
-    "tipo": "video",
-    "categoria": "adjacente",
-    "nota": 5.7,
-    "titulo": "O PROMPT MORREU: Como Aprender Inteligência Artificial em 2027?",
-    "paragrafos": [
-      "Apenas o título e a fonte deste vídeo do YouTube foram disponibilizados para análise.",
-      "O conteúdo completo do vídeo não foi lido e nenhum detalhe técnico foi inventado."
-    ],
-    "por_que_importa": "É só uma aposta de correlação sobre o futuro da tecnologia e agentes de IA.",
-    "dia": "2026-11-01"
-  },
-  {
-    "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "seguranca de ia",
+    "tema": "python e ferramentas",
     "tipo": "discussao",
     "categoria": "adjacente",
-    "nota": 5.3,
-    "titulo": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
+    "nota": 6.3,
+    "titulo": "Show HN: I've updated my Linux System Call website and API",
     "paragrafos": [
-      "Apenas o título e a fonte desta descoberta no Hacker News foram disponibilizados para análise.",
-      "O conteúdo completo do texto não foi lido e não há invenção de fatos adicionais sobre o caso jurídico."
+      "O conteúdo completo desta página não foi lido, pois apenas o título e a fonte estavam disponíveis. Portanto, nenhum detalhe adicional foi inventado."
     ],
-    "por_que_importa": "É só uma aposta de correlação sobre falhas de segurança em sistemas de inteligência artificial.",
-    "dia": "2026-11-01"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.40564",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "treinamento de modelos",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 4.9,
-    "titulo": "Training Foundation Models with a Single Algorithm",
-    "paragrafos": [
-      "Um artigo técnico demonstra que treinar modelos de fundação (Foundation models, que são modelos de inteligência artificial de grande escala) não precisa ocorrer em várias etapas separadas (como pré-treinamento, ajuste fino e aprendizado por reforço). Os autores unificaram todas essas fases em um único algoritmo baseado em verossimilhança (método estatístico para estimar parâmetros), tratando o processo apenas como uma escolha de quais dados usar e em quais proporções, o que melhora a eficiência computacional e a precisão."
-    ],
-    "por_que_importa": "Interessa diretamente à sua atuação com agentes de IA e consultoria de dados, pois mostra a simplificação drástica da infraestrutura computacional necessária para criar inteligência artificial.",
-    "dia": "2026-11-01"
+    "por_que_importa": "É apenas uma aposta de correlação para o seu dia a dia de engenharia.",
+    "dia": "2026-11-02"
   }
 ]

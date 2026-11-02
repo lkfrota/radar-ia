@@ -1,4 +1,10 @@
 {
-  "temas": {},
-  "fontes": {}
+  "temas": {
+    "agentes de ia": 0.32
+  },
+  "fontes": {
+    "Hugging Face Papers (descoberta)": 0.06,
+    "Anthropic News": 0.06
+  },
+  "conhecido": {}
 }

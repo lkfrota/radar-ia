@@ -12,12 +12,12 @@ LIMITE = 0.5
 # derrubam a fonte aos poucos; muitos "quero mais" a sobem).
 EFEITOS = {  # variação de peso do tema e/ou da fonte
     "quero_mais": {"tema": 0.15, "fonte": 0.05},
-    "util": {"tema": 0.08, "fonte": 0.03},
+    "futuro": {"tema": 0.08, "fonte": 0.03},  # "Vejo futuro nisso": não aplico hoje, mas é cenário que preciso acompanhar
     "fora_foco": {"tema": -0.15, "fonte": -0.05},
     "ja_conhecia": {},  # não mexe nos pesos: conta como "conhecido" (reduz o valor de novidade do tema)
     "fonte_fraca": {"fonte": -0.05},  # botão removido em 2026-11-02; mantido só para cliques já gravados
 }
-LEGADO = {"like": "util", "dislike": "fora_foco", "lido": "ja_conhecia"}  # arquivos da 1ª versão da página
+LEGADO = {"like": "futuro", "util": "futuro", "dislike": "fora_foco", "lido": "ja_conhecia"}  # nomes de versões anteriores da página
 
 
 def _ajusta(d, chave, delta):

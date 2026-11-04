@@ -27,6 +27,11 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
   like/dislike/lido. Substitui a 1ª versão (👍/👎 + "lido"), que misturava tema e fonte.
 - 2026-11-02: removido o botão "Fonte fraca" (julgar a fonte por um item é injusto). A fonte recebe só uma fração
   do sinal das outras reações (`pesos.py`, EFEITOS); sua qualidade emerge do acúmulo. Substitui a opção de 2026-11-01.
+- 2026-11-03: reações viram "Quero mais disso" (`quero_mais`) / "Vejo futuro nisso" (`futuro`; "Útil" e "like" antigos são lidos
+  como `futuro`) / "Já conhecia" / "Distante de mim" (`fora_foco`). Substitui a versão de 2026-11-01. Motivo: o objetivo das leituras é
+  ter gancho com o trabalho dele (energia solar, consultoria IA/dados, manutenção) e acompanhar o cenário, não ter assunto nem se entreter.
+  Mesma data: o critério de `aderencia` na triagem (`pontuar.py`) passou de "útil/atual para o perfil" a "gancho com o trabalho ou
+  mudança de cenário". Mudança de método: notas anteriores a 2026-11-03 não são comparáveis com as posteriores.
 - 2026-11-01: página com teto de 15 itens; sai o de menor nota para dar vez a novos.
 
 ## Próximo passo planejado

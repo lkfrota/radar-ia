@@ -42,7 +42,7 @@ def _fb(tmp_path, nome, url, acao):
 def test_fonte_recebe_so_fracao_do_sinal(tmp_path):
     _fb(tmp_path, "1.json", "a", "fora_foco")
     _fb(tmp_path, "2.json", "b", "quero_mais")
-    _fb(tmp_path, "3.json", "c", "util")
+    _fb(tmp_path, "3.json", "c", "futuro")
     p, pend, vistos = pesos.processar(tmp_path, {"temas": {}, "fontes": {}},
                                       [{"url": u} for u in "abcd"], [])
     assert p["temas"]["t"] == 0.08   # -0.15 + 0.15 + 0.08

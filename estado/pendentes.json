@@ -1,105 +1,68 @@
 [
   {
-    "url": "https://www.youtube.com/watch?v=47N3ExwgoGs",
-    "fonte": "Matheus Battisti (YouTube)",
+    "url": "https://huggingface.co/papers/2611.05345",
+    "fonte": "Hugging Face Papers (descoberta)",
     "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+    "paragrafos": [
+      "A decodificação especulativa é uma otimização de sistema que acelera a geração de texto em Modelos de Linguagem Grande (LLMs, sistemas de inteligência artificial baseados em texto) sem alterar o comportamento do modelo. Até então, o foco era apenas aumentar a taxa de aceitação de rascunhos gerados por modelos menores.",
+      "No entanto, os autores mostram que isso não se aplica a agentes de longo prazo, que são IAs executando tarefas complexas por muitas etapas consecutivas. Descobriu-se que o ruído numérico cresce nas janelas de verificação e altera a precisão do raciocínio após 30 passos.",
+      "Para resolver isso, a pesquisa controla esse ruído treinando o modelo de rascunho para ser rejeitado de propósito em pontos críticos de decisão. Assim, o modelo principal assume o controle exato nos momentos que exigem maior precisão de pensamento.",
+      "Essa abordagem transforma a decodificação especulativa de um mero acelerador de velocidade em um alocador ativo de precisão de contexto. O resultado é o aumento na taxa de sucesso de tarefas complexas de código sem alterar o modelo principal, treinando apenas uma fração mínima de parâmetros."
+    ],
+    "por_que_importa": "Isso importa para o seu foco em agentes de IA, pois melhora a confiabilidade de IAs que precisam tomar dezenas de decisões encadeadas sem alucinar em tarefas longas.",
+    "dia": "2026-11-04"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.05306",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "otimizacao de contextos",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.42,
+    "titulo": "You don't need long context",
+    "paragrafos": [
+      "Gerar tokens (pedaços de palavras processados pela IA) mais tarde em uma conversa longa é muito mais custoso computacionalmente do que gerá-los no início, podendo ser até sete vezes mais caro em modelos modernos.",
+      "O estudo demonstra que, por meio de compactações frequentes do histórico, os modelos de linguagem não perdem precisão em tarefas longas mesmo mantendo um contexto curto.",
+      "Além disso, a pesquisa prova que o desempenho de IAs em engenharia de software complexa não entra em colapso mesmo quando executam no máximo uma ação por contexto.",
+      "Com base nisso, os autores introduzem o conceito de Modelos de Espaço de Estado Semântico, questionando a real necessidade de modelos de linguagem com contextos gigantescos e caros."
+    ],
+    "por_que_importa": "Para consultoria de dados e agentes de IA, isso mostra que otimizar o fluxo de dados com janelas curtas e compactadas pode ser muito mais eficiente e barato do que usar contextos gigantes.",
+    "dia": "2026-11-04"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=0ym9eZMzm_Q",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "ferramentas no-code",
     "tipo": "video",
     "categoria": "perfil",
-    "nota": 10,
-    "titulo": "Criar jogos com IA ficou ABSURDO!",
+    "nota": 9.22,
+    "titulo": "Essa IA estuda qualquer app e cria a SUA versão (Craft Anything)",
     "paragrafos": [
-      "O vídeo apresenta um pacote totalmente gratuito chamado Claude Code Game Studios, projetado para estruturar a criação de jogos usando inteligência artificial de forma semelhante a um estúdio real.",
-      "O sistema organiza agentes em uma hierarquia dividida entre diretores, líderes e especialistas técnicos, cobrindo áreas como design, código, arte, áudio, história, QA e release.",
-      "O fluxo de trabalho utiliza comandos simples no terminal, guiando o usuário desde a inicialização do projeto até o planejamento, brainstorming e divisão de tarefas para desenvolvimento passo a passo.",
-      "O criador demonstra o funcionamento prático criando o jogo 'Fogo-Fátuo', um roguelike inspirado no folclore brasileiro desenvolvido na engine Godot com o auxílio dos agentes de IA."
+      "O conteúdo completo desta fonte não foi lido e, por isso, nenhum detalhe adicional foi inventado além do título e da origem informados."
     ],
-    "por_que_importa": "Ferramentas de IA com agentes estruturados e suporte em tempo real podem otimizar fluxos complexos, servindo de base para automações em consultoria de dados e manutenção industrial.",
-    "dia": "2026-11-02"
+    "por_que_importa": "É só uma aposta de correlação com o seu perfil geral de tecnologia.",
+    "dia": "2026-11-04"
   },
   {
-    "url": "https://huggingface.co/papers/2610.37651",
+    "url": "https://huggingface.co/papers/2611.04814",
     "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
+    "tema": "otimizacao de inferencia",
     "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 10,
-    "titulo": "GEPA-Curator: Curated Learning for Self Improving Agents",
+    "nota": 9.18,
+    "titulo": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
     "paragrafos": [
-      "Modelos de Linguagem de Grande Escala, conhecidos como LLMs, são amplamente utilizados em fluxos de trabalho autônomos de múltiplos turnos que exigem interação contínua com ambientes complexos. Otimizadores de comandos reflexivos existentes, chamados de GEPA, aprendem com falhas de execuções anteriores, mas as falhas de agentes também podem vir de fraquezas nos comandos, limitações de infraestrutura, execução estocástica ou juízes barulhentos.",
-      "O artigo argumenta que essas falhas podem não fornecer sinais de aprendizado úteis e podem até ser prejudiciais. Portanto, é essencial selecionar quais tarefas são fornecidas ao otimizador de comandos para melhorar o desempenho.",
-      "Para resolver isso, os autores introduzem o GEPA-Curator, uma estrutura que aprimora o otimizador de comandos para selecionar quais experiências de agentes devem moldar a otimização. O sistema possui dois componentes: a curadoria de tarefas, que filtra tarefas com sinais de aprendizado não confiáveis, e a recuperação de sucesso anterior, que busca trajetórias bem-sucedidas do passado para fornecer contexto adicional.",
-      "O GEPA-Curator foi avaliado em quatro benchmarks, superando o desempenho médio dos modelos de referência com ganhos de até 20.7% sobre o GEPA tradicional e 21.2% sobre o ACE, utilizando modelos como Gemini 3.1 Pro e Claude Opus 5 como otimizadores."
+      "Modelos de raciocínio avançados alcançam alta performance, mas seu longo encadeamento de pensamentos gera custos computacionais elevados por continuarem deliberando mesmo após terem informação suficiente.",
+      "Os métodos tradicionais focam em encurtar a trajetória inteira do raciocínio, prestando menos atenção à decisão local de quando parar de pensar.",
+      "Os autores propõem o LoCo, um método que detecta estados de excesso de pensamento, congela o raciocínio inicial e regenera continuações mais curtas e verificadas usando preferências locais.",
+      "Isso ensina o modelo o momento exato de concluir a linha de raciocínio, reduzindo drasticamente o tamanho das respostas em matemática e código sem perder precisão."
     ],
-    "por_que_importa": "Isso importa para o seu trabalho com agentes de IA, pois melhora a confiabilidade do aprendizado autônomo ao filtrar ruídos e falhas irrelevantes.",
-    "dia": "2026-11-02"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.40488",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
-    "paragrafos": [
-      "O estudo investiga se agentes de pesquisa possuem o que chamamos de 'gosto' — a capacidade de julgar quais experimentos científicos valem a pena ser executados antes que seus resultados sejam conhecidos. Seis modelos de inteligência artificial de ponta analisaram sete artigos recentes de processamento de linguagem natural.",
-      "Trabalhando sozinhos ou em equipes, os modelos propuseram experimentos viáveis mínimos, conhecidos como MVEs, previram se passariam em limites estabelecidos e os ordenaram. Um executor separado testou todos os experimentos, incluindo os piores classificados, e três modelos auditores julgaram os resultados.",
-      "Dos 415 experimentos propostos, 194 foram considerados sólidos, valiosos e novos, mas menos da metade (73) foi julgada como inovadora além do artigo base. As primeiras escolhas dos agentes coincidiram mais vezes com os experimentos mais valiados do que escolhas aleatórias.",
-      "No entanto, as previsões dos agentes não foram measuravelmente mais precisas do que as de uma instância nova do mesmo modelo usando apenas o artigo original, e equipes de agentes custaram mais caro sem melhorar a qualidade das propostas."
-    ],
-    "por_que_importa": "Isso importa para a sua atuação em consultoria de dados, pois mostra os limites atuais da automação na tomada de decisões estratégicas de pesquisa.",
-    "dia": "2026-11-02"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=T5fff-tB1Os",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "A DeepSeek liberou um agente que programa SOZINHO no GitHub (dsh-superagent)",
-    "paragrafos": [
-      "O canal Hora de Codar apresentou o Superagent, um novo projeto gratuito da DeepSeek hospedado no GitHub que funciona como um agente autônomo de programação no seu computador.",
-      "Para utilizá-lo, o usuário cria uma issue (relato de problema ou solicitação de funcionalidade) no repositório marcando o agente. O sistema faz uma triagem para verificar a segurança da solicitação, avalia o pedido e executa as tarefas de forma paralela utilizando ferramentas de terminal e controle de versão, conhecidas como DeepSeek Harness.",
-      "Após a execução do código de forma autônoma, o Superagent abre um pull request (solicitação de alteração de código) contendo o passo a passo, logs de execução e evidências visuais em formato de imagens de antes e depois.",
-      "O processo completo reduz drasticamente a intervenção humana, exigindo apenas a validação e o aceite das modificações propostas diretamente pela interface do repositório."
-    ],
-    "por_que_importa": "Para um profissional de manutenção industrial ou engenharia, agentes de IA autônomos como o Superagent representam a base de automações futuras aplicáveis à gestão de processos automatizados e análise de dados operacionais.",
-    "dia": "2026-11-03"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.03097",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "DR Pixel: Page-Native Deep Research with Vision-Language Models",
-    "paragrafos": [
-      "Documentos técnicos complexos, como artigos científicos, contêm informações ricas em tabelas, figuras e equações. No entanto, os sistemas atuais de pesquisa profunda (DR) geralmente reduzem esses documentos a textos extraídos por OCR, que é a tecnologia de reconhecimento óptico de caracteres para transformar imagens de texto em texto editável.",
-      "Para resolver essa limitação, os pesquisadores criaram o DR Pixel, um agente multimodal de código aberto que usa páginas renderizadas de documentos diretamente como sua única unidade de recuperação e raciocínio, sem passar pelo OCR. Esse agente opera sobre um acervo de 1,06 milhão de páginas e foi avaliado por meio de um novo benchmark chamado DRPixelBench.",
-      "Os testes mostraram que o método baseado diretamente nas imagens das páginas funciona muito bem mesmo sem treinamento específico, superando modelos consagrados que usam OCR e exigindo menos chamadas de ferramentas. Para aprimorar ainda mais o sistema, os autores introduziram um método de treinamento chamado reponderação de crédito contrafactual, que avalia o impacto real de cada etapa de raciocínio e ação no resultado final.",
-      "Com esse treinamento, o DR Pixel melhorou expressamente a recuperação de informações e a precisão final nas avaliações. Os resultados sugerem que o processo tradicional de converter imagens em texto por OCR antes de pesquisar não é apenas desnecessário, mas também menos eficiente do que analisar o documento visualmente de ponta a ponta."
-    ],
-    "por_que_importa": "Isso importa para a sua atuação com agentes de IA, pois mostra como modelos visuais podem processar manuais técnicos e esquemas industriais complexos sem perder dados cruciais que o texto puro costuma apagar.",
-    "dia": "2026-11-03"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.35219",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "Multi-Agent Relay Thinking",
-    "paragrafos": [
-      "Métodos tradicionais de colaboração entre múltiplos agentes de IA costumam usar uma topologia de grupo, onde vários agentes geram soluções de forma independente e depois juntam os resultados. Neste trabalho, os autores investigam uma abordagem diferente chamada pensamento em relay, ou revezamento, onde a responsabilidade pelo raciocínio é transferida dinamicamente entre os agentes de forma sequencial.",
-      "Para viabilizar essa ideia, foi criada a estrutura MACR, que permite a colaboração dinâmica baseada em confiança. O principal desafio superado pelo método é decidir o momento exato em que o raciocínio deve ser passado adiante e qual agente possui a qualificação ideal para continuar a tarefa, utilizando um mecanismo de leilão guiado pela confiança de cada agente.",
-      "Experimentos realizados em quatro benchmarks mostraram que essa estratégia de revezamento supera abordagens baseadas em um único modelo de inteligência artificial em termos de precisão. Além disso, manteve desempenho equivalente ao de outras estratégias complexas de múltiplos agentes, mas consumindo uma quantidade de tokens computacionais até seis vezes menor.",
-      "A análise detalhada revelou que a colaboração em revezamento permite que agentes com características heterogêneas integrem progressivamente insights complementares ao longo das etapas de raciocínio. O código-fonte completo dessa pesquisa foi disponibilizado publicamente no GitHub para a comunidade."
-    ],
-    "por_que_importa": "Isso é útil para projetos de consultoria de dados e automação, pois demonstra como dividir tarefas complexas entre agentes especializados em sequência gasta menos recursos computacionais do que processar tudo de uma vez.",
-    "dia": "2026-11-03"
+    "por_que_importa": "Isso importa para agentes de IA e consultoria de dados, pois reduz custos operacionais de inferência ao eliminar o processamento desnecessário de modelos pesados.",
+    "dia": "2026-11-04"
   },
   {
     "url": "https://huggingface.co/papers/2610.37903",
@@ -150,6 +113,21 @@
     "dia": "2026-11-02"
   },
   {
+    "url": "https://huggingface.co/papers/2611.03998",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "modelos de linguagem",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 7.92,
+    "titulo": "Dory1.0-4B: A Looped Normalized-GPT",
+    "paragrafos": [
+      "Os pesquisadores lançam o Dory1.0-4B, um modelo de linguagem com 4 bilhões de parâmetros estruturado em loop e com profundidade elástica, permitindo que um único arquivo sirva para diferentes orçamentos computacionais.",
+      "O modelo utiliza uma arquitetura baseada em Transformer normalizado com camadas recorrentes, permitindo que o bloco de processamento seja aplicado um número variável de vezes na inferência para aumentar a precisão sem aumentar o tamanho do modelo."
+    ],
+    "por_que_importa": "Isso é uma aposta de correlação, relevante caso você precise rodar IAs locais eficientes em hardware limitado na indústria.",
+    "dia": "2026-11-04"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=QqukKq6wGOE",
     "fonte": "Maestros da IA (YouTube)",
     "tema": "agentes de ia",
@@ -164,21 +142,6 @@
     "dia": "2026-11-03"
   },
   {
-    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "modelos abertos",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 7.3,
-    "titulo": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-    "paragrafos": [
-      "Apenas o título e a fonte desta descoberta no Hacker News foram disponibilizados para análise.",
-      "O conteúdo completo do texto não foi lido e detalhes adicionais não serão inventados para preservar a precisão da informação."
-    ],
-    "por_que_importa": "É só uma aposta de correlação sem impacto direto imediato na sua rotina de engenharia mecânica.",
-    "dia": "2026-11-01"
-  },
-  {
     "url": "https://rikiyat.github.io/blog/weight-space-programming/",
     "fonte": "Hacker News (descoberta)",
     "tema": "lancamento de modelos",
@@ -191,6 +154,35 @@
     ],
     "por_que_importa": "É só uma aposta de correlação para o seu perfil de engenheiro mecânico.",
     "dia": "2026-11-02"
+  },
+  {
+    "url": "https://neufangled.com/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "robotica industrial",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 7.3,
+    "titulo": "Stringman, an $800 open-source room scale gripper robot",
+    "paragrafos": [
+      "O conteúdo completo desta fonte não foi lido e, por isso, nenhum detalhe adicional foi inventado além do título e da origem informados."
+    ],
+    "por_que_importa": "Isso importa diretamente para manutenção industrial e robótica, ligando-se ao seu histórico como engenheiro mecânico.",
+    "dia": "2026-11-04"
+  },
+  {
+    "url": "https://www.deeplearning.ai/the-batch/ai-bites-the-hand-that-feeds-it/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "seguranca de dados",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 7.1,
+    "titulo": "AI Bites the Hand That Feeds It: Scientists, other users fear AI companies will train on or misuse sensitive data",
+    "paragrafos": [
+      "Cientistas, desenvolvedores e empresas alimentam ferramentas de IA (inteligência artificial, sistemas computacionais que simulam a inteligência humana) com códigos privados, pesquisas não publicadas e arquivos confidenciais. O grande medo é que cada comando enviado (prompt), rascunho e arquivo entregue à IA seja usado para treinar futuros modelos. Isso pode expor segredos industriais a rivais ou fazer com que o sistema descubra algo antes do próprio criador.",
+      "Há casos reais preocupantes. Matemáticos passaram meses tentando resolver um problema complexo e, logo após publicarem provas relacionadas, a OpenAI anunciou que seus agentes (sistemas de IA autônomos que executam tarefas) haviam resolvido a mesma questão, baseando-se em rascunhos anteriores. Em outro caso, biólogos gastaram anos estudando enzimas e, após compartilharem dados com a ferramenta Claude da Anthropic, a empresa anunciou descobertas idênticas. Pesquisadores agora limitam o uso de IA por medo de terem suas ideias roubadas."
+    ],
+    "por_que_importa": "Isso importa para a segurança de dados e projetos confidenciais que você gerencia em consultoria de dados e manutenção industrial.",
+    "dia": "2026-11-04"
   },
   {
     "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
@@ -221,17 +213,18 @@
     "dia": "2026-11-03"
   },
   {
-    "url": "https://syscall.sh/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "python e ferramentas",
-    "tipo": "discussao",
+    "url": "https://huggingface.co/papers/2610.40574",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "treinamento de modelos",
+    "tipo": "artigo",
     "categoria": "adjacente",
-    "nota": 6.3,
-    "titulo": "Show HN: I've updated my Linux System Call website and API",
+    "nota": 6.72,
+    "titulo": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
     "paragrafos": [
-      "O conteúdo completo desta página não foi lido, pois apenas o título e a fonte estavam disponíveis. Portanto, nenhum detalhe adicional foi inventado."
+      "A destilação automática em modelos grandes de linguagem (técnica para transferir conhecimento de um modelo complexo para um menor) costuma usar um único 'professor' fixo para avaliar respostas inteiras. No entanto, este artigo argumenta que cada token (termo que define pedaços de palavras que a IA processa) precisa de seu próprio orientador, pois a preferência de correção muda palavra por palavra dentro de uma mesma resposta.",
+      "Para resolver isso, os autores propõem o método MTA-OPSD, que cria um grupo com vários professores e permite que cada token escolha seu orientador ideal durante o treinamento. Testes em tarefas de raciocínio matemático mostraram que essa abordagem superou métodos tradicionais, provando a importância de adaptar a supervisão no nível de cada palavra."
     ],
-    "por_que_importa": "É apenas uma aposta de correlação para o seu dia a dia de engenharia.",
-    "dia": "2026-11-02"
+    "por_que_importa": "É só uma aposta de correlação sem conexão direta óbvia com a engenharia mecânica tradicional.",
+    "dia": "2026-11-04"
   }
 ]

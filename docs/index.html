@@ -41,16 +41,46 @@
     <nav><a href="index.html">Hoje</a><a href="config.html">Configurar</a></nav>
   </header>
   
-<p class="meta">Atualizado em 03/11/2026 17:10 · 15 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
+<p class="meta">Atualizado em 04/11/2026 17:18 · 15 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
 
 
-<article data-url="https://www.youtube.com/watch?v=47N3ExwgoGs" data-tema="agentes de ia" data-fonte="Matheus Battisti (YouTube)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://www.youtube.com/watch?v=47N3ExwgoGs" target="_blank" rel="noopener">Criar jogos com IA ficou ABSURDO!</a></h2>
+<article data-url="https://huggingface.co/papers/2611.05345" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://huggingface.co/papers/2611.05345" target="_blank" rel="noopener">Adversarial Speculative Reasoning Improves Long Horizon Agents</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>A decodificação especulativa é uma otimização de sistema que acelera a geração de texto em Modelos de Linguagem Grande (LLMs, sistemas de inteligência artificial baseados em texto) sem alterar o comportamento do modelo. Até então, o foco era apenas aumentar a taxa de aceitação de rascunhos gerados por modelos menores.</p><p>No entanto, os autores mostram que isso não se aplica a agentes de longo prazo, que são IAs executando tarefas complexas por muitas etapas consecutivas. Descobriu-se que o ruído numérico cresce nas janelas de verificação e altera a precisão do raciocínio após 30 passos.</p><p>Para resolver isso, a pesquisa controla esse ruído treinando o modelo de rascunho para ser rejeitado de propósito em pontos críticos de decisão. Assim, o modelo principal assume o controle exato nos momentos que exigem maior precisão de pensamento.</p><p>Essa abordagem transforma a decodificação especulativa de um mero acelerador de velocidade em um alocador ativo de precisão de contexto. O resultado é o aumento na taxa de sucesso de tarefas complexas de código sem alterar o modelo principal, treinando apenas uma fração mínima de parâmetros.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.05345" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Isso importa para o seu foco em agentes de IA, pois melhora a confiabilidade de IAs que precisam tomar dezenas de decisões encadeadas sem alucinar em tarefas longas.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://huggingface.co/papers/2611.05306" data-tema="otimizacao de contextos" data-fonte="Hugging Face Papers (descoberta)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://huggingface.co/papers/2611.05306" target="_blank" rel="noopener">You don&#39;t need long context</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>Gerar tokens (pedaços de palavras processados pela IA) mais tarde em uma conversa longa é muito mais custoso computacionalmente do que gerá-los no início, podendo ser até sete vezes mais caro em modelos modernos.</p><p>O estudo demonstra que, por meio de compactações frequentes do histórico, os modelos de linguagem não perdem precisão em tarefas longas mesmo mantendo um contexto curto.</p><p>Além disso, a pesquisa prova que o desempenho de IAs em engenharia de software complexa não entra em colapso mesmo quando executam no máximo uma ação por contexto.</p><p>Com base nisso, os autores introduzem o conceito de Modelos de Espaço de Estado Semântico, questionando a real necessidade de modelos de linguagem com contextos gigantescos e caros.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.05306" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Para consultoria de dados e agentes de IA, isso mostra que otimizar o fluxo de dados com janelas curtas e compactadas pode ser muito mais eficiente e barato do que usar contextos gigantes.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://www.youtube.com/watch?v=0ym9eZMzm_Q" data-tema="ferramentas no-code" data-fonte="Matheus Battisti (YouTube)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://www.youtube.com/watch?v=0ym9eZMzm_Q" target="_blank" rel="noopener">Essa IA estuda qualquer app e cria a SUA versão (Craft Anything)</a></h2>
   <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>O vídeo apresenta um pacote totalmente gratuito chamado Claude Code Game Studios, projetado para estruturar a criação de jogos usando inteligência artificial de forma semelhante a um estúdio real.</p><p>O sistema organiza agentes em uma hierarquia dividida entre diretores, líderes e especialistas técnicos, cobrindo áreas como design, código, arte, áudio, história, QA e release.</p><p>O fluxo de trabalho utiliza comandos simples no terminal, guiando o usuário desde a inicialização do projeto até o planejamento, brainstorming e divisão de tarefas para desenvolvimento passo a passo.</p><p>O criador demonstra o funcionamento prático criando o jogo &#39;Fogo-Fátuo&#39;, um roguelike inspirado no folclore brasileiro desenvolvido na engine Godot com o auxílio dos agentes de IA.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=47N3ExwgoGs" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">Ferramentas de IA com agentes estruturados e suporte em tempo real podem otimizar fluxos complexos, servindo de base para automações em consultoria de dados e manutenção industrial.</div>
+  <p>O conteúdo completo desta fonte não foi lido e, por isso, nenhum detalhe adicional foi inventado além do título e da origem informados.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=0ym9eZMzm_Q" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação com o seu perfil geral de tecnologia.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
@@ -59,73 +89,13 @@
   </div>
 </article>
 
-<article data-url="https://huggingface.co/papers/2610.37651" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2610.37651" target="_blank" rel="noopener">GEPA-Curator: Curated Learning for Self Improving Agents</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Modelos de Linguagem de Grande Escala, conhecidos como LLMs, são amplamente utilizados em fluxos de trabalho autônomos de múltiplos turnos que exigem interação contínua com ambientes complexos. Otimizadores de comandos reflexivos existentes, chamados de GEPA, aprendem com falhas de execuções anteriores, mas as falhas de agentes também podem vir de fraquezas nos comandos, limitações de infraestrutura, execução estocástica ou juízes barulhentos.</p><p>O artigo argumenta que essas falhas podem não fornecer sinais de aprendizado úteis e podem até ser prejudiciais. Portanto, é essencial selecionar quais tarefas são fornecidas ao otimizador de comandos para melhorar o desempenho.</p><p>Para resolver isso, os autores introduzem o GEPA-Curator, uma estrutura que aprimora o otimizador de comandos para selecionar quais experiências de agentes devem moldar a otimização. O sistema possui dois componentes: a curadoria de tarefas, que filtra tarefas com sinais de aprendizado não confiáveis, e a recuperação de sucesso anterior, que busca trajetórias bem-sucedidas do passado para fornecer contexto adicional.</p><p>O GEPA-Curator foi avaliado em quatro benchmarks, superando o desempenho médio dos modelos de referência com ganhos de até 20.7% sobre o GEPA tradicional e 21.2% sobre o ACE, utilizando modelos como Gemini 3.1 Pro e Claude Opus 5 como otimizadores.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.37651" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Isso importa para o seu trabalho com agentes de IA, pois melhora a confiabilidade do aprendizado autônomo ao filtrar ruídos e falhas irrelevantes.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2610.40488" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2610.40488" target="_blank" rel="noopener">rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>O estudo investiga se agentes de pesquisa possuem o que chamamos de &#39;gosto&#39; — a capacidade de julgar quais experimentos científicos valem a pena ser executados antes que seus resultados sejam conhecidos. Seis modelos de inteligência artificial de ponta analisaram sete artigos recentes de processamento de linguagem natural.</p><p>Trabalhando sozinhos ou em equipes, os modelos propuseram experimentos viáveis mínimos, conhecidos como MVEs, previram se passariam em limites estabelecidos e os ordenaram. Um executor separado testou todos os experimentos, incluindo os piores classificados, e três modelos auditores julgaram os resultados.</p><p>Dos 415 experimentos propostos, 194 foram considerados sólidos, valiosos e novos, mas menos da metade (73) foi julgada como inovadora além do artigo base. As primeiras escolhas dos agentes coincidiram mais vezes com os experimentos mais valiados do que escolhas aleatórias.</p><p>No entanto, as previsões dos agentes não foram measuravelmente mais precisas do que as de uma instância nova do mesmo modelo usando apenas o artigo original, e equipes de agentes custaram mais caro sem melhorar a qualidade das propostas.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.40488" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Isso importa para a sua atuação em consultoria de dados, pois mostra os limites atuais da automação na tomada de decisões estratégicas de pesquisa.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://www.youtube.com/watch?v=T5fff-tB1Os" data-tema="agentes de ia" data-fonte="Matheus Battisti (YouTube)">
+<article data-url="https://huggingface.co/papers/2611.04814" data-tema="otimizacao de inferencia" data-fonte="Hugging Face Papers (descoberta)">
   <div class="tag">No seu perfil</div>
-  <h2><a href="https://www.youtube.com/watch?v=T5fff-tB1Os" target="_blank" rel="noopener">A DeepSeek liberou um agente que programa SOZINHO no GitHub (dsh-superagent)</a></h2>
-  <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>O canal Hora de Codar apresentou o Superagent, um novo projeto gratuito da DeepSeek hospedado no GitHub que funciona como um agente autônomo de programação no seu computador.</p><p>Para utilizá-lo, o usuário cria uma issue (relato de problema ou solicitação de funcionalidade) no repositório marcando o agente. O sistema faz uma triagem para verificar a segurança da solicitação, avalia o pedido e executa as tarefas de forma paralela utilizando ferramentas de terminal e controle de versão, conhecidas como DeepSeek Harness.</p><p>Após a execução do código de forma autônoma, o Superagent abre um pull request (solicitação de alteração de código) contendo o passo a passo, logs de execução e evidências visuais em formato de imagens de antes e depois.</p><p>O processo completo reduz drasticamente a intervenção humana, exigindo apenas a validação e o aceite das modificações propostas diretamente pela interface do repositório.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=T5fff-tB1Os" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">Para um profissional de manutenção industrial ou engenharia, agentes de IA autônomos como o Superagent representam a base de automações futuras aplicáveis à gestão de processos automatizados e análise de dados operacionais.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2611.03097" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil</div>
-  <h2><a href="https://huggingface.co/papers/2611.03097" target="_blank" rel="noopener">DR Pixel: Page-Native Deep Research with Vision-Language Models</a></h2>
+  <h2><a href="https://huggingface.co/papers/2611.04814" target="_blank" rel="noopener">Think Less, Locally: Local Preference Learning for Reasoning Compression</a></h2>
   <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Documentos técnicos complexos, como artigos científicos, contêm informações ricas em tabelas, figuras e equações. No entanto, os sistemas atuais de pesquisa profunda (DR) geralmente reduzem esses documentos a textos extraídos por OCR, que é a tecnologia de reconhecimento óptico de caracteres para transformar imagens de texto em texto editável.</p><p>Para resolver essa limitação, os pesquisadores criaram o DR Pixel, um agente multimodal de código aberto que usa páginas renderizadas de documentos diretamente como sua única unidade de recuperação e raciocínio, sem passar pelo OCR. Esse agente opera sobre um acervo de 1,06 milhão de páginas e foi avaliado por meio de um novo benchmark chamado DRPixelBench.</p><p>Os testes mostraram que o método baseado diretamente nas imagens das páginas funciona muito bem mesmo sem treinamento específico, superando modelos consagrados que usam OCR e exigindo menos chamadas de ferramentas. Para aprimorar ainda mais o sistema, os autores introduziram um método de treinamento chamado reponderação de crédito contrafactual, que avalia o impacto real de cada etapa de raciocínio e ação no resultado final.</p><p>Com esse treinamento, o DR Pixel melhorou expressamente a recuperação de informações e a precisão final nas avaliações. Os resultados sugerem que o processo tradicional de converter imagens em texto por OCR antes de pesquisar não é apenas desnecessário, mas também menos eficiente do que analisar o documento visualmente de ponta a ponta.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.03097" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Isso importa para a sua atuação com agentes de IA, pois mostra como modelos visuais podem processar manuais técnicos e esquemas industriais complexos sem perder dados cruciais que o texto puro costuma apagar.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2610.35219" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil</div>
-  <h2><a href="https://huggingface.co/papers/2610.35219" target="_blank" rel="noopener">Multi-Agent Relay Thinking</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Métodos tradicionais de colaboração entre múltiplos agentes de IA costumam usar uma topologia de grupo, onde vários agentes geram soluções de forma independente e depois juntam os resultados. Neste trabalho, os autores investigam uma abordagem diferente chamada pensamento em relay, ou revezamento, onde a responsabilidade pelo raciocínio é transferida dinamicamente entre os agentes de forma sequencial.</p><p>Para viabilizar essa ideia, foi criada a estrutura MACR, que permite a colaboração dinâmica baseada em confiança. O principal desafio superado pelo método é decidir o momento exato em que o raciocínio deve ser passado adiante e qual agente possui a qualificação ideal para continuar a tarefa, utilizando um mecanismo de leilão guiado pela confiança de cada agente.</p><p>Experimentos realizados em quatro benchmarks mostraram que essa estratégia de revezamento supera abordagens baseadas em um único modelo de inteligência artificial em termos de precisão. Além disso, manteve desempenho equivalente ao de outras estratégias complexas de múltiplos agentes, mas consumindo uma quantidade de tokens computacionais até seis vezes menor.</p><p>A análise detalhada revelou que a colaboração em revezamento permite que agentes com características heterogêneas integrem progressivamente insights complementares ao longo das etapas de raciocínio. O código-fonte completo dessa pesquisa foi disponibilizado publicamente no GitHub para a comunidade.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.35219" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Isso é útil para projetos de consultoria de dados e automação, pois demonstra como dividir tarefas complexas entre agentes especializados em sequência gasta menos recursos computacionais do que processar tudo de uma vez.</div>
+  <p>Modelos de raciocínio avançados alcançam alta performance, mas seu longo encadeamento de pensamentos gera custos computacionais elevados por continuarem deliberando mesmo após terem informação suficiente.</p><p>Os métodos tradicionais focam em encurtar a trajetória inteira do raciocínio, prestando menos atenção à decisão local de quando parar de pensar.</p><p>Os autores propõem o LoCo, um método que detecta estados de excesso de pensamento, congela o raciocínio inicial e regenera continuações mais curtas e verificadas usando preferências locais.</p><p>Isso ensina o modelo o momento exato de concluir a linha de raciocínio, reduzindo drasticamente o tamanho das respostas em matemática e código sem perder precisão.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.04814" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Isso importa para agentes de IA e consultoria de dados, pois reduz custos operacionais de inferência ao eliminar o processamento desnecessário de modelos pesados.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
@@ -179,13 +149,13 @@
   </div>
 </article>
 
-<article data-url="https://www.youtube.com/watch?v=QqukKq6wGOE" data-tema="agentes de ia" data-fonte="Maestros da IA (YouTube)">
+<article data-url="https://huggingface.co/papers/2611.03998" data-tema="modelos de linguagem" data-fonte="Hugging Face Papers (descoberta)">
   <div class="tag">Perto do seu radar</div>
-  <h2><a href="https://www.youtube.com/watch?v=QqukKq6wGOE" target="_blank" rel="noopener">O FIM da IA Religiosa: Por que o Claude.md MORREU de vez</a></h2>
-  <div class="meta">Maestros da IA (YouTube) · vídeo</div>
-  <p>O conteúdo completo deste item não foi lido a partir da fonte informada, portanto nenhum detalhe adicional foi inventado ou adicionado a este resumo.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=QqukKq6wGOE" target="_blank" rel="noopener">Maestros da IA (YouTube) — ler o original ↗</a></p>
-  <div class="porque">Isso é só uma aposta de correlação sem impacto direto mensurável no seu trabalho atual.</div>
+  <h2><a href="https://huggingface.co/papers/2611.03998" target="_blank" rel="noopener">Dory1.0-4B: A Looped Normalized-GPT</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>Os pesquisadores lançam o Dory1.0-4B, um modelo de linguagem com 4 bilhões de parâmetros estruturado em loop e com profundidade elástica, permitindo que um único arquivo sirva para diferentes orçamentos computacionais.</p><p>O modelo utiliza uma arquitetura baseada em Transformer normalizado com camadas recorrentes, permitindo que o bloco de processamento seja aplicado um número variável de vezes na inferência para aumentar a precisão sem aumentar o tamanho do modelo.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.03998" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Isso é uma aposta de correlação, relevante caso você precise rodar IAs locais eficientes em hardware limitado na indústria.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
@@ -194,13 +164,13 @@
   </div>
 </article>
 
-<article data-url="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" data-tema="modelos abertos" data-fonte="Hacker News (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" target="_blank" rel="noopener">Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard</a></h2>
-  <div class="meta">Hacker News (descoberta)</div>
-  <p>Apenas o título e a fonte desta descoberta no Hacker News foram disponibilizados para análise.</p><p>O conteúdo completo do texto não foi lido e detalhes adicionais não serão inventados para preservar a precisão da informação.</p>
-  <p class="meta fonte">Fonte: <a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
-  <div class="porque">É só uma aposta de correlação sem impacto direto imediato na sua rotina de engenharia mecânica.</div>
+<article data-url="https://www.youtube.com/watch?v=QqukKq6wGOE" data-tema="agentes de ia" data-fonte="Maestros da IA (YouTube)">
+  <div class="tag">Perto do seu radar · de dias anteriores</div>
+  <h2><a href="https://www.youtube.com/watch?v=QqukKq6wGOE" target="_blank" rel="noopener">O FIM da IA Religiosa: Por que o Claude.md MORREU de vez</a></h2>
+  <div class="meta">Maestros da IA (YouTube) · vídeo</div>
+  <p>O conteúdo completo deste item não foi lido a partir da fonte informada, portanto nenhum detalhe adicional foi inventado ou adicionado a este resumo.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=QqukKq6wGOE" target="_blank" rel="noopener">Maestros da IA (YouTube) — ler o original ↗</a></p>
+  <div class="porque">Isso é só uma aposta de correlação sem impacto direto mensurável no seu trabalho atual.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
@@ -224,8 +194,38 @@
   </div>
 </article>
 
-<article data-url="https://blog.nns.ee/2026/11/02/renault-hack/" data-tema="automacao e hardware" data-fonte="Hacker News (descoberta)">
+<article data-url="https://neufangled.com/" data-tema="robotica industrial" data-fonte="Hacker News (descoberta)">
   <div class="tag">No seu perfil</div>
+  <h2><a href="https://neufangled.com/" target="_blank" rel="noopener">Stringman, an $800 open-source room scale gripper robot</a></h2>
+  <div class="meta">Hacker News (descoberta)</div>
+  <p>O conteúdo completo desta fonte não foi lido e, por isso, nenhum detalhe adicional foi inventado além do título e da origem informados.</p>
+  <p class="meta fonte">Fonte: <a href="https://neufangled.com/" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Isso importa diretamente para manutenção industrial e robótica, ligando-se ao seu histórico como engenheiro mecânico.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://www.deeplearning.ai/the-batch/ai-bites-the-hand-that-feeds-it/" data-tema="seguranca de dados" data-fonte="The Batch (DeepLearning.AI)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://www.deeplearning.ai/the-batch/ai-bites-the-hand-that-feeds-it/" target="_blank" rel="noopener">AI Bites the Hand That Feeds It: Scientists, other users fear AI companies will train on or misuse sensitive data</a></h2>
+  <div class="meta">The Batch (DeepLearning.AI)</div>
+  <p>Cientistas, desenvolvedores e empresas alimentam ferramentas de IA (inteligência artificial, sistemas computacionais que simulam a inteligência humana) com códigos privados, pesquisas não publicadas e arquivos confidenciais. O grande medo é que cada comando enviado (prompt), rascunho e arquivo entregue à IA seja usado para treinar futuros modelos. Isso pode expor segredos industriais a rivais ou fazer com que o sistema descubra algo antes do próprio criador.</p><p>Há casos reais preocupantes. Matemáticos passaram meses tentando resolver um problema complexo e, logo após publicarem provas relacionadas, a OpenAI anunciou que seus agentes (sistemas de IA autônomos que executam tarefas) haviam resolvido a mesma questão, baseando-se em rascunhos anteriores. Em outro caso, biólogos gastaram anos estudando enzimas e, após compartilharem dados com a ferramenta Claude da Anthropic, a empresa anunciou descobertas idênticas. Pesquisadores agora limitam o uso de IA por medo de terem suas ideias roubadas.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.deeplearning.ai/the-batch/ai-bites-the-hand-that-feeds-it/" target="_blank" rel="noopener">The Batch (DeepLearning.AI) — ler o original ↗</a></p>
+  <div class="porque">Isso importa para a segurança de dados e projetos confidenciais que você gerencia em consultoria de dados e manutenção industrial.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://blog.nns.ee/2026/11/02/renault-hack/" data-tema="automacao e hardware" data-fonte="Hacker News (descoberta)">
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://blog.nns.ee/2026/11/02/renault-hack/" target="_blank" rel="noopener">Jailbreaking my car&#39;s navigation system just so I can change the time</a></h2>
   <div class="meta">Hacker News (descoberta)</div>
   <p>O conteúdo completo deste item não foi lido a partir da fonte informada, portanto nenhum detalhe adicional foi inventado ou adicionado a este resumo.</p>
@@ -240,7 +240,7 @@
 </article>
 
 <article data-url="https://github.com/NVIDIA/auto-ontology" data-tema="analise de dados" data-fonte="Hacker News (descoberta)">
-  <div class="tag">Perto do seu radar</div>
+  <div class="tag">Perto do seu radar · de dias anteriores</div>
   <h2><a href="https://github.com/NVIDIA/auto-ontology" target="_blank" rel="noopener">Nvidia – open-source auto-ontology</a></h2>
   <div class="meta">Hacker News (descoberta)</div>
   <p>O conteúdo completo deste item não foi lido a partir da fonte informada, portanto nenhum detalhe adicional foi inventado ou adicionado a este resumo.</p>
@@ -254,13 +254,13 @@
   </div>
 </article>
 
-<article data-url="https://syscall.sh/" data-tema="python e ferramentas" data-fonte="Hacker News (descoberta)">
-  <div class="tag">Perto do seu radar · de dias anteriores</div>
-  <h2><a href="https://syscall.sh/" target="_blank" rel="noopener">Show HN: I&#39;ve updated my Linux System Call website and API</a></h2>
-  <div class="meta">Hacker News (descoberta)</div>
-  <p>O conteúdo completo desta página não foi lido, pois apenas o título e a fonte estavam disponíveis. Portanto, nenhum detalhe adicional foi inventado.</p>
-  <p class="meta fonte">Fonte: <a href="https://syscall.sh/" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
-  <div class="porque">É apenas uma aposta de correlação para o seu dia a dia de engenharia.</div>
+<article data-url="https://huggingface.co/papers/2610.40574" data-tema="treinamento de modelos" data-fonte="Hugging Face Papers (descoberta)">
+  <div class="tag">Perto do seu radar</div>
+  <h2><a href="https://huggingface.co/papers/2610.40574" target="_blank" rel="noopener">Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>A destilação automática em modelos grandes de linguagem (técnica para transferir conhecimento de um modelo complexo para um menor) costuma usar um único &#39;professor&#39; fixo para avaliar respostas inteiras. No entanto, este artigo argumenta que cada token (termo que define pedaços de palavras que a IA processa) precisa de seu próprio orientador, pois a preferência de correção muda palavra por palavra dentro de uma mesma resposta.</p><p>Para resolver isso, os autores propõem o método MTA-OPSD, que cria um grupo com vários professores e permite que cada token escolha seu orientador ideal durante o treinamento. Testes em tarefas de raciocínio matemático mostraram que essa abordagem superou métodos tradicionais, provando a importância de adaptar a supervisão no nível de cada palavra.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.40574" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação sem conexão direta óbvia com a engenharia mecânica tradicional.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>

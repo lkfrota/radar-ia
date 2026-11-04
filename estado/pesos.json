@@ -1,10 +1,11 @@
 {
   "temas": {
-    "agentes de ia": 0.32
+    "agentes de ia": 0.5
   },
   "fontes": {
-    "Hugging Face Papers (descoberta)": 0.06,
-    "Anthropic News": 0.06
+    "Hugging Face Papers (descoberta)": 0.2,
+    "Anthropic News": 0.06,
+    "Matheus Battisti (YouTube)": 0.06
   },
   "conhecido": {}
 }

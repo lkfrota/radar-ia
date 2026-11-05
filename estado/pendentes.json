@@ -17,6 +17,48 @@
     "dia": "2026-11-04"
   },
   {
+    "url": "https://huggingface.co/papers/2611.01926",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "TAC-CoT: Tool-Empowered Implicit Chain-of-Thought via Interleaving Explicit Tokens",
+    "paragrafos": [
+      "LLM-based agentic systems are increasingly combined with CoT reasoning to solve tasks that require accurate reasoning, external knowledge, and multi-step deliberation. Yet, explicit CoT incurs substantial generation overhead, while implicit CoT, which replaces textual rationales with compact continuous tokens, does not naturally support the explicit communication interface required for agentic tool-use. We propose TAC-CoT, a tool-empowered adaptive implicit CoT framework that replaces explicit r…"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
+  },
+  {
+    "url": "https://huggingface.co/papers/2610.41432",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents",
+    "paragrafos": [
+      "Computer-use agents increasingly tackle tasks ranging from everyday desktop activities to long-horizon professional workflows. Yet interfaces centered on screenshots and mouse-and-keyboard actions can impose a human-interaction prior, requiring repeated screen interpretation while leaving the computer's semantic and programmatic capabilities underexposed. We argue for exposing these capabilities and letting models choose and combine them. We introduce Hybrid Computer Use (HCU), a unified interfa…"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.06768",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "automacao de processos",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.6,
+    "titulo": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
+    "paragrafos": [
+      "Coding agents powered by models such as GPT-6-Astra connect spatial reasoning with executable robot behavior, raising the question of how such agents can produce lasting improvements in robot capabilities from physical interaction. In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that…"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.05306",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "otimizacao de contextos",
@@ -65,52 +107,32 @@
     "dia": "2026-11-04"
   },
   {
-    "url": "https://huggingface.co/papers/2610.37903",
+    "url": "https://huggingface.co/papers/2611.05029",
     "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "manutencao preditiva",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.04,
+    "titulo": "DRAP: Dynamics-Risk Adaptive Plasticity for Continual Learning in Physical AI",
+    "paragrafos": [
+      "Continual learning in physical AI differs from conventional continual learning because small per-step policy errors can accumulate over a trajectory. Each deviation may move the agent outside the training distribution, increase subsequent prediction errors, and ultimately cause closed-loop task failure. This work introduces Dynamics-Risk Adaptive Plasticity (DRAP), a replay-free method that estimates the historical importance of adaptable model tensors from sample-level action gradients weighted…"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
+  },
+  {
+    "url": "https://www.ricursive.com/ripple",
+    "fonte": "Hacker News (descoberta)",
     "tema": "modelos abertos",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 8.8,
-    "titulo": "Think Twice: The Metis-1.6 Technical Report",
-    "paragrafos": [
-      "O projeto Metis é uma aposta de que melhores dados, métodos de treinamento e novas arquiteturas superam a simples contagem de parâmetros, custando muito menos. O Metis-1.6 apresenta dois modelos de linguagem construídos do zero por um único pesquisador: Praxis e Logos.",
-      "Ambos rodam uma pilha híbrida de Mamba-2 e atenção do tipo mistura de especialistas duas vezes para cada token, permitindo que cada token receba uma segunda olhada. Eles foram treinados com fraqueza em código e seguimento de instruções, mas alcançaram resultados notáveis em matemática.",
-      "O relatório destaca o que deu errado durante o processo: o otimizador configurado nunca rodou, a atenção foi treinada com AdamW em todo o pré-treinamento, uma memória n-gram de parâmetros aprendeu a se desligar sozinha e escolhas de ajuste fino prejudicaram a capacidade do modelo.",
-      "O autor conclui apresentando as ablações que dão base para o Metis-1.7, uma arquitetura em loop voltada para maior eficiência com menor custo computacional."
-    ],
-    "por_que_importa": "É só uma aposta de correlação para o seu perfil de engenheiro mecânico.",
-    "dia": "2026-11-02"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.37481",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "etica e seguranca",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 8.48,
-    "titulo": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
-    "paragrafos": [
-      "O ajuste fino de Modelos de Linguagem de Grande Escala com dados de instrução pode corroer silenciosamente sua segurança, mesmo quando nenhum exemplo de treinamento parece prejudicial. Como esses dados parecem benignos, os filtros de conteúdo padrão falham em detectá-los.",
-      "Os autores desenvolveram o SimpleLoRIF, um método de incorporação de gradiente escalável que identifica exemplos de ajuste fino cujos gradientes se alinham a comportamentos inseguros, restringindo a retropropagação aos últimos quatro blocos do transformador.",
-      "Validado em desalinhamento emergente, o método conectou dados de código inseguro a comportamentos nocivos gerados após o ajuste fino. Com ele, os pesquisadores criaram o SafeTulu, removendo os 20% de exemplos mais alinhados a respostas inseguras.",
-      "O treinamento com o SafeTulu reduziu a taxa de sucesso de ataques adversariais em até 22% em diferentes arquiteturas de modelos, preservando ou melhorando a capacidade geral do sistema."
-    ],
-    "por_que_importa": "Isso importa para o seu trabalho com agentes de IA, garantindo maior robustez e segurança contra falhas induzidas em modelos ajustados.",
-    "dia": "2026-11-02"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=x2h38zvQA3I",
-    "fonte": "Maestros da IA (YouTube)",
-    "tema": "lancamento de modelos",
-    "tipo": "video",
+    "tipo": "discussao",
     "categoria": "perfil",
     "nota": 8.0,
-    "titulo": "O Modelo que pretende DESTRONAR o Claude (Kimi K3.1 Pro)",
+    "titulo": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
     "paragrafos": [
-      "O conteúdo completo deste vídeo não foi lido a partir da fonte e detalhes adicionais não foram inventados."
+      "Resumo automático indisponível nesta rodada."
     ],
-    "por_que_importa": "É só uma aposta de correlação para o seu perfil de engenheiro mecânico.",
-    "dia": "2026-11-02"
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
   },
   {
     "url": "https://huggingface.co/papers/2611.03998",
@@ -140,20 +162,6 @@
     ],
     "por_que_importa": "Isso é só uma aposta de correlação sem impacto direto mensurável no seu trabalho atual.",
     "dia": "2026-11-03"
-  },
-  {
-    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "lancamento de modelos",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 7.3,
-    "titulo": "Astra can read and write weights to improve Qwen",
-    "paragrafos": [
-      "O conteúdo completo desta descoberta não foi lido a partir da fonte e detalhes adicionais não foram inventados."
-    ],
-    "por_que_importa": "É só uma aposta de correlação para o seu perfil de engenheiro mecânico.",
-    "dia": "2026-11-02"
   },
   {
     "url": "https://neufangled.com/",
@@ -199,32 +207,17 @@
     "dia": "2026-11-03"
   },
   {
-    "url": "https://github.com/NVIDIA/auto-ontology",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
     "fonte": "Hacker News (descoberta)",
-    "tema": "analise de dados",
+    "tema": "lancamento de modelos",
     "tipo": "discussao",
-    "categoria": "adjacente",
-    "nota": 6.8,
-    "titulo": "Nvidia – open-source auto-ontology",
+    "categoria": "perfil",
+    "nota": 7.0,
+    "titulo": "Kimi K3.1 Pro model weights are out",
     "paragrafos": [
-      "O conteúdo completo deste item não foi lido a partir da fonte informada, portanto nenhum detalhe adicional foi inventado ou adicionado a este resumo."
+      "Resumo automático indisponível nesta rodada."
     ],
-    "por_que_importa": "Isso é só uma aposta de correlação sem impacto direto mensurável no seu trabalho atual.",
-    "dia": "2026-11-03"
-  },
-  {
-    "url": "https://huggingface.co/papers/2610.40574",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "treinamento de modelos",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 6.72,
-    "titulo": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
-    "paragrafos": [
-      "A destilação automática em modelos grandes de linguagem (técnica para transferir conhecimento de um modelo complexo para um menor) costuma usar um único 'professor' fixo para avaliar respostas inteiras. No entanto, este artigo argumenta que cada token (termo que define pedaços de palavras que a IA processa) precisa de seu próprio orientador, pois a preferência de correção muda palavra por palavra dentro de uma mesma resposta.",
-      "Para resolver isso, os autores propõem o método MTA-OPSD, que cria um grupo com vários professores e permite que cada token escolha seu orientador ideal durante o treinamento. Testes em tarefas de raciocínio matemático mostraram que essa abordagem superou métodos tradicionais, provando a importância de adaptar a supervisão no nível de cada palavra."
-    ],
-    "por_que_importa": "É só uma aposta de correlação sem conexão direta óbvia com a engenharia mecânica tradicional.",
-    "dia": "2026-11-04"
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
   }
 ]

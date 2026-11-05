@@ -1,45 +1,28 @@
 [
   {
-    "url": "https://huggingface.co/papers/2611.05345",
+    "url": "https://huggingface.co/papers/2610.36544",
     "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
+    "tema": "confiabilidade e avaliacao de agentes",
     "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 10,
-    "titulo": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+    "nota": 9.66,
+    "titulo": "Monitor Accuracy Isn't the Answer: A Decision-Value Framework for Evaluating AI Agent Restart Monitors",
     "paragrafos": [
-      "A decodificação especulativa é uma otimização de sistema que acelera a geração de texto em Modelos de Linguagem Grande (LLMs, sistemas de inteligência artificial baseados em texto) sem alterar o comportamento do modelo. Até então, o foco era apenas aumentar a taxa de aceitação de rascunhos gerados por modelos menores.",
-      "No entanto, os autores mostram que isso não se aplica a agentes de longo prazo, que são IAs executando tarefas complexas por muitas etapas consecutivas. Descobriu-se que o ruído numérico cresce nas janelas de verificação e altera a precisão do raciocínio após 30 passos.",
-      "Para resolver isso, a pesquisa controla esse ruído treinando o modelo de rascunho para ser rejeitado de propósito em pontos críticos de decisão. Assim, o modelo principal assume o controle exato nos momentos que exigem maior precisão de pensamento.",
-      "Essa abordagem transforma a decodificação especulativa de um mero acelerador de velocidade em um alocador ativo de precisão de contexto. O resultado é o aumento na taxa de sucesso de tarefas complexas de código sem alterar o modelo principal, treinando apenas uma fração mínima de parâmetros."
-    ],
-    "por_que_importa": "Isso importa para o seu foco em agentes de IA, pois melhora a confiabilidade de IAs que precisam tomar dezenas de decisões encadeadas sem alucinar em tarefas longas.",
-    "dia": "2026-11-04"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.01926",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "TAC-CoT: Tool-Empowered Implicit Chain-of-Thought via Interleaving Explicit Tokens",
-    "paragrafos": [
-      "LLM-based agentic systems are increasingly combined with CoT reasoning to solve tasks that require accurate reasoning, external knowledge, and multi-step deliberation. Yet, explicit CoT incurs substantial generation overhead, while implicit CoT, which replaces textual rationales with compact continuous tokens, does not naturally support the explicit communication interface required for agentic tool-use. We propose TAC-CoT, a tool-empowered adaptive implicit CoT framework that replaces explicit r…"
+      "Classification accuracy and true-positive and false-positive rates alone do not determine whether restarting an AI agent improves success. Using an exact alarm-to-action identity for an independent clean restart with zero monitoring overhead, we show analytically that a monitor with fixed 90% accuracy can swing from a five-percentage-point loss to a 35-point gain in success rate, depending solely on the replacement attempt's residual-budget success probability. We introduce two techniques for ev…"
     ],
     "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
     "dia": "2026-11-05"
   },
   {
-    "url": "https://huggingface.co/papers/2610.41432",
+    "url": "https://huggingface.co/papers/2611.03852",
     "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
+    "tema": "custos e eficiencia de inferencia",
     "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 10,
-    "titulo": "Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents",
+    "nota": 9.66,
+    "titulo": "Why Pay for Long Reasoning When Rewrite Do Trick? Causal Effects of Reasoning History Compaction on Future Generation and Agent Cost",
     "paragrafos": [
-      "Computer-use agents increasingly tackle tasks ranging from everyday desktop activities to long-horizon professional workflows. Yet interfaces centered on screenshots and mouse-and-keyboard actions can impose a human-interaction prior, requiring repeated screen interpretation while leaving the computer's semantic and programmatic capabilities underexposed. We argue for exposing these capabilities and letting models choose and combine them. We introduce Hybrid Computer Use (HCU), a unified interfa…"
+      "Reasoning substantially improves language models' ability to solve difficult problems, but long reasoning traces make these gains expensive. Efficient reasoning should express useful analysis in fewer tokens by reducing repetition and text that adds little value to solving the problem. Progress in proprietary models motivates this goal, yet their hidden scratchpads limit direct study of how it is achieved. We investigate whether open-weight models can generate less verbose reasoning by changing …"
     ],
     "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
     "dia": "2026-11-05"
@@ -57,23 +40,6 @@
     ],
     "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
     "dia": "2026-11-05"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.05306",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "otimizacao de contextos",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 9.42,
-    "titulo": "You don't need long context",
-    "paragrafos": [
-      "Gerar tokens (pedaços de palavras processados pela IA) mais tarde em uma conversa longa é muito mais custoso computacionalmente do que gerá-los no início, podendo ser até sete vezes mais caro em modelos modernos.",
-      "O estudo demonstra que, por meio de compactações frequentes do histórico, os modelos de linguagem não perdem precisão em tarefas longas mesmo mantendo um contexto curto.",
-      "Além disso, a pesquisa prova que o desempenho de IAs em engenharia de software complexa não entra em colapso mesmo quando executam no máximo uma ação por contexto.",
-      "Com base nisso, os autores introduzem o conceito de Modelos de Espaço de Estado Semântico, questionando a real necessidade de modelos de linguagem com contextos gigantescos e caros."
-    ],
-    "por_que_importa": "Para consultoria de dados e agentes de IA, isso mostra que otimizar o fluxo de dados com janelas curtas e compactadas pode ser muito mais eficiente e barato do que usar contextos gigantes.",
-    "dia": "2026-11-04"
   },
   {
     "url": "https://www.youtube.com/watch?v=0ym9eZMzm_Q",
@@ -107,6 +73,48 @@
     "dia": "2026-11-04"
   },
   {
+    "url": "https://www.youtube.com/watch?v=LhYNd49SbsY",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "claude code e automacao",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.9,
+    "titulo": "Seu site tem CARA DE IA? Essa skill resolve (unslop no Claude Code)",
+    "paragrafos": [
+      "Resumo automático indisponível nesta rodada."
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.03517",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "otimizacao de codigo com agentes",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.88,
+    "titulo": "Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization",
+    "paragrafos": [
+      "LLM agents for GPU kernel optimization sit at two ends of a structure-freedom tradeoff. Scripted agents fix what the model does at each step, via a learned policy, an optimization menu, or fixed roles, and are sample-efficient where the recipe applies and stall where it does not. Open-ended agents let a self-directed model mutate a population of kernels and pay for the freedom in trials: thousands of evaluations, repeated edits, and wrong candidates. Both respond to hard targets by equipping the…"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.03330",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "custos e eficiencia de inferencia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.1,
+    "titulo": "The SIMPLE Law for Energy Cost of LLM Inference",
+    "paragrafos": [
+      "Generative AI is billed per token, yet tokens are not equally expensive. Each token enters the KV-cache and raises the cost of those that follow, so energy grows non-linearly along a sequence whose tokens look identical. No analytical model states what a token costs, and the most accurate SOTA model is a fit, not a law: it absorbs architecture into fitted coefficients, requiring per-LLM fitting. We derive closed-form expressions of the computational and memory-access complexity of LLM inference …"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.05029",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "manutencao preditiva",
@@ -135,21 +143,6 @@
     "dia": "2026-11-05"
   },
   {
-    "url": "https://huggingface.co/papers/2611.03998",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "modelos de linguagem",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 7.92,
-    "titulo": "Dory1.0-4B: A Looped Normalized-GPT",
-    "paragrafos": [
-      "Os pesquisadores lançam o Dory1.0-4B, um modelo de linguagem com 4 bilhões de parâmetros estruturado em loop e com profundidade elástica, permitindo que um único arquivo sirva para diferentes orçamentos computacionais.",
-      "O modelo utiliza uma arquitetura baseada em Transformer normalizado com camadas recorrentes, permitindo que o bloco de processamento seja aplicado um número variável de vezes na inferência para aumentar a precisão sem aumentar o tamanho do modelo."
-    ],
-    "por_que_importa": "Isso é uma aposta de correlação, relevante caso você precise rodar IAs locais eficientes em hardware limitado na indústria.",
-    "dia": "2026-11-04"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=QqukKq6wGOE",
     "fonte": "Maestros da IA (YouTube)",
     "tema": "agentes de ia",
@@ -164,6 +157,20 @@
     "dia": "2026-11-03"
   },
   {
+    "url": "https://www.youtube.com/watch?v=rKcxLM15yAE",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "engenharia de prompts e agentes",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 7.4,
+    "titulo": "Pare de Focar no Modelo de IA. O Esforço Muda Tudo",
+    "paragrafos": [
+      "Resumo automático indisponível nesta rodada."
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-05"
+  },
+  {
     "url": "https://neufangled.com/",
     "fonte": "Hacker News (descoberta)",
     "tema": "robotica industrial",
@@ -175,21 +182,6 @@
       "O conteúdo completo desta fonte não foi lido e, por isso, nenhum detalhe adicional foi inventado além do título e da origem informados."
     ],
     "por_que_importa": "Isso importa diretamente para manutenção industrial e robótica, ligando-se ao seu histórico como engenheiro mecânico.",
-    "dia": "2026-11-04"
-  },
-  {
-    "url": "https://www.deeplearning.ai/the-batch/ai-bites-the-hand-that-feeds-it/",
-    "fonte": "The Batch (DeepLearning.AI)",
-    "tema": "seguranca de dados",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 7.1,
-    "titulo": "AI Bites the Hand That Feeds It: Scientists, other users fear AI companies will train on or misuse sensitive data",
-    "paragrafos": [
-      "Cientistas, desenvolvedores e empresas alimentam ferramentas de IA (inteligência artificial, sistemas computacionais que simulam a inteligência humana) com códigos privados, pesquisas não publicadas e arquivos confidenciais. O grande medo é que cada comando enviado (prompt), rascunho e arquivo entregue à IA seja usado para treinar futuros modelos. Isso pode expor segredos industriais a rivais ou fazer com que o sistema descubra algo antes do próprio criador.",
-      "Há casos reais preocupantes. Matemáticos passaram meses tentando resolver um problema complexo e, logo após publicarem provas relacionadas, a OpenAI anunciou que seus agentes (sistemas de IA autônomos que executam tarefas) haviam resolvido a mesma questão, baseando-se em rascunhos anteriores. Em outro caso, biólogos gastaram anos estudando enzimas e, após compartilharem dados com a ferramenta Claude da Anthropic, a empresa anunciou descobertas idênticas. Pesquisadores agora limitam o uso de IA por medo de terem suas ideias roubadas."
-    ],
-    "por_que_importa": "Isso importa para a segurança de dados e projetos confidenciais que você gerencia em consultoria de dados e manutenção industrial.",
     "dia": "2026-11-04"
   },
   {

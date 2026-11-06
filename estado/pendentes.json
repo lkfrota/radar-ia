@@ -1,5 +1,50 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=0vDlZEnk2Rc",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "agentes de ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "A Vercel lança o agent-desktop para IA controlar o computador",
+    "paragrafos": [
+      "A Vercel Labs lançou o agent-desktop, uma ferramenta open-source que permite a agentes de inteligência artificial operarem programas de desktop diretamente. Diferente de soluções tradicionais que utilizam capturas de tela (prints) e coordenadas de mouse baseadas em pixels, o agent-desktop lê a estrutura da tela do sistema operacional e retorna dados estruturados em formato JSON, transformando a interface gráfica em texto.",
+      "Esse método estruturado traz maior consistência e agilidade para as interações da IA com sistemas legados ou não convencionais. O agente executa um ciclo contínuo de capturar o estado atual da tela, agir com base nas referências encontradas e verificar se a tarefa foi concluída com sucesso. Ele também dispensa o uso direto do cursor do mouse, reduzindo erros operacionais e melhorando a precisão das tarefas automatizadas.",
+      "Durante a demonstração, o apresentador testou o agent-desktop em dois cenários práticos. No primeiro, o agente operou um sistema offline de ordens de serviço de uma oficina mecânica, preenchendo campos e calculando valores automaticamente. No segundo, ele atuou como um testador (QA), navegando em um sistema para identificar falhas com base em regras pré-definidas e gerando relatórios detalhados.",
+      "A ferramenta demonstrou versatilidade ao rodar em sistemas operacionais como macOS, Windows e Linux, integrando-se facilmente com ambientes de desenvolvimento baseados em inteligência artificial. Embora a navegação em navegadores web tenha apresentado alguns desafios adicionais com bloqueios de cookies e pop-ups, a automação em softwares locais funcionou de maneira fluida e eficiente."
+    ],
+    "por_que_importa": "Ferramentas como o agent-desktop importam para profissionais de manutenção industrial e automação porque viabilizam o controle inteligente de softwares legados diretamente via IA, reduzindo drasticamente o esforço manual em tarefas repetitivas de suporte e controle de processos.",
+    "dia": "2026-11-06"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.07613",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "automacao industrial",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.99,
+    "titulo": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
+    "paragrafos": [
+      "LiDAR is a critical sensor for autonomous driving and robotics, yet it remains vulnerable to adverse conditions such as fog, rain, transparent objects, and low-reflectance surfaces. Full-waveform LiDAR (FWL) addresses these limitations by capturing the complete return waveform as a histogram, preserving rich reflection characteristics including multi-path echoes and weak signals. While recent Transformer-based approaches have demonstrated promise on FWL data, two fundamental bottlenecks remain: …"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-06"
+  },
+  {
+    "url": "https://github.com/anthropics/claude-code/issues/107757",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 9.86,
+    "titulo": "Claude Code sends your email address to websites",
+    "paragrafos": [
+      "Resumo automático indisponível nesta rodada."
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-06"
+  },
+  {
     "url": "https://huggingface.co/papers/2610.36544",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "confiabilidade e avaliacao de agentes",
@@ -54,6 +99,20 @@
     ],
     "por_que_importa": "É só uma aposta de correlação com o seu perfil geral de tecnologia.",
     "dia": "2026-11-04"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.08237",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "pesquisa em ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.21,
+    "titulo": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
+    "paragrafos": [
+      "Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible reference and physically feasible; existing benchmarks either score solver fragments or grade reports with an LLM judge, leaving those numbers unchecked. We introduce TB-MathModel (the Terminal-style Mathematical Modeling Bench), the first benchmark to make complete contest-style modeling problems agent…"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-06"
   },
   {
     "url": "https://huggingface.co/papers/2611.04814",
@@ -143,73 +202,17 @@
     "dia": "2026-11-05"
   },
   {
-    "url": "https://www.youtube.com/watch?v=QqukKq6wGOE",
-    "fonte": "Maestros da IA (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "adjacente",
-    "nota": 7.52,
-    "titulo": "O FIM da IA Religiosa: Por que o Claude.md MORREU de vez",
-    "paragrafos": [
-      "O conteúdo completo deste item não foi lido a partir da fonte informada, portanto nenhum detalhe adicional foi inventado ou adicionado a este resumo."
-    ],
-    "por_que_importa": "Isso é só uma aposta de correlação sem impacto direto mensurável no seu trabalho atual.",
-    "dia": "2026-11-03"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=rKcxLM15yAE",
-    "fonte": "Maestros da IA (YouTube)",
-    "tema": "engenharia de prompts e agentes",
-    "tipo": "video",
+    "url": "https://www.deeplearning.ai/the-batch/ai-models-can-read-other-models-weights/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "pesquisa em ia",
+    "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 7.4,
-    "titulo": "Pare de Focar no Modelo de IA. O Esforço Muda Tudo",
+    "nota": 7.83,
+    "titulo": "AI models can read other models’ weights: FlashProve easily verifies a model’s claimed outputs",
     "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
+      "In today’s edition of Data Points, you’ll learn about our top headlines, and more: Microsoft plugin reduces costs of repeated inputs Google criticized for linking students’ search access to Gemini OpenAI, Anthropic, others fight election misinformation U.S. voters want more checks on data center construction But first: Researchers use one AI model to read the weights of another MIT researchers report that OpenAI’s GPT-6 Astra can read the raw weights of other AI models and rewrite them without g…"
     ],
     "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
-  },
-  {
-    "url": "https://neufangled.com/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "robotica industrial",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 7.3,
-    "titulo": "Stringman, an $800 open-source room scale gripper robot",
-    "paragrafos": [
-      "O conteúdo completo desta fonte não foi lido e, por isso, nenhum detalhe adicional foi inventado além do título e da origem informados."
-    ],
-    "por_que_importa": "Isso importa diretamente para manutenção industrial e robótica, ligando-se ao seu histórico como engenheiro mecânico.",
-    "dia": "2026-11-04"
-  },
-  {
-    "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "automacao e hardware",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 7.0,
-    "titulo": "Jailbreaking my car's navigation system just so I can change the time",
-    "paragrafos": [
-      "O conteúdo completo deste item não foi lido a partir da fonte informada, portanto nenhum detalhe adicional foi inventado ou adicionado a este resumo."
-    ],
-    "por_que_importa": "Isso é só uma aposta de correlação sem impacto direto mensurável no seu trabalho atual.",
-    "dia": "2026-11-03"
-  },
-  {
-    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "lancamento de modelos",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 7.0,
-    "titulo": "Kimi K3.1 Pro model weights are out",
-    "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
+    "dia": "2026-11-06"
   }
 ]

@@ -41,11 +41,11 @@
     <nav><a href="index.html">Hoje</a><a href="config.html">Configurar</a></nav>
   </header>
   
-<p class="meta">Atualizado em 06/11/2026 16:49 · 15 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
+<p class="meta">Atualizado em 07/11/2026 15:41 · 15 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
 
 
 <article data-url="https://www.youtube.com/watch?v=0vDlZEnk2Rc" data-tema="agentes de ia" data-fonte="Matheus Battisti (YouTube)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://www.youtube.com/watch?v=0vDlZEnk2Rc" target="_blank" rel="noopener">A Vercel lança o agent-desktop para IA controlar o computador</a></h2>
   <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
   <p>A Vercel Labs lançou o agent-desktop, uma ferramenta open-source que permite a agentes de inteligência artificial operarem programas de desktop diretamente. Diferente de soluções tradicionais que utilizam capturas de tela (prints) e coordenadas de mouse baseadas em pixels, o agent-desktop lê a estrutura da tela do sistema operacional e retorna dados estruturados em formato JSON, transformando a interface gráfica em texto.</p><p>Esse método estruturado traz maior consistência e agilidade para as interações da IA com sistemas legados ou não convencionais. O agente executa um ciclo contínuo de capturar o estado atual da tela, agir com base nas referências encontradas e verificar se a tarefa foi concluída com sucesso. Ele também dispensa o uso direto do cursor do mouse, reduzindo erros operacionais e melhorando a precisão das tarefas automatizadas.</p><p>Durante a demonstração, o apresentador testou o agent-desktop em dois cenários práticos. No primeiro, o agente operou um sistema offline de ordens de serviço de uma oficina mecânica, preenchendo campos e calculando valores automaticamente. No segundo, ele atuou como um testador (QA), navegando em um sistema para identificar falhas com base em regras pré-definidas e gerando relatórios detalhados.</p><p>A ferramenta demonstrou versatilidade ao rodar em sistemas operacionais como macOS, Windows e Linux, integrando-se facilmente com ambientes de desenvolvimento baseados em inteligência artificial. Embora a navegação em navegadores web tenha apresentado alguns desafios adicionais com bloqueios de cookies e pop-ups, a automação em softwares locais funcionou de maneira fluida e eficiente.</p>
@@ -59,8 +59,38 @@
   </div>
 </article>
 
-<article data-url="https://huggingface.co/papers/2611.07613" data-tema="automacao industrial" data-fonte="Hugging Face Papers (descoberta)">
+<article data-url="https://huggingface.co/papers/2611.06500" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
   <div class="tag">No seu perfil</div>
+  <h2><a href="https://huggingface.co/papers/2611.06500" target="_blank" rel="noopener">Tools Need Not Speak in Text: Latent Context Compression for Agents</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>Agentes de IA baseados em Modelos de Linguagem Grande (LLM, na sigla em inglês, que são sistemas de inteligência artificial treinados para entender e gerar texto humano) costumam anexar respostas brutas de ferramentas externas diretamente em seu contexto. Ao longo de interações com várias etapas, dados longos geram alto consumo de memória de contexto e dispersam a atenção da IA.</p><p>Para resolver isso, os pesquisadores criaram o Coca-Cola, um modelo de compressão de contexto latente contínuo. Espaço latente refere-se a uma representação matemática interna e compacta que a máquina usa, sem precisar transformá-la em palavras legíveis por humanos.</p><p>O método utiliza o Treinamento de Preservação de Ação para alinhar as decisões do agente mesmo usando dados compactados. Isso garante que a IA retenha informações críticas para a tomada de decisão sem perder precisão.</p><p>Experimentos com buscas na web mostraram que o Coca-Cola reduziu o consumo de tokens (unidades de texto que a IA processa) em até 89% e o tempo de execução em até 55%, melhorando o desempenho das tarefas.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.06500" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">Isso importa muito para o seu perfil em agentes de IA, pois reduz drasticamente o custo computacional e o tempo de resposta de sistemas autônomos na indústria.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://huggingface.co/papers/2611.08483" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://huggingface.co/papers/2611.08483" target="_blank" rel="noopener">SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization</a></h2>
+  <div class="meta">Hugging Face Papers (descoberta)</div>
+  <p>A busca evolutiva guiada por IA usa agentes para melhorar programas de computação de forma iterativa, combinando métodos de alta pontuação. No entanto, o processo costuma ser lento porque a IA gera longas cadeias de raciocínio textual a cada rodada para manter a diversidade.</p><p>O SwarmEvolve é um framework (uma estrutura de software pronta para uso) onde centenas de agentes de baixo custo trabalham em enxames, raciocinando diretamente no espaço latente (dados internos matemáticos sem conversão em texto) e compartilhando informações através de memórias internas chamadas KV caches.</p><p>Um filtro de novidade mede a distância entre os vetores de estado oculto para selecionar as ideias mais distintas. O cruzamento de ideias ocorre naturalmente quando um agente compactador recebe os dados combinados de todo o enxame.</p><p>Em testes de computação científica, o SwarmEvolve alcançou pontuações máximas reduzindo o tempo de processamento de uma hora para poucos minutos, provando ser uma abordagem extremamente rápida e barata para busca de programas.</p>
+  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.08483" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É uma aposta de correlação para a sua atuação com agentes de IA e otimização de processos complexos, simulando comportamentos de enxame.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://huggingface.co/papers/2611.07613" data-tema="automacao industrial" data-fonte="Hugging Face Papers (descoberta)">
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://huggingface.co/papers/2611.07613" target="_blank" rel="noopener">Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation</a></h2>
   <div class="meta">Hugging Face Papers (descoberta)</div>
   <p>LiDAR is a critical sensor for autonomous driving and robotics, yet it remains vulnerable to adverse conditions such as fog, rain, transparent objects, and low-reflectance surfaces. Full-waveform LiDAR (FWL) addresses these limitations by capturing the complete return waveform as a histogram, preserving rich reflection characteristics including multi-path echoes and weak signals. While recent Transformer-based approaches have demonstrated promise on FWL data, two fundamental bottlenecks remain: …</p>
@@ -75,7 +105,7 @@
 </article>
 
 <article data-url="https://github.com/anthropics/claude-code/issues/107757" data-tema="agentes de ia" data-fonte="Hacker News (descoberta)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://github.com/anthropics/claude-code/issues/107757" target="_blank" rel="noopener">Claude Code sends your email address to websites</a></h2>
   <div class="meta">Hacker News (descoberta)</div>
   <p>Resumo automático indisponível nesta rodada.</p>
@@ -134,43 +164,13 @@
   </div>
 </article>
 
-<article data-url="https://www.youtube.com/watch?v=0ym9eZMzm_Q" data-tema="ferramentas no-code" data-fonte="Matheus Battisti (YouTube)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://www.youtube.com/watch?v=0ym9eZMzm_Q" target="_blank" rel="noopener">Essa IA estuda qualquer app e cria a SUA versão (Craft Anything)</a></h2>
-  <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>O conteúdo completo desta fonte não foi lido e, por isso, nenhum detalhe adicional foi inventado além do título e da origem informados.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=0ym9eZMzm_Q" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">É só uma aposta de correlação com o seu perfil geral de tecnologia.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
 <article data-url="https://huggingface.co/papers/2611.08237" data-tema="pesquisa em ia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://huggingface.co/papers/2611.08237" target="_blank" rel="noopener">Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling</a></h2>
   <div class="meta">Hugging Face Papers (descoberta)</div>
   <p>Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible reference and physically feasible; existing benchmarks either score solver fragments or grade reports with an LLM judge, leaving those numbers unchecked. We introduce TB-MathModel (the Terminal-style Mathematical Modeling Bench), the first benchmark to make complete contest-style modeling problems agent…</p>
   <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.08237" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
   <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2611.04814" data-tema="otimizacao de inferencia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2611.04814" target="_blank" rel="noopener">Think Less, Locally: Local Preference Learning for Reasoning Compression</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Modelos de raciocínio avançados alcançam alta performance, mas seu longo encadeamento de pensamentos gera custos computacionais elevados por continuarem deliberando mesmo após terem informação suficiente.</p><p>Os métodos tradicionais focam em encurtar a trajetória inteira do raciocínio, prestando menos atenção à decisão local de quando parar de pensar.</p><p>Os autores propõem o LoCo, um método que detecta estados de excesso de pensamento, congela o raciocínio inicial e regenera continuações mais curtas e verificadas usando preferências locais.</p><p>Isso ensina o modelo o momento exato de concluir a linha de raciocínio, reduzindo drasticamente o tamanho das respostas em matemática e código sem perder precisão.</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.04814" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Isso importa para agentes de IA e consultoria de dados, pois reduz custos operacionais de inferência ao eliminar o processamento desnecessário de modelos pesados.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
@@ -255,7 +255,7 @@
 </article>
 
 <article data-url="https://www.deeplearning.ai/the-batch/ai-models-can-read-other-models-weights/" data-tema="pesquisa em ia" data-fonte="The Batch (DeepLearning.AI)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://www.deeplearning.ai/the-batch/ai-models-can-read-other-models-weights/" target="_blank" rel="noopener">AI models can read other models’ weights: FlashProve easily verifies a model’s claimed outputs</a></h2>
   <div class="meta">The Batch (DeepLearning.AI)</div>
   <p>In today’s edition of Data Points, you’ll learn about our top headlines, and more: Microsoft plugin reduces costs of repeated inputs Google criticized for linking students’ search access to Gemini OpenAI, Anthropic, others fight election misinformation U.S. voters want more checks on data center construction But first: Researchers use one AI model to read the weights of another MIT researchers report that OpenAI’s GPT-6 Astra can read the raw weights of other AI models and rewrite them without g…</p>

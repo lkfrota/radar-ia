@@ -17,6 +17,40 @@
     "dia": "2026-11-06"
   },
   {
+    "url": "https://huggingface.co/papers/2611.06500",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
+    "paragrafos": [
+      "Agentes de IA baseados em Modelos de Linguagem Grande (LLM, na sigla em inglês, que são sistemas de inteligência artificial treinados para entender e gerar texto humano) costumam anexar respostas brutas de ferramentas externas diretamente em seu contexto. Ao longo de interações com várias etapas, dados longos geram alto consumo de memória de contexto e dispersam a atenção da IA.",
+      "Para resolver isso, os pesquisadores criaram o Coca-Cola, um modelo de compressão de contexto latente contínuo. Espaço latente refere-se a uma representação matemática interna e compacta que a máquina usa, sem precisar transformá-la em palavras legíveis por humanos.",
+      "O método utiliza o Treinamento de Preservação de Ação para alinhar as decisões do agente mesmo usando dados compactados. Isso garante que a IA retenha informações críticas para a tomada de decisão sem perder precisão.",
+      "Experimentos com buscas na web mostraram que o Coca-Cola reduziu o consumo de tokens (unidades de texto que a IA processa) em até 89% e o tempo de execução em até 55%, melhorando o desempenho das tarefas."
+    ],
+    "por_que_importa": "Isso importa muito para o seu perfil em agentes de IA, pois reduz drasticamente o custo computacional e o tempo de resposta de sistemas autônomos na indústria.",
+    "dia": "2026-11-07"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.08483",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+    "paragrafos": [
+      "A busca evolutiva guiada por IA usa agentes para melhorar programas de computação de forma iterativa, combinando métodos de alta pontuação. No entanto, o processo costuma ser lento porque a IA gera longas cadeias de raciocínio textual a cada rodada para manter a diversidade.",
+      "O SwarmEvolve é um framework (uma estrutura de software pronta para uso) onde centenas de agentes de baixo custo trabalham em enxames, raciocinando diretamente no espaço latente (dados internos matemáticos sem conversão em texto) e compartilhando informações através de memórias internas chamadas KV caches.",
+      "Um filtro de novidade mede a distância entre os vetores de estado oculto para selecionar as ideias mais distintas. O cruzamento de ideias ocorre naturalmente quando um agente compactador recebe os dados combinados de todo o enxame.",
+      "Em testes de computação científica, o SwarmEvolve alcançou pontuações máximas reduzindo o tempo de processamento de uma hora para poucos minutos, provando ser uma abordagem extremamente rápida e barata para busca de programas."
+    ],
+    "por_que_importa": "É uma aposta de correlação para a sua atuação com agentes de IA e otimização de processos complexos, simulando comportamentos de enxame.",
+    "dia": "2026-11-07"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.07613",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "automacao industrial",
@@ -87,20 +121,6 @@
     "dia": "2026-11-05"
   },
   {
-    "url": "https://www.youtube.com/watch?v=0ym9eZMzm_Q",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "ferramentas no-code",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 9.22,
-    "titulo": "Essa IA estuda qualquer app e cria a SUA versão (Craft Anything)",
-    "paragrafos": [
-      "O conteúdo completo desta fonte não foi lido e, por isso, nenhum detalhe adicional foi inventado além do título e da origem informados."
-    ],
-    "por_que_importa": "É só uma aposta de correlação com o seu perfil geral de tecnologia.",
-    "dia": "2026-11-04"
-  },
-  {
     "url": "https://huggingface.co/papers/2611.08237",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "pesquisa em ia",
@@ -113,23 +133,6 @@
     ],
     "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
     "dia": "2026-11-06"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.04814",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "otimizacao de inferencia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 9.18,
-    "titulo": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
-    "paragrafos": [
-      "Modelos de raciocínio avançados alcançam alta performance, mas seu longo encadeamento de pensamentos gera custos computacionais elevados por continuarem deliberando mesmo após terem informação suficiente.",
-      "Os métodos tradicionais focam em encurtar a trajetória inteira do raciocínio, prestando menos atenção à decisão local de quando parar de pensar.",
-      "Os autores propõem o LoCo, um método que detecta estados de excesso de pensamento, congela o raciocínio inicial e regenera continuações mais curtas e verificadas usando preferências locais.",
-      "Isso ensina o modelo o momento exato de concluir a linha de raciocínio, reduzindo drasticamente o tamanho das respostas em matemática e código sem perder precisão."
-    ],
-    "por_que_importa": "Isso importa para agentes de IA e consultoria de dados, pois reduz custos operacionais de inferência ao eliminar o processamento desnecessário de modelos pesados.",
-    "dia": "2026-11-04"
   },
   {
     "url": "https://www.youtube.com/watch?v=LhYNd49SbsY",

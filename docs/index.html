@@ -41,26 +41,11 @@
     <nav><a href="index.html">Hoje</a><a href="config.html">Configurar</a></nav>
   </header>
   
-<p class="meta">Atualizado em 07/11/2026 15:41 · 15 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
+<p class="meta">Atualizado em 08/11/2026 16:00 · 12 itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
 
-
-<article data-url="https://www.youtube.com/watch?v=0vDlZEnk2Rc" data-tema="agentes de ia" data-fonte="Matheus Battisti (YouTube)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://www.youtube.com/watch?v=0vDlZEnk2Rc" target="_blank" rel="noopener">A Vercel lança o agent-desktop para IA controlar o computador</a></h2>
-  <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>A Vercel Labs lançou o agent-desktop, uma ferramenta open-source que permite a agentes de inteligência artificial operarem programas de desktop diretamente. Diferente de soluções tradicionais que utilizam capturas de tela (prints) e coordenadas de mouse baseadas em pixels, o agent-desktop lê a estrutura da tela do sistema operacional e retorna dados estruturados em formato JSON, transformando a interface gráfica em texto.</p><p>Esse método estruturado traz maior consistência e agilidade para as interações da IA com sistemas legados ou não convencionais. O agente executa um ciclo contínuo de capturar o estado atual da tela, agir com base nas referências encontradas e verificar se a tarefa foi concluída com sucesso. Ele também dispensa o uso direto do cursor do mouse, reduzindo erros operacionais e melhorando a precisão das tarefas automatizadas.</p><p>Durante a demonstração, o apresentador testou o agent-desktop em dois cenários práticos. No primeiro, o agente operou um sistema offline de ordens de serviço de uma oficina mecânica, preenchendo campos e calculando valores automaticamente. No segundo, ele atuou como um testador (QA), navegando em um sistema para identificar falhas com base em regras pré-definidas e gerando relatórios detalhados.</p><p>A ferramenta demonstrou versatilidade ao rodar em sistemas operacionais como macOS, Windows e Linux, integrando-se facilmente com ambientes de desenvolvimento baseados em inteligência artificial. Embora a navegação em navegadores web tenha apresentado alguns desafios adicionais com bloqueios de cookies e pop-ups, a automação em softwares locais funcionou de maneira fluida e eficiente.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=0vDlZEnk2Rc" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">Ferramentas como o agent-desktop importam para profissionais de manutenção industrial e automação porque viabilizam o controle inteligente de softwares legados diretamente via IA, reduzindo drasticamente o esforço manual em tarefas repetitivas de suporte e controle de processos.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
 
 <article data-url="https://huggingface.co/papers/2611.06500" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://huggingface.co/papers/2611.06500" target="_blank" rel="noopener">Tools Need Not Speak in Text: Latent Context Compression for Agents</a></h2>
   <div class="meta">Hugging Face Papers (descoberta)</div>
   <p>Agentes de IA baseados em Modelos de Linguagem Grande (LLM, na sigla em inglês, que são sistemas de inteligência artificial treinados para entender e gerar texto humano) costumam anexar respostas brutas de ferramentas externas diretamente em seu contexto. Ao longo de interações com várias etapas, dados longos geram alto consumo de memória de contexto e dispersam a atenção da IA.</p><p>Para resolver isso, os pesquisadores criaram o Coca-Cola, um modelo de compressão de contexto latente contínuo. Espaço latente refere-se a uma representação matemática interna e compacta que a máquina usa, sem precisar transformá-la em palavras legíveis por humanos.</p><p>O método utiliza o Treinamento de Preservação de Ação para alinhar as decisões do agente mesmo usando dados compactados. Isso garante que a IA retenha informações críticas para a tomada de decisão sem perder precisão.</p><p>Experimentos com buscas na web mostraram que o Coca-Cola reduziu o consumo de tokens (unidades de texto que a IA processa) em até 89% e o tempo de execução em até 55%, melhorando o desempenho das tarefas.</p>
@@ -75,12 +60,42 @@
 </article>
 
 <article data-url="https://huggingface.co/papers/2611.08483" data-tema="agentes de ia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil</div>
+  <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://huggingface.co/papers/2611.08483" target="_blank" rel="noopener">SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization</a></h2>
   <div class="meta">Hugging Face Papers (descoberta)</div>
   <p>A busca evolutiva guiada por IA usa agentes para melhorar programas de computação de forma iterativa, combinando métodos de alta pontuação. No entanto, o processo costuma ser lento porque a IA gera longas cadeias de raciocínio textual a cada rodada para manter a diversidade.</p><p>O SwarmEvolve é um framework (uma estrutura de software pronta para uso) onde centenas de agentes de baixo custo trabalham em enxames, raciocinando diretamente no espaço latente (dados internos matemáticos sem conversão em texto) e compartilhando informações através de memórias internas chamadas KV caches.</p><p>Um filtro de novidade mede a distância entre os vetores de estado oculto para selecionar as ideias mais distintas. O cruzamento de ideias ocorre naturalmente quando um agente compactador recebe os dados combinados de todo o enxame.</p><p>Em testes de computação científica, o SwarmEvolve alcançou pontuações máximas reduzindo o tempo de processamento de uma hora para poucos minutos, provando ser uma abordagem extremamente rápida e barata para busca de programas.</p>
   <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.08483" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
   <div class="porque">É uma aposta de correlação para a sua atuação com agentes de IA e otimização de processos complexos, simulando comportamentos de enxame.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://www.youtube.com/watch?v=nt7PYzjL6P8" data-tema="agentes de ia" data-fonte="Maestros da IA (YouTube)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://www.youtube.com/watch?v=nt7PYzjL6P8" target="_blank" rel="noopener">Você Está Usando o Claude do Jeito Difícil. Este é o Novo Método</a></h2>
+  <div class="meta">Maestros da IA (YouTube) · vídeo</div>
+  <p>O vídeo aborda dicas atualizadas para otimizar o uso de Inteligência Artificial, utilizando o ambiente Galaria AI, embora outros editores de código também funcionem. A primeira dica é o uso de subagentes (sub-agents), que permite que vários trabalhadores executem tarefas em paralelo e entreguem resultados para uma sessão central, economizando tempo.</p><p>Outra técnica útil é a separação de diferentes contextos, como revisar um texto sob múltiplas perspectivas utilizando subagentes. Além disso, o uso de skills e repositórios no GitHub facilita a implementação de habilidades prontas, como ferramentas de verificação de fatos e tomadas de decisão.</p><p>A utilização de arquivos HTML é apresentada como um recurso eficiente para resumir grandes volumes de dados de forma interativa, dispensando a abertura manual de vários arquivos individuais. O vídeo também destaca comandos como &#39;/voice&#39; e &#39;/remote-control&#39; para facilitar a transcrição e o acesso remoto às sessões.</p><p>Por fim, a comunidade Maestros da IA oferece cursos estruturados com dezenas de aplicações e habilidades exclusivas para quem deseja aprofundar o uso de ferramentas de IA no dia a dia.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=nt7PYzjL6P8" target="_blank" rel="noopener">Maestros da IA (YouTube) — ler o original ↗</a></p>
+  <div class="porque">Isso é importante porque otimiza processos complexos e acelera a tomada de decisões na manutenção industrial e consultoria de dados.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://www.deeplearning.ai/the-batch/context-engineering-for-images/" data-tema="agentes de ia" data-fonte="The Batch (DeepLearning.AI)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://www.deeplearning.ai/the-batch/context-engineering-for-images/" target="_blank" rel="noopener">Engenharia de Contexto para Imagens: VISTA do MIT</a></h2>
+  <div class="meta">The Batch (DeepLearning.AI)</div>
+  <p>Pesquisadores do MIT criaram o VISTA, um agente de IA (Inteligência Artificial, sistemas que executam tarefas de forma autônoma) voltado para raciocínio visual que resolve quebra-cabeças usando 57,4 por cento menos ações que humanos novatos.</p><p>O grande problema atual é que sistemas visuais típicos usam embeddings (vetores numéricos que representam dados de forma compacta) que perdem detalhes ao longo do tempo e são apagados quando a memória de contexto enche, impedindo que o modelo recupere informações passadas.</p><p>O VISTA resolve isso armazenando todos os quadros de imagem em uma memória persistente. Ele permite que o agente recupere imagens anteriores e dê zoom em áreas específicas para capturar detalhes que seriam perdidos.</p><p>O agente funciona integrado a grandes modelos de linguagem, decidindo dinamicamente quando ler notas sobre o ambiente, recuperar quadros antigos, checar ações passadas ou executar novos comandos de teclado e mouse.</p><p>Isso importa diretamente para o seu perfil em agentes de IA, pois demonstra como superar a limitação de perda de memória visual em sistemas autônomos.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.deeplearning.ai/the-batch/context-engineering-for-images/" target="_blank" rel="noopener">The Batch (DeepLearning.AI) — ler o original ↗</a></p>
+  <div class="porque">Isso é altamente relevante para o seu trabalho com agentes de IA, pois mostra como resolver problemas de perda de memória visual em ambientes dinâmicos.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
@@ -119,51 +134,6 @@
   </div>
 </article>
 
-<article data-url="https://huggingface.co/papers/2610.36544" data-tema="confiabilidade e avaliacao de agentes" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2610.36544" target="_blank" rel="noopener">Monitor Accuracy Isn&#39;t the Answer: A Decision-Value Framework for Evaluating AI Agent Restart Monitors</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Classification accuracy and true-positive and false-positive rates alone do not determine whether restarting an AI agent improves success. Using an exact alarm-to-action identity for an independent clean restart with zero monitoring overhead, we show analytically that a monitor with fixed 90% accuracy can swing from a five-percentage-point loss to a 35-point gain in success rate, depending solely on the replacement attempt&#39;s residual-budget success probability. We introduce two techniques for ev…</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2610.36544" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2611.03852" data-tema="custos e eficiencia de inferencia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2611.03852" target="_blank" rel="noopener">Why Pay for Long Reasoning When Rewrite Do Trick? Causal Effects of Reasoning History Compaction on Future Generation and Agent Cost</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Reasoning substantially improves language models&#39; ability to solve difficult problems, but long reasoning traces make these gains expensive. Efficient reasoning should express useful analysis in fewer tokens by reducing repetition and text that adds little value to solving the problem. Progress in proprietary models motivates this goal, yet their hidden scratchpads limit direct study of how it is achieved. We investigate whether open-weight models can generate less verbose reasoning by changing …</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.03852" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2611.06768" data-tema="automacao de processos" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2611.06768" target="_blank" rel="noopener">PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Coding agents powered by models such as GPT-6-Astra connect spatial reasoning with executable robot behavior, raising the question of how such agents can produce lasting improvements in robot capabilities from physical interaction. In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that…</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.06768" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
 <article data-url="https://huggingface.co/papers/2611.08237" data-tema="pesquisa em ia" data-fonte="Hugging Face Papers (descoberta)">
   <div class="tag">No seu perfil · de dias anteriores</div>
   <h2><a href="https://huggingface.co/papers/2611.08237" target="_blank" rel="noopener">Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling</a></h2>
@@ -179,73 +149,13 @@
   </div>
 </article>
 
-<article data-url="https://www.youtube.com/watch?v=LhYNd49SbsY" data-tema="claude code e automacao" data-fonte="Matheus Battisti (YouTube)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://www.youtube.com/watch?v=LhYNd49SbsY" target="_blank" rel="noopener">Seu site tem CARA DE IA? Essa skill resolve (unslop no Claude Code)</a></h2>
-  <div class="meta">Matheus Battisti (YouTube) · vídeo</div>
-  <p>Resumo automático indisponível nesta rodada.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.youtube.com/watch?v=LhYNd49SbsY" target="_blank" rel="noopener">Matheus Battisti (YouTube) — ler o original ↗</a></p>
-  <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2611.03517" data-tema="otimizacao de codigo com agentes" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2611.03517" target="_blank" rel="noopener">Ask, Don&#39;t Equip: Question-Driven Coding Agents for Deep Kernel Optimization</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>LLM agents for GPU kernel optimization sit at two ends of a structure-freedom tradeoff. Scripted agents fix what the model does at each step, via a learned policy, an optimization menu, or fixed roles, and are sample-efficient where the recipe applies and stall where it does not. Open-ended agents let a self-directed model mutate a population of kernels and pay for the freedom in trials: thousands of evaluations, repeated edits, and wrong candidates. Both respond to hard targets by equipping the…</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.03517" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2611.03330" data-tema="custos e eficiencia de inferencia" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2611.03330" target="_blank" rel="noopener">The SIMPLE Law for Energy Cost of LLM Inference</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Generative AI is billed per token, yet tokens are not equally expensive. Each token enters the KV-cache and raises the cost of those that follow, so energy grows non-linearly along a sequence whose tokens look identical. No analytical model states what a token costs, and the most accurate SOTA model is a fit, not a law: it absorbs architecture into fitted coefficients, requiring per-LLM fitting. We derive closed-form expressions of the computational and memory-access complexity of LLM inference …</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.03330" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://huggingface.co/papers/2611.05029" data-tema="manutencao preditiva" data-fonte="Hugging Face Papers (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://huggingface.co/papers/2611.05029" target="_blank" rel="noopener">DRAP: Dynamics-Risk Adaptive Plasticity for Continual Learning in Physical AI</a></h2>
-  <div class="meta">Hugging Face Papers (descoberta)</div>
-  <p>Continual learning in physical AI differs from conventional continual learning because small per-step policy errors can accumulate over a trajectory. Each deviation may move the agent outside the training distribution, increase subsequent prediction errors, and ultimately cause closed-loop task failure. This work introduces Dynamics-Risk Adaptive Plasticity (DRAP), a replay-free method that estimates the historical importance of adaptable model tensors from sample-level action gradients weighted…</p>
-  <p class="meta fonte">Fonte: <a href="https://huggingface.co/papers/2611.05029" target="_blank" rel="noopener">Hugging Face Papers (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
-  <div class="acoes">
-    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
-    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
-    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
-    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
-  </div>
-</article>
-
-<article data-url="https://www.ricursive.com/ripple" data-tema="modelos abertos" data-fonte="Hacker News (descoberta)">
-  <div class="tag">No seu perfil · de dias anteriores</div>
-  <h2><a href="https://www.ricursive.com/ripple" target="_blank" rel="noopener">Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding</a></h2>
+<article data-url="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" data-tema="seguranca em ia" data-fonte="Hacker News (descoberta)">
+  <div class="tag">No seu perfil</div>
+  <h2><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" target="_blank" rel="noopener">Vazamento de senhas no GitHub pelo Claude Code</a></h2>
   <div class="meta">Hacker News (descoberta)</div>
-  <p>Resumo automático indisponível nesta rodada.</p>
-  <p class="meta fonte">Fonte: <a href="https://www.ricursive.com/ripple" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
-  <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
+  <p>O conteúdo completo desta fonte não foi lido e não inventaremos detalhes além do título e da fonte disponíveis.</p>
+  <p class="meta fonte">Fonte: <a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação com segurança de software, sem conexão direta com o seu perfil industrial.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
@@ -261,6 +171,51 @@
   <p>In today’s edition of Data Points, you’ll learn about our top headlines, and more: Microsoft plugin reduces costs of repeated inputs Google criticized for linking students’ search access to Gemini OpenAI, Anthropic, others fight election misinformation U.S. voters want more checks on data center construction But first: Researchers use one AI model to read the weights of another MIT researchers report that OpenAI’s GPT-6 Astra can read the raw weights of other AI models and rewrite them without g…</p>
   <p class="meta fonte">Fonte: <a href="https://www.deeplearning.ai/the-batch/ai-models-can-read-other-models-weights/" target="_blank" rel="noopener">The Batch (DeepLearning.AI) — ler o original ↗</a></p>
   <div class="porque">Resumo automático indisponível nesta rodada; trecho original da fonte.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://www.deeplearning.ai/the-batch/world-models-become-robot-playgrounds/" data-tema="modelos de linguagem" data-fonte="The Batch (DeepLearning.AI)">
+  <div class="tag">Perto do seu radar</div>
+  <h2><a href="https://www.deeplearning.ai/the-batch/world-models-become-robot-playgrounds/" target="_blank" rel="noopener">Modelos de Mundo como Playgrounds para Robôs: Google Genie 4</a></h2>
+  <div class="meta">The Batch (DeepLearning.AI)</div>
+  <p>O Google anunciou o Genie 4, um modelo de mundo (sistema que simula a física e o comportamento de ambientes virtuais) projetado para criar espaços de prática digital para robôs e treinamentos em ambientes interativos.</p><p>Trabalhando em conjunto com modelos Gemini, o Genie 4 gera cenários realistas com som em tempo real e reage a comandos de texto ou controles de videogame, permitindo simulações de até dois minutos.</p><p>Apesar das demonstrações impressionantes, o Google ainda precisa melhorar a consistência física em interações complexas, havendo relatos de falhas na física dos cenários simulados.</p>
+  <p class="meta fonte">Fonte: <a href="https://www.deeplearning.ai/the-batch/world-models-become-robot-playgrounds/" target="_blank" rel="noopener">The Batch (DeepLearning.AI) — ler o original ↗</a></p>
+  <div class="porque">Isso se conecta diretamente à manutenção industrial e robótica, simulando ambientes de teste virtuais para treinar sistemas mecânicos complexos.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://blog.bosscher.ch/posts/openstick/" data-tema="automacao pessoal" data-fonte="Hacker News (descoberta)">
+  <div class="tag">Perto do seu radar</div>
+  <h2><a href="https://blog.bosscher.ch/posts/openstick/" target="_blank" rel="noopener">O que uso no meu homelab OpenStick de 10 dólares</a></h2>
+  <div class="meta">Hacker News (descoberta)</div>
+  <p>O conteúdo completo desta fonte não foi lido e não inventaremos detalhes além do título e da fonte disponíveis.</p>
+  <p class="meta fonte">Fonte: <a href="https://blog.bosscher.ch/posts/openstick/" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação sobre hardware de baixo custo, sem forte ligação com o seu perfil.</div>
+  <div class="acoes">
+    <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
+    <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>
+    <button data-acao="ja_conhecia" title="Está no meu radar, mas não era novidade">Já conhecia</button>
+    <button data-acao="fora_foco" title="Não encosta no que faço (tema ou pesquisa distante da aplicação)">Distante de mim</button>
+  </div>
+</article>
+
+<article data-url="https://caleb.software/posts/claude-to-pi.html" data-tema="modelos de linguagem" data-fonte="Hacker News (descoberta)">
+  <div class="tag">Perto do seu radar</div>
+  <h2><a href="https://caleb.software/posts/claude-to-pi.html" target="_blank" rel="noopener">Adeus Claude, olá Pi</a></h2>
+  <div class="meta">Hacker News (descoberta)</div>
+  <p>O conteúdo completo desta fonte não foi lido e não inventaremos detalhes além do título e da fonte disponíveis.</p>
+  <p class="meta fonte">Fonte: <a href="https://caleb.software/posts/claude-to-pi.html" target="_blank" rel="noopener">Hacker News (descoberta) — ler o original ↗</a></p>
+  <div class="porque">É só uma aposta de correlação sobre preferências de ferramentas de inteligência artificial.</div>
   <div class="acoes">
     <button data-acao="quero_mais" title="Tem gancho com o que faço: quero mais conteúdo assim">Quero mais disso</button>
     <button data-acao="futuro" title="Não aplico hoje, mas é um cenário que preciso acompanhar">Vejo futuro nisso</button>

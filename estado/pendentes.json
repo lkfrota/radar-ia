@@ -1,22 +1,5 @@
 [
   {
-    "url": "https://www.youtube.com/watch?v=0vDlZEnk2Rc",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "A Vercel lança o agent-desktop para IA controlar o computador",
-    "paragrafos": [
-      "A Vercel Labs lançou o agent-desktop, uma ferramenta open-source que permite a agentes de inteligência artificial operarem programas de desktop diretamente. Diferente de soluções tradicionais que utilizam capturas de tela (prints) e coordenadas de mouse baseadas em pixels, o agent-desktop lê a estrutura da tela do sistema operacional e retorna dados estruturados em formato JSON, transformando a interface gráfica em texto.",
-      "Esse método estruturado traz maior consistência e agilidade para as interações da IA com sistemas legados ou não convencionais. O agente executa um ciclo contínuo de capturar o estado atual da tela, agir com base nas referências encontradas e verificar se a tarefa foi concluída com sucesso. Ele também dispensa o uso direto do cursor do mouse, reduzindo erros operacionais e melhorando a precisão das tarefas automatizadas.",
-      "Durante a demonstração, o apresentador testou o agent-desktop em dois cenários práticos. No primeiro, o agente operou um sistema offline de ordens de serviço de uma oficina mecânica, preenchendo campos e calculando valores automaticamente. No segundo, ele atuou como um testador (QA), navegando em um sistema para identificar falhas com base em regras pré-definidas e gerando relatórios detalhados.",
-      "A ferramenta demonstrou versatilidade ao rodar em sistemas operacionais como macOS, Windows e Linux, integrando-se facilmente com ambientes de desenvolvimento baseados em inteligência artificial. Embora a navegação em navegadores web tenha apresentado alguns desafios adicionais com bloqueios de cookies e pop-ups, a automação em softwares locais funcionou de maneira fluida e eficiente."
-    ],
-    "por_que_importa": "Ferramentas como o agent-desktop importam para profissionais de manutenção industrial e automação porque viabilizam o controle inteligente de softwares legados diretamente via IA, reduzindo drasticamente o esforço manual em tarefas repetitivas de suporte e controle de processos.",
-    "dia": "2026-11-06"
-  },
-  {
     "url": "https://huggingface.co/papers/2611.06500",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "agentes de ia",
@@ -51,6 +34,41 @@
     "dia": "2026-11-07"
   },
   {
+    "url": "https://www.youtube.com/watch?v=nt7PYzjL6P8",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "agentes de ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "Você Está Usando o Claude do Jeito Difícil. Este é o Novo Método",
+    "paragrafos": [
+      "O vídeo aborda dicas atualizadas para otimizar o uso de Inteligência Artificial, utilizando o ambiente Galaria AI, embora outros editores de código também funcionem. A primeira dica é o uso de subagentes (sub-agents), que permite que vários trabalhadores executem tarefas em paralelo e entreguem resultados para uma sessão central, economizando tempo.",
+      "Outra técnica útil é a separação de diferentes contextos, como revisar um texto sob múltiplas perspectivas utilizando subagentes. Além disso, o uso de skills e repositórios no GitHub facilita a implementação de habilidades prontas, como ferramentas de verificação de fatos e tomadas de decisão.",
+      "A utilização de arquivos HTML é apresentada como um recurso eficiente para resumir grandes volumes de dados de forma interativa, dispensando a abertura manual de vários arquivos individuais. O vídeo também destaca comandos como '/voice' e '/remote-control' para facilitar a transcrição e o acesso remoto às sessões.",
+      "Por fim, a comunidade Maestros da IA oferece cursos estruturados com dezenas de aplicações e habilidades exclusivas para quem deseja aprofundar o uso de ferramentas de IA no dia a dia."
+    ],
+    "por_que_importa": "Isso é importante porque otimiza processos complexos e acelera a tomada de decisões na manutenção industrial e consultoria de dados.",
+    "dia": "2026-11-08"
+  },
+  {
+    "url": "https://www.deeplearning.ai/the-batch/context-engineering-for-images/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "Engenharia de Contexto para Imagens: VISTA do MIT",
+    "paragrafos": [
+      "Pesquisadores do MIT criaram o VISTA, um agente de IA (Inteligência Artificial, sistemas que executam tarefas de forma autônoma) voltado para raciocínio visual que resolve quebra-cabeças usando 57,4 por cento menos ações que humanos novatos.",
+      "O grande problema atual é que sistemas visuais típicos usam embeddings (vetores numéricos que representam dados de forma compacta) que perdem detalhes ao longo do tempo e são apagados quando a memória de contexto enche, impedindo que o modelo recupere informações passadas.",
+      "O VISTA resolve isso armazenando todos os quadros de imagem em uma memória persistente. Ele permite que o agente recupere imagens anteriores e dê zoom em áreas específicas para capturar detalhes que seriam perdidos.",
+      "O agente funciona integrado a grandes modelos de linguagem, decidindo dinamicamente quando ler notas sobre o ambiente, recuperar quadros antigos, checar ações passadas ou executar novos comandos de teclado e mouse.",
+      "Isso importa diretamente para o seu perfil em agentes de IA, pois demonstra como superar a limitação de perda de memória visual em sistemas autônomos."
+    ],
+    "por_que_importa": "Isso é altamente relevante para o seu trabalho com agentes de IA, pois mostra como resolver problemas de perda de memória visual em ambientes dinâmicos.",
+    "dia": "2026-11-08"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.07613",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "automacao industrial",
@@ -79,48 +97,6 @@
     "dia": "2026-11-06"
   },
   {
-    "url": "https://huggingface.co/papers/2610.36544",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "confiabilidade e avaliacao de agentes",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 9.66,
-    "titulo": "Monitor Accuracy Isn't the Answer: A Decision-Value Framework for Evaluating AI Agent Restart Monitors",
-    "paragrafos": [
-      "Classification accuracy and true-positive and false-positive rates alone do not determine whether restarting an AI agent improves success. Using an exact alarm-to-action identity for an independent clean restart with zero monitoring overhead, we show analytically that a monitor with fixed 90% accuracy can swing from a five-percentage-point loss to a 35-point gain in success rate, depending solely on the replacement attempt's residual-budget success probability. We introduce two techniques for ev…"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.03852",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "custos e eficiencia de inferencia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 9.66,
-    "titulo": "Why Pay for Long Reasoning When Rewrite Do Trick? Causal Effects of Reasoning History Compaction on Future Generation and Agent Cost",
-    "paragrafos": [
-      "Reasoning substantially improves language models' ability to solve difficult problems, but long reasoning traces make these gains expensive. Efficient reasoning should express useful analysis in fewer tokens by reducing repetition and text that adds little value to solving the problem. Progress in proprietary models motivates this goal, yet their hidden scratchpads limit direct study of how it is achieved. We investigate whether open-weight models can generate less verbose reasoning by changing …"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.06768",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "automacao de processos",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 9.6,
-    "titulo": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
-    "paragrafos": [
-      "Coding agents powered by models such as GPT-6-Astra connect spatial reasoning with executable robot behavior, raising the question of how such agents can produce lasting improvements in robot capabilities from physical interaction. In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that…"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
-  },
-  {
     "url": "https://huggingface.co/papers/2611.08237",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "pesquisa em ia",
@@ -135,74 +111,18 @@
     "dia": "2026-11-06"
   },
   {
-    "url": "https://www.youtube.com/watch?v=LhYNd49SbsY",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "claude code e automacao",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 8.9,
-    "titulo": "Seu site tem CARA DE IA? Essa skill resolve (unslop no Claude Code)",
-    "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.03517",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "otimizacao de codigo com agentes",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 8.88,
-    "titulo": "Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization",
-    "paragrafos": [
-      "LLM agents for GPU kernel optimization sit at two ends of a structure-freedom tradeoff. Scripted agents fix what the model does at each step, via a learned policy, an optimization menu, or fixed roles, and are sample-efficient where the recipe applies and stall where it does not. Open-ended agents let a self-directed model mutate a population of kernels and pay for the freedom in trials: thousands of evaluations, repeated edits, and wrong candidates. Both respond to hard targets by equipping the…"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.03330",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "custos e eficiencia de inferencia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 8.1,
-    "titulo": "The SIMPLE Law for Energy Cost of LLM Inference",
-    "paragrafos": [
-      "Generative AI is billed per token, yet tokens are not equally expensive. Each token enters the KV-cache and raises the cost of those that follow, so energy grows non-linearly along a sequence whose tokens look identical. No analytical model states what a token costs, and the most accurate SOTA model is a fit, not a law: it absorbs architecture into fitted coefficients, requiring per-LLM fitting. We derive closed-form expressions of the computational and memory-access complexity of LLM inference …"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.05029",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "manutencao preditiva",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 8.04,
-    "titulo": "DRAP: Dynamics-Risk Adaptive Plasticity for Continual Learning in Physical AI",
-    "paragrafos": [
-      "Continual learning in physical AI differs from conventional continual learning because small per-step policy errors can accumulate over a trajectory. Each deviation may move the agent outside the training distribution, increase subsequent prediction errors, and ultimately cause closed-loop task failure. This work introduces Dynamics-Risk Adaptive Plasticity (DRAP), a replay-free method that estimates the historical importance of adaptable model tensors from sample-level action gradients weighted…"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
-  },
-  {
-    "url": "https://www.ricursive.com/ripple",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
     "fonte": "Hacker News (descoberta)",
-    "tema": "modelos abertos",
+    "tema": "seguranca em ia",
     "tipo": "discussao",
     "categoria": "perfil",
-    "nota": 8.0,
-    "titulo": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+    "nota": 8.35,
+    "titulo": "Vazamento de senhas no GitHub pelo Claude Code",
     "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
+      "O conteúdo completo desta fonte não foi lido e não inventaremos detalhes além do título e da fonte disponíveis."
     ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-05"
+    "por_que_importa": "É só uma aposta de correlação com segurança de software, sem conexão direta com o seu perfil industrial.",
+    "dia": "2026-11-08"
   },
   {
     "url": "https://www.deeplearning.ai/the-batch/ai-models-can-read-other-models-weights/",
@@ -217,5 +137,49 @@
     ],
     "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
     "dia": "2026-11-06"
+  },
+  {
+    "url": "https://www.deeplearning.ai/the-batch/world-models-become-robot-playgrounds/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "modelos de linguagem",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 5.52,
+    "titulo": "Modelos de Mundo como Playgrounds para Robôs: Google Genie 4",
+    "paragrafos": [
+      "O Google anunciou o Genie 4, um modelo de mundo (sistema que simula a física e o comportamento de ambientes virtuais) projetado para criar espaços de prática digital para robôs e treinamentos em ambientes interativos.",
+      "Trabalhando em conjunto com modelos Gemini, o Genie 4 gera cenários realistas com som em tempo real e reage a comandos de texto ou controles de videogame, permitindo simulações de até dois minutos.",
+      "Apesar das demonstrações impressionantes, o Google ainda precisa melhorar a consistência física em interações complexas, havendo relatos de falhas na física dos cenários simulados."
+    ],
+    "por_que_importa": "Isso se conecta diretamente à manutenção industrial e robótica, simulando ambientes de teste virtuais para treinar sistemas mecânicos complexos.",
+    "dia": "2026-11-08"
+  },
+  {
+    "url": "https://blog.bosscher.ch/posts/openstick/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "automacao pessoal",
+    "tipo": "discussao",
+    "categoria": "adjacente",
+    "nota": 4.6,
+    "titulo": "O que uso no meu homelab OpenStick de 10 dólares",
+    "paragrafos": [
+      "O conteúdo completo desta fonte não foi lido e não inventaremos detalhes além do título e da fonte disponíveis."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sobre hardware de baixo custo, sem forte ligação com o seu perfil.",
+    "dia": "2026-11-08"
+  },
+  {
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "modelos de linguagem",
+    "tipo": "discussao",
+    "categoria": "adjacente",
+    "nota": 4.5,
+    "titulo": "Adeus Claude, olá Pi",
+    "paragrafos": [
+      "O conteúdo completo desta fonte não foi lido e não inventaremos detalhes além do título e da fonte disponíveis."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sobre preferências de ferramentas de inteligência artificial.",
+    "dia": "2026-11-08"
   }
 ]

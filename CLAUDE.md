@@ -19,6 +19,11 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 - x.ai/news: 403 (Cloudflare); fonte cadastrada como inativa.
 - RSS do YouTube é instável; usa-se a página do canal + oEmbed + descrição.
 - Cron do GitHub atrasa horas. O usuário disse (2026-11-01) que o horário não importa, só 1 rodada por dia.
+- **O build do GitHub Pages falha sozinho de vez em quando** (4 vezes entre 03 e 07/11, em commits de reação, rodada, The Batch e
+  `config/fontes.json`; sem mensagem de erro útil). O build seguinte costuma se recuperar; o dano real é quando o último build
+  falha: a rodada fica "success" e a página, velha (04/11). Refazer à mão: `gh api -X POST repos/lkfrota/radar-ia/pages/builds`.
+  Desde 2026-11-05 o `diario.yml` confere o build do commit da rodada e refaz até 3 vezes; se persistir, falha o job (e-mail do GitHub).
+  Falhas de Pages em commits fora da rodada (The Batch, reações, Configurar) **não** são cobertas.
 - O repositório é público (decisão do usuário): perfil e fontes ficam visíveis.
 
 ## Decisões do usuário
@@ -41,11 +46,14 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 - **Verificado:** coleta de todas as fontes; rodadas reais na nuvem em 30/10, 31/10 e 01/11 terminaram bem; reações
   novas ("Útil") chegam ao repositório; timer local instalado e a coleta de teste do The Batch chegou ao GitHub.
 - **Não verificado:** (1) a página nunca foi vista num navegador por mim (capturas de tela deram timeout; só HTML e
-  sintaxe do `app.js` foram conferidos; o usuário a usa e não relatou defeito); (2) a primeira rodada na nuvem com a versão
-  final (The Batch por arquivo, 4 reações, teto de 15) — acontece depois de 2026-11-02; conferir o log se a página estranhar.
+  sintaxe do `app.js` foram conferidos; o usuário a usa e não relatou defeito). (A primeira rodada com a versão final rodou
+  bem em 03/11 e as seguintes até 08/11.)
 - **Pendente de decisão do usuário:** mover o cron da nuvem (hoje 9:17 UTC, atrasa horas) para depois das 13h de Brasília
   (~16:30 UTC) para o artigo do The Batch chegar no mesmo dia; hoje chega com 1 dia de atraso. xAI: recomendei não coletar
   (403 também na máquina dele; cobertura indireta por HN/Anthropic/The Batch); ele não decidiu em contrário.
+- **Pendente de decisão do usuário (2026-11-08):** workflow separado, disparado quando o build do Pages falha, que refaz o build
+  para qualquer commit (cobre The Batch, reações, Configurar). Foi oferecido; ele não respondeu. Alternativa: silenciar no GitHub
+  os e-mails de falha do Pages.
 - **Pendências de método (não feitas):** (a) a triagem em `pontuar.py` é exatamente o caso "IA que só produz decisão"
   da lista de ferramentas em avaliação do CLAUDE.md global (Jev, ver `~/.claude/referencias/jev-typesafe.md`); a sessão
   de criação não levou isso ao usuário. Comparar exigiria conta de API (Haiku) que ele não tem. (b) `GEMINI_MODEL*` usam aliases

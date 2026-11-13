@@ -45,7 +45,7 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 - 2026-11-01: página com teto de 15 itens; sai o de menor nota para dar vez a novos.
 
 ## Próximo passo planejado
-`PLANO_FASE2.md` — sugerir fontes novas por citação e sugerir remoção. Começar por volta de 2026-11-12.
+`PLANO_FASE2.md` — sugerir fontes novas por citação e sugerir remoção. Começar por volta de 2026-11-12 (data já vencida em 2026-11-13; nada feito ainda).
 
 ## Estado ao encerrar a sessão de criação (2026-11-02)
 - **Verificado:** coleta de todas as fontes; rodadas reais na nuvem em 30/10, 31/10 e 01/11 terminaram bem; reações

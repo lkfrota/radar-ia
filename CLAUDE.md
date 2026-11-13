@@ -12,6 +12,10 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 
 ## Fatos não óbvios (não redescobrir)
 - Gemini grátis: **20 chamadas/dia por modelo**. Triagem e redação usam o modelo lite; Flash completo deu 504/503.
+- **503 "alta demanda" do Gemini pode durar dias** (11 e 12/11/2026: duas rodadas seguidas abortaram na triagem, página parada em 10/11).
+  Desde 2026-11-13: `modelo.gerar_json` cai para `ALTERNATIVOS` (env `GEMINI_ALTERNATIVOS`, padrão `gemini-flash-latest`) depois de 3 tentativas;
+  se a triagem ainda assim falhar, os itens ficam sem nota para a rodada seguinte e a página mostra o aviso, em vez de abortar. Redação sem
+  modelo cai no texto original (reserva). Rodada "success" pode, portanto, sair degradada: ver o aviso no topo da página.
 - Leitura de vídeo pelo Gemini é lenta e instável: no máximo 1 por dia, 1 tentativa. Os demais usam a descrição do vídeo.
 - **The Batch dá 403 nos servidores do GitHub** (IP de nuvem), em qualquer endereço. Funciona na máquina do usuário.
   Solução (2026-11-02): `local/coletar_batch.py` roda no computador dele (timer systemd às 13h — mudado de 6h em 2026-11-02 —, `local/instalar_timer.sh`,

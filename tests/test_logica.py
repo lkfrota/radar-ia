@@ -87,3 +87,28 @@ def test_fonte_arquivo_avisa_quando_velha(tmp_path, monkeypatch):
     coletar.AVISOS.clear()
     itens, falhas = coletar.coletar_tudo([{"nome": "TB", "tipo": "arquivo", "arquivo": "e.json"}])
     assert [i.url for i in itens] == ["u"] and "5 dias" in falhas[0]["erro"]
+
+
+def test_triagem_com_provedor_fora_nao_derruba_rodada(monkeypatch):
+    from src import modelo, pontuar
+    def quebra(*a, **k):
+        raise RuntimeError("503 UNAVAILABLE")
+    monkeypatch.setattr(modelo, "FAKE", False)
+    monkeypatch.setattr(modelo, "gerar_json", quebra)
+    monkeypatch.setattr(pontuar, "ADIADOS", [])
+    assert pontuar.pontuar([item("a", 0, 0)], {}) == []
+    assert pontuar.ADIADOS == ["1 itens sem nota"]
+
+
+def test_modelo_alternativo_assume_quando_o_principal_cai(monkeypatch):
+    from src import modelo
+    usados = []
+    def fake(m, *a):
+        usados.append(m)
+        if m == "lite":
+            raise RuntimeError("503 UNAVAILABLE")
+        return {"ok": 1}
+    monkeypatch.setattr(modelo, "_gerar_com", fake)
+    monkeypatch.setattr(modelo, "ALTERNATIVOS", ["flash"])
+    assert modelo.gerar_json("p", {}, modelo="lite") == {"ok": 1}
+    assert usados == ["lite", "flash"]

@@ -34,7 +34,8 @@ def rodar():
     itens, falhas = coletar.coletar_tudo(fontes)
     ja = set(vistos) | {p["url"] for p in pendentes}
     itens = [i for i in itens if i.url not in ja]
-    pontuar.pontuar(itens, perfil)
+    itens = pontuar.pontuar(itens, perfil)
+    falhas += [{"fonte": f"triagem do Gemini indisponível ({a})", "erro": a} for a in pontuar.ADIADOS]
     escolhidos = montar.selecionar(itens, pesos, set(vistos))
 
     textos = montar.redigir_lote(escolhidos)

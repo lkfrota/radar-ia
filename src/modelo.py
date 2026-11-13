@@ -14,6 +14,9 @@ MODELO = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 MODELO_TRIAGEM = os.environ.get("GEMINI_MODEL_TRIAGEM", "gemini-flash-lite-latest")
 # redação também em lite: o Flash completo deu 504 repetido em 2026-10-30 (demanda alta)
 MODELO_REDACAO = os.environ.get("GEMINI_MODEL_REDACAO", MODELO_TRIAGEM)
+# se o modelo escolhido seguir indisponível (503 de "alta demanda" durou 2 dias seguidos em
+# 11-12/11/2026 e derrubou a rodada), tenta estes na ordem; cada modelo tem cota própria
+ALTERNATIVOS = [m for m in os.environ.get("GEMINI_ALTERNATIVOS", MODELO).split(",") if m]
 TIMEOUT_MS = 180_000  # 3 min por chamada
 _PAUSA = 6.5  # a camada gratuita limita requisições por minuto
 
@@ -37,17 +40,32 @@ class CotaDiaria(Exception):
 
 def gerar_json(prompt, esquema, video_url=None, modelo=None, tentativas=3, timeout_ms=None):
     """Chamada com saída estruturada. `esquema` é um schema JSON; video_url opcional
-    faz o Gemini assistir um vídeo público do YouTube."""
+    faz o Gemini assistir um vídeo público do YouTube. Esgotadas as tentativas num modelo,
+    passa ao próximo de ALTERNATIVOS; só levanta erro se todos falharem."""
+    principal = modelo or MODELO
+    cadeia = [principal] + [m for m in ALTERNATIVOS if m != principal]
+    ultimo = None
+    for m in cadeia:
+        try:
+            return _gerar_com(m, prompt, esquema, video_url, tentativas, timeout_ms)
+        except Exception as e:
+            ultimo = e
+            print(f"  gemini: {m} falhou ({str(e)[:100]}); "
+                  f"{'tentando o próximo modelo' if m != cadeia[-1] else 'sem mais modelos'}", flush=True)
+    raise ultimo
+
+
+def _gerar_com(modelo, prompt, esquema, video_url, tentativas, timeout_ms):
     from google.genai import types
     partes = []
     if video_url:
         partes.append(types.Part(file_data=types.FileData(file_uri=video_url)))
     partes.append(types.Part(text=prompt))
     for tentativa in range(tentativas):
-        print(f"  gemini: chamada {'(vídeo) ' if video_url else ''}tentativa {tentativa + 1}", flush=True)
+        print(f"  gemini: {modelo} {'(vídeo) ' if video_url else ''}tentativa {tentativa + 1}", flush=True)
         try:
             r = _client().models.generate_content(
-                model=modelo or MODELO,
+                model=modelo,
                 contents=types.Content(parts=partes),
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json", response_schema=esquema,

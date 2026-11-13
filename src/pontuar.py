@@ -4,6 +4,7 @@ import hashlib
 from . import modelo
 
 LOTE = 40
+ADIADOS = []  # lotes que a triagem não conseguiu pontuar nesta rodada (viram aviso na página)
 
 ESQUEMA = {
     "type": "ARRAY",
@@ -59,11 +60,18 @@ def pontuar(itens, perfil):
             for k, v in _fake(it, perfil).items():
                 setattr(it, k, v)
         return itens
+    pontuados = []
     for ini in range(0, len(itens), LOTE):
         lote = itens[ini:ini + LOTE]
-        res = modelo.gerar_json(_prompt(perfil, lote), ESQUEMA, modelo=modelo.MODELO_TRIAGEM)
+        try:
+            res = modelo.gerar_json(_prompt(perfil, lote), ESQUEMA, modelo=modelo.MODELO_TRIAGEM)
+        except Exception as e:  # provedor fora do ar: o lote não é visto e volta na próxima rodada
+            print(f"triagem falhou, {len(lote)} itens ficam para a próxima rodada: {str(e)[:200]}", flush=True)
+            ADIADOS.append(f"{len(lote)} itens sem nota")
+            continue
         por_i = {r["i"]: r for r in res}
         for n, it in enumerate(lote):
             r = por_i.get(n, {"aderencia": 0, "novidade": 0, "tema": "indefinido"})
             it.aderencia, it.novidade, it.tema = r["aderencia"], r["novidade"], r["tema"]
-    return itens
+        pontuados += lote
+    return pontuados

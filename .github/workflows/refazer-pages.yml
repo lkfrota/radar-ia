@@ -1,0 +1,31 @@
+name: refazer-pages
+
+# Quando a publicação do Pages falha (em qualquer commit: rodada, The Batch, reações, Configurar),
+# pede um novo build. Até 3 refações por commit; depois falha de propósito para avisar por e-mail.
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+
+permissions:
+  actions: read
+  pages: write
+
+jobs:
+  refazer:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refazer build do Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          falhas=$(gh api "repos/${{ github.repository }}/actions/runs?head_sha=$SHA&per_page=50" \
+            --jq '[.workflow_runs[] | select(.name=="pages build and deployment" and .conclusion=="failure")] | length')
+          echo "Falhas do Pages para $SHA: $falhas"
+          if [ "$falhas" -gt 3 ]; then
+            echo "::error::Pages falhou $falhas vezes para $SHA; desisto de refazer"; exit 1
+          fi
+          sleep 30
+          gh api -X POST repos/${{ github.repository }}/pages/builds

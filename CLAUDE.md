@@ -27,7 +27,8 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
   `config/fontes.json`; sem mensagem de erro útil). O build seguinte costuma se recuperar; o dano real é quando o último build
   falha: a rodada fica "success" e a página, velha (04/11). Refazer à mão: `gh api -X POST repos/lkfrota/radar-ia/pages/builds`.
   Desde 2026-11-05 o `diario.yml` confere o build do commit da rodada e refaz até 3 vezes; se persistir, falha o job (e-mail do GitHub).
-  Falhas de Pages em commits fora da rodada (The Batch, reações, Configurar) **não** são cobertas.
+  Desde 2026-11-13, `refazer-pages.yml` cobre qualquer commit: quando o workflow "pages build and deployment" falha, pede novo build
+  (até 3 por commit; depois falha o job e avisa por e-mail). **Nunca exercitado com falha real**: se uma falha chegar, conferir o log dele.
 - O repositório é público (decisão do usuário): perfil e fontes ficam visíveis.
 
 ## Decisões do usuário
@@ -55,9 +56,6 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 - **Pendente de decisão do usuário:** mover o cron da nuvem (hoje 9:17 UTC, atrasa horas) para depois das 13h de Brasília
   (~16:30 UTC) para o artigo do The Batch chegar no mesmo dia; hoje chega com 1 dia de atraso. xAI: recomendei não coletar
   (403 também na máquina dele; cobertura indireta por HN/Anthropic/The Batch); ele não decidiu em contrário.
-- **Pendente de decisão do usuário (2026-11-08):** workflow separado, disparado quando o build do Pages falha, que refaz o build
-  para qualquer commit (cobre The Batch, reações, Configurar). Foi oferecido; ele não respondeu. Alternativa: silenciar no GitHub
-  os e-mails de falha do Pages.
 - **Pendências de método (não feitas):** (a) a triagem em `pontuar.py` é exatamente o caso "IA que só produz decisão"
   da lista de ferramentas em avaliação do CLAUDE.md global (Jev, ver `~/.claude/referencias/jev-typesafe.md`); a sessão
   de criação não levou isso ao usuário. Comparar exigiria conta de API (Haiku) que ele não tem. (b) `GEMINI_MODEL*` usam aliases

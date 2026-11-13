@@ -1,15 +1,18 @@
 {
   "temas": {
-    "agentes de ia": 0.43,
+    "agentes de ia": 0.5,
     "otimizacao de contextos": 0.08,
     "modelos de linguagem": -0.15,
     "seguranca de dados": 0.08
   },
   "fontes": {
-    "Hugging Face Papers (descoberta)": 0.11,
+    "Hugging Face Papers (descoberta)": 0.17,
     "Anthropic News": 0.06,
     "Matheus Battisti (YouTube)": 0.11,
-    "The Batch (DeepLearning.AI)": 0.03
+    "The Batch (DeepLearning.AI)": 0.06,
+    "Maestros da IA (YouTube)": 0.05
   },
-  "conhecido": {}
+  "conhecido": {
+    "agentes de ia": 1
+  }
 }

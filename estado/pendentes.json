@@ -101,6 +101,20 @@
     "dia": "2026-11-13"
   },
   {
+    "url": "https://www.youtube.com/watch?v=IvHwiECBh94",
+    "fonte": "IA em 6 Minutos (YouTube)",
+    "tema": "agentes de ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "Como os Devs Top 1% Usam o Claude Code! E o Que Eles Fazem de Diferente?",
+    "paragrafos": [
+      "Este item possui apenas o título e a fonte disponíveis, portanto o conteúdo completo não foi lido e nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "Como você trabalha com engenharia mecânica, este resumo sem conteúdo é apenas uma aposta de correlação com termos de tecnologia que não alteram sua rotina de manutenção.",
+    "dia": "2026-11-13"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=mQnsUQ8UooA",
     "fonte": "Matheus Battisti (YouTube)",
     "tema": "comparativo de modelos",
@@ -112,6 +126,23 @@
       "Resumo automático indisponível nesta rodada."
     ],
     "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-13"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.16009",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 8.83,
+    "titulo": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
+    "paragrafos": [
+      "A inteligência artificial (IA) GPT-6 Astra consegue controlar diretamente um braço robótico por meio de um chicote de conexões físico fixo (fiação dedicada). A quantidade de agentes de software voltados para robótica tem crescido rapidamente, mas as pesquisas anteriores mudavam vários designs ao mesmo tempo, dificultando saber o que realmente gerava melhorias.",
+      "Para resolver isso, os pesquisadores testaram diferentes estruturas em um único ambiente. Eles avaliaram a interface de ações, o histórico de episódios e a geometria da cena (compreensão visual do espaço).",
+      "O estudo descobriu que uma estrutura simplificada, que mantém todo o histórico de execução e para o movimento antes do tempo limite, melhora muito o desempenho. O uso da geometria da cena, mesmo quando a profundidade é estimada apenas por imagens comuns (RGB), traz o maior ganho.",
+      "Sem precisar de treinamento de políticas complexas ou ajustes específicos para tarefas, essa estrutura simples elevou a pontuação de desempenho no benchmark (teste padrão de simulação) RoboDojo de 29,7 para 50,3."
+    ],
+    "por_que_importa": "Isso importa diretamente para a sua área de manutenção industrial e robótica, pois mostra como controlar atuadores e braços mecânicos com inteligência artificial de forma mais previsível e eficiente.",
     "dia": "2026-11-13"
   },
   {
@@ -129,6 +160,36 @@
     "dia": "2026-11-13"
   },
   {
+    "url": "https://www.deeplearning.ai/the-batch/anthropic-releases-new-top-models/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "lancamento de modelos",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 7.79,
+    "titulo": "Anthropic releases new top models: Meta’s Muse Ember rivals leading fast models",
+    "paragrafos": [
+      "A empresa Anthropic lançou novos modelos de inteligência artificial chamados Fable 5.2 e Mythos 5.2. O Fable 5.2 é voltado para engenharia de software complexa, controle de robôs e projetos longos, custando US$ 8 por milhão de tokens (pedaços de texto processados) de entrada e US$ 40 por milhão de saída. O Mythos 5.2 é o mesmo modelo, mas com menos travas de segurança para cibersegurança.",
+      "Por outro lado, a Meta lançou o modelo Muse Ember, que empata em inteligência com concorrentes mais caros, mas custa bem menos por tarefa. Ele usa o cache de entradas de forma mais barata, embora recuse mais perguntas para evitar erros e alucinações (quando a IA inventa dados)."
+    ],
+    "por_que_importa": "Isso é útil para avaliar ferramentas de software e agentes de IA mais baratos para automação de processos na sua consultoria de dados.",
+    "dia": "2026-11-13"
+  },
+  {
+    "url": "https://www.deeplearning.ai/the-batch/gpt-6-cyber-patches-more-security-flaws-for-less-cost/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "seguranca e automacao",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 7.42,
+    "titulo": "GPT-6 Cyber Patches More Security Flaws for Less Cost",
+    "paragrafos": [
+      "A OpenAI criou o GPT-6 Cyber, uma versão da sua IA ajustada especificamente para encontrar e corrigir falhas de segurança em software. Em um teste recente no kernel (núcleo do sistema operacional) do Linux, a IA descobriu, explorou e gerou correções para centenas de vulnerabilidades graves que permitiriam a um usuário comum assumir o controle total de uma máquina.",
+      "O processo utilizou agentes de IA especializados que atuam em etapas: batedores identificam áreas vulneráveis, analistas leem o código e um sistema de triagem cria programas para testar a falha em um ambiente virtual. O custo médio por falha corrigida foi de cerca de US$ 1.280."
+    ],
+    "por_que_importa": "Como você lida com sistemas industriais e softwares de controle, entender como IAs automatizam a segurança de sistemas operacionais ajuda a proteger infraestruturas críticas contra invasões.",
+    "dia": "2026-11-13"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.08318",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "automacao industrial",
@@ -143,31 +204,17 @@
     "dia": "2026-11-13"
   },
   {
-    "url": "https://huggingface.co/papers/2611.15094",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "visao computacional",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 6.55,
-    "titulo": "A frontier machine intelligence for human neuroimaging",
+    "url": "https://github.com/simpsoka/zigzag",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "automacao e hardware",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 7.3,
+    "titulo": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
     "paragrafos": [
-      "Medical imaging is essential for diagnosing disease, guiding treatment and monitoring patients over time. Although artificial intelligence has advanced image interpretation, existing medical models often address restricted tasks, while general-purpose proprietary models lack access to private clinical imaging required to achieve medical expertise. Developing models that can interpret complex examinations and communicate their findings in the context of clinical decisions remains a major challeng…"
+      "Este item possui apenas o título e a fonte disponíveis, portanto o conteúdo completo não foi lido e nenhum detalhe adicional foi inventado."
     ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.15844",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "visao computacional",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 6.55,
-    "titulo": "Open Vision Banana: A Fully Open Recipe for Generative Visual Perception",
-    "paragrafos": [
-      "Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, code, and implementation details are not public. We present Open Vision Banana (OVB), a fully open and reproducible recipe for converting pretrained generators into unified multi-task perception systems. Our analyses identify the design choices that matter most for generalization…"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "por_que_importa": "Esta é apenas uma aposta de correlação genérica sobre dispositivos de hardware que exigem assinaturas, sem impacto direto na engenharia mecânica tradicional.",
     "dia": "2026-11-13"
   }
 ]

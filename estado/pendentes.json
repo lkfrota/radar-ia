@@ -1,22 +1,5 @@
 [
   {
-    "url": "https://www.youtube.com/watch?v=qSDDSUcegkQ",
-    "fonte": "IA em 6 Minutos (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "A Memória dos Agentes de IA",
-    "paragrafos": [
-      "A Anthropic demonstrou que a memória de agentes de Inteligência Artificial funciona de forma parecida com o cérebro humano. Durante o trabalho, o agente grava tudo rapidamente, mas a consolidação do conhecimento acontece offline, em um processo chamado de dreaming ou sonhar, onde o sistema revisa seus registros, corrige erros e organiza o que aprendeu.",
-      "A estrutura dessa memória é organizada em camadas, desde registros brutos chamados transcripts até notas de memória, wikis e um contexto pequeno que entra em todas as sessões. Escrever uma memória é, essencialmente, fazer uma previsão sobre quais regras ou informações serão úteis novamente no futuro.",
-      "Testes práticos mostram que modelos de IA mais potentes conseguem selecionar bem o que guardar, enquanto modelos mais simples salvam informações desnecessárias e perdem eficiência. Além disso, o processo de sonhar permite que o agente corrija notas erradas, o que se provou fundamental para resolver tarefas complexas e avançar sem erros.",
-      "A construção de wikis e a limitação do topo da memória evitam que o sistema acumule dados excessivos, funcionando de forma análoga a manter manuais de manutenção industrial resumidos e eficientes em vez de um volume impraticável de anotações."
-    ],
-    "por_que_importa": "Isso importa para a manutenção industrial porque mostra que gerenciar dados de forma enxuta e revisada evita sobrecarga, mantendo sistemas e agentes focados no que realmente gera valor e previne falhas.",
-    "dia": "2026-11-13"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=bwqpYTUYMsc",
     "fonte": "IA em 6 Minutos (YouTube)",
     "tema": "agentes de ia",
@@ -31,34 +14,6 @@
     "dia": "2026-11-13"
   },
   {
-    "url": "https://www.deeplearning.ai/the-batch/how-to-build-an-agent-harness-in-one-prompt/",
-    "fonte": "The Batch (DeepLearning.AI)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "How to Build an Agent Harness in One Prompt: Build agent harnesses for any LLM using the open source OpenWorker Agent Harness SDK",
-    "paragrafos": [
-      "Dear friends, Building an agent harness has been a rapidly growing method to build an AI agent. The OpenWorker project just released the open source OpenWorker Agent Harness SDK , which I invite you to check out. If you have not built an agent harness before, I encourage you to do so. (This skill is reflected in the AI Engineering Skills Map , and job interviews increasingly ask people if they’ve done this.) This letter describes how to steer coding agents to quickly build an agent harness. An a…"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
-  },
-  {
-    "url": "https://www.deeplearning.ai/the-batch/issue-379/",
-    "fonte": "The Batch (DeepLearning.AI)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "GPT-6 Cyber Versus Linux, The Problem With LLM-Powered Search, LLMs Edit Model Weights, Agentic Doc Retrieval",
-    "paragrafos": [
-      "Dear friends, Building an agent harness has been a rapidly growing method to build an AI agent. The OpenWorker project just released the open source OpenWorker Agent Harness SDK , which I invite you to check out. If you have not built an agent harness before, I encourage you to do so. (This skill is reflected in the AI Engineering Skills Map , and job interviews increasingly ask people if they’ve done this.) This letter describes how to steer coding agents to quickly build an agent harness. An a…"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
-  },
-  {
     "url": "https://brave.com/blog/search-api-agentic-payments/",
     "fonte": "Hacker News (descoberta)",
     "tema": "agentes de ia",
@@ -68,20 +23,6 @@
     "titulo": "Brave Search API now accepts agentic payments via the x402 protocol",
     "paragrafos": [
       "Resumo automático indisponível nesta rodada."
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.16409",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
-    "paragrafos": [
-      "It is common to train Large Language Models (LLMs) for agentic tasks with Reinforcement Learning (RL) from scalar rewards. However, this throws away the fine-grained information about the environment that the agent experienced during the trial (e.g., error logs). To utilize this rich information, recent works wrap the agent in a harness that refines its own inputs through reflection or compaction and hands past experience to future rollouts, but the construction of the handed-off artifacts (e.g.…"
     ],
     "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
     "dia": "2026-11-13"
@@ -115,38 +56,21 @@
     "dia": "2026-11-13"
   },
   {
-    "url": "https://huggingface.co/papers/2611.10439",
-    "fonte": "Hugging Face Papers (descoberta)",
+    "url": "https://www.youtube.com/watch?v=JqPjDPlPfvs",
+    "fonte": "Maestros da IA (YouTube)",
     "tema": "agentes de ia",
-    "tipo": "artigo",
+    "tipo": "video",
     "categoria": "perfil",
     "nota": 10,
-    "titulo": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
+    "titulo": "Conselhos de Andrej Karpathy para o Uso Eficaz de IA",
     "paragrafos": [
-      "Agentes de IA (inteligência artificial, programas de computador capazes de tomar decisões autônomas) que evoluem sozinhos melhoram suas habilidades usando experiências passadas, sem precisar retreinar o modelo de linguagem base. No entanto, sistemas que compartilham essas lições entre múltiplos usuários e agentes heterogêneos enfrentam o desafio de decidir quem pode se beneficiar de cada aprendizado e quais informações devem permanecer estritamente privadas.",
-      "Para resolver isso, os pesquisadores apresentaram o MixUA, um sistema de memória que destila trajetórias independentes de usuários e agentes em lições. O sistema atribui cada lição a um escopo específico — seja um par de usuário-agente, apenas um usuário, apenas um agente, ou o escopo global —, baseando-se em quem realmente se beneficia daquela informação e no que pode ser divulgado.",
-      "O estudo introduziu o CrossLearnBench, um benchmark (conjunto de testes padronizados para comparar desempenho) que avalia tarefas de agentes combinadas a preferências de usuários e testes de privacidade. Com cinco usuários e sete agentes, o MixUA aumentou as taxas de sucesso em até 16 pontos em comparação com a ausência de memória e em até 5 pontos comparado a uma memória global única.",
-      "Além disso, o sistema manteve até 90% das preferências declaradas anteriormente e registrou no máximo 0,02% de vazamento de dados privados em escopos proibidos. O objetivo é oferecer um caminho escalável para sistemas globais onde usuários e agentes evoluem juntos com segurança."
+      "Andrej Karpathy, figura influente na inteligência artificial e cofundador da OpenAI, oferece conselhos práticos para otimizar o uso de ferramentas de IA no dia a dia. Entre suas recomendações, ele destaca a importância de escolher o nível de esforço adequado para cada tarefa, preferindo esforço médio para garantir velocidade e evitar análises excessivas desnecessárias.",
+      "Outro ponto central abordado é a estruturação de comandos, sugerindo evitar listas longas de instruções contraditórias e optar por objetivos claros, permitindo que a IA trabalhe de forma mais eficiente. Karpathy também recomenda a criação de habilidades ('skills') baseadas na experiência prática e no fluxo de trabalho concluído, evitando tentar prever todas as possibilidades de antemão.",
+      "No contexto de manipulação de grandes volumes de dados e análise de bancos de dados, o vídeo ressalta a importância de utilizar filtros prévios para descartar informações irrelevantes antes de enviar dados para os modelos de IA, economizando tokens e recursos computacionais.",
+      "Por fim, o vídeo discute a necessidade de manter a compreensão e o pensamento crítico sobre os sistemas construídos, enfatizando que a IA deve ser utilizada para expandir horizontes e tornar o impossível acessível, sem terceirizar o entendimento fundamental dos processos."
     ],
-    "por_que_importa": "Isso importa diretamente para o seu trabalho com agentes de IA, pois define como múltiplos robôs ou assistentes inteligentes podem colaborar e aprender com diferentes operadores industriais sem vazar dados confidenciais de engenharia.",
-    "dia": "2026-11-14"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.09567",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "manutencao industrial",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 9.71,
-    "titulo": "TurtLES: A Large-Scale Benchmark for Turbulent 3D Neural PDE Surrogates",
-    "paragrafos": [
-      "Modelos substitutos de aprendizado de máquina são cada vez mais utilizados para acelerar a CFD (Dinâmica dos Fluidos Computacional, simulação numérica do escoamento de fluidos). Contudo, o progresso nessa área esbarra na falta de benchmarks que capturem fluxos turbulentos realistas e dependentes do tempo.",
-      "Para preencher essa lacuna, os autores introduziram o TurtLES, um conjunto de dados maciço de 14 terabytes focado em esteiras turbulentas tridimensionais atrás de cilindros em regime de transição de camada de cisalhamento. O banco de dados foi computado por meio de simulações de grandes edições implícitas de alta fidelidade.",
-      "O dataset contém 400 trajetórias com 400 passos de tempo cada, variando de 3 a 11 milhões de pontos por quadro, cobrindo mudanças geométricas, número de Reynolds (parâmetro adimensional usado em mecânica dos fluidos para caracterizar o regime de escoamento) e ângulo de ataque. Ele combina turbulência fisicamente realista com uma cascata de energia ativa impulsionada pelo estiramento de vórtices.",
-      "Ao testar operadores neurais de ponta nesse material, os pesquisadores identificaram falhas críticas, como instabilidade temporal e perda de energia em pequenas escalas. O TurtLES surge assim como um novo padrão para avaliar modelos preditivos em resoluções de malha relevantes para a indústria mecânica."
-    ],
-    "por_que_importa": "Importa muito para a sua atuação em manutenção industrial e simulações, pois fornece uma base de dados realística de dinâmica dos fluidos para testar modelos preditivos de escoamentos turbulentos.",
-    "dia": "2026-11-14"
+    "por_que_importa": "Isso importa para um engenheiro mecânico porque demonstra como aplicar inteligência artificial em fluxos de manutenção industrial e análise de dados operacionais sem perder o controle crítico dos sistemas.",
+    "dia": "2026-11-15"
   },
   {
     "url": "https://www.youtube.com/watch?v=mQnsUQ8UooA",
@@ -163,21 +87,21 @@
     "dia": "2026-11-13"
   },
   {
-    "url": "https://huggingface.co/papers/2611.16009",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
+    "url": "https://www.deeplearning.ai/the-batch/retrieval-for-rag-resistant-docs/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "recuperacao de informacao",
     "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 8.83,
-    "titulo": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
+    "categoria": "perfil",
+    "nota": 9.51,
+    "titulo": "Retrieval for RAG-Resistant Docs",
     "paragrafos": [
-      "A inteligência artificial (IA) GPT-6 Astra consegue controlar diretamente um braço robótico por meio de um chicote de conexões físico fixo (fiação dedicada). A quantidade de agentes de software voltados para robótica tem crescido rapidamente, mas as pesquisas anteriores mudavam vários designs ao mesmo tempo, dificultando saber o que realmente gerava melhorias.",
-      "Para resolver isso, os pesquisadores testaram diferentes estruturas em um único ambiente. Eles avaliaram a interface de ações, o histórico de episódios e a geometria da cena (compreensão visual do espaço).",
-      "O estudo descobriu que uma estrutura simplificada, que mantém todo o histórico de execução e para o movimento antes do tempo limite, melhora muito o desempenho. O uso da geometria da cena, mesmo quando a profundidade é estimada apenas por imagens comuns (RGB), traz o maior ganho.",
-      "Sem precisar de treinamento de políticas complexas ou ajustes específicos para tarefas, essa estrutura simples elevou a pontuação de desempenho no benchmark (teste padrão de simulação) RoboDojo de 29,7 para 50,3."
+      "O método tradicional de busca em documentos para IA usa a técnica de 'chunk-and-embed' (fatiamento e incorporação), onde textos grandes são divididos em pequenos pedaços chamados de pedaços ou 'chunks', transformados em representações numéricas e buscados por similaridade. No entanto, isso falha quando o contexto depende de informações distantes, como unidades de medida em tabelas que ficam em páginas diferentes dos números.",
+      "Para resolver isso, pesquisadores desenvolveram o READ (Reliable Embedding-free Agentic Document-search). Em vez de usar apenas pedaços isolados, o sistema emprega um agente de IA equipado com ferramentas especializadas, permitindo que ele navegue pelo documento inteiro como um humano faria.",
+      "O sistema teve acesso a três ferramentas principais: busca por palavras-chave com números de linha, um gerador de sumário com os títulos das seções e um leitor de texto para buscar intervalos específicos de linhas. Usando essas ferramentas em um loop de refinamento automático, o agente ajustava seus termos de busca quando encontrava resultados excessivos, escassos ou insuficientes.",
+      "Em testes práticos respondendo a perguntas sobre um relatório financeiro complexo de 780 páginas, o método READ acertou 58,8 por cento das perguntas, superando drasticamente a busca tradicional por pedaços (15,7 por cento) e a busca tradicional combinada com agentes (27,5 por cento)."
     ],
-    "por_que_importa": "Isso importa diretamente para a sua área de manutenção industrial e robótica, pois mostra como controlar atuadores e braços mecânicos com inteligência artificial de forma mais previsível e eficiente.",
-    "dia": "2026-11-13"
+    "por_que_importa": "Isso importa para o seu perfil em agentes de IA, pois melhora muito a capacidade de sistemas autônomos lerem manuais técnicos extensos e normas de engenharia sem perder detalhes vitais que ficam separados no texto.",
+    "dia": "2026-11-15"
   },
   {
     "url": "https://www.youtube.com/watch?v=26oVTOeyc0E",
@@ -194,21 +118,21 @@
     "dia": "2026-11-13"
   },
   {
-    "url": "https://huggingface.co/papers/2611.16961",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "otimizacao de modelos",
+    "url": "https://www.deeplearning.ai/the-batch/llms-can-fine-tune-neural-networks/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "ajuste de modelos",
     "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 8.19,
-    "titulo": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+    "nota": 8.47,
+    "titulo": "LLMs Can Fine-Tune Neural Networks",
     "paragrafos": [
-      "Métodos tradicionais de raciocínio adaptativo em inteligência artificial encurtam a linha de raciocínio explícita gerada pelo modelo ou pulam etapas mudando de modo, mas o resultado ainda é gerado passo a passo, token por token (unidades de texto que o modelo processa). Os autores propõem um paradigma diferente chamado pensamento zero-ou-T: um único modelo responde diretamente a partir do pensamento implícito gerado em uma única passagem frontal ou executa um raciocínio completo ao custo de T tokens quando necessário.",
-      "Essa abordagem é realizada em um Modelo de Decisão Híbrido (HDM), onde um modelo base congelado atende a ambos os modos, enquanto um bloco leve de roteamento automático escolhe qual caminho seguir. Esse bloco estima o 'valor de pensar', calculando se o modo lento trará vantagens suficientes sobre o modo rápido para justificar o custo.",
-      "Nos casos em que não há rótulos pré-existentes por decisão, como em tarefas episódicas de agentes, a pesquisa introduz o CDPO (Calibrated Decision Policy Optimisation), uma técnica de aprendizado por reforço para treinar o bloco de roteamento. Os testes foram realizados em benchmarks como MMLU-Pro, AGIEval e MiniWoB.",
-      "Especificamente no teste JevBench, o modelo HDM-4B obteve pontuação de 0,857 em um tempo mediano de 0,179 segundos, sendo consideravelmente mais rápido que o modelo de referência. No ambiente de agentes MiniWoB, a versão HDM-27B reduziu o custo computacional em tokens em 80,1%."
+      "Pesquisadores demonstraram que é possível melhorar os pesos de uma rede neural (os parâmetros internos que determinam o comportamento do modelo) apenas usando comandos textuais em um LLM (Large Language Model, modelo de linguagem de grande porte), pelo menos em redes menores que 1 bilhão de parâmetros.",
+      "No experimento principal, pesquisadores usaram o modelo GPT-6 Astra para interpretar, modificar e gerar pesos de redes neurais em diferentes cenários. Em um teste prático com uma rede neural pequena chamada Qwen3.5-0.8B, o modelo analisou o comportamento, identificou falhas onde o sistema entrava em loop e modificou apenas 0,016 por cento dos pesos internos.",
+      "Essa alteração cirúrgica nos pesos foi suficiente para elevar drasticamente o desempenho do modelo em benchmarks (testes padrão) de matemática, saltando de 7,9 por cento de acertos para 48,1 por cento, mostrando que IAs avançadas podem otimizar modelos menores diretamente no nível estrutural.",
+      "Contudo, a técnica não funcionou em todos os testes: ao tentar aplicar o mesmo processo para melhorar o desempenho matemático de outro modelo chamado Gemma 3 270M, o GPT-6 Astra não obteve sucesso, indicando que o método ainda depende de condições específicas e não é universal."
     ],
-    "por_que_importa": "Essa é uma aposta de correlação para o seu perfil, já que otimizar o tempo e o custo de processamento de modelos de IA pode futuramente baratear qualquer sistema de computação que você utilize em consultoria de dados.",
-    "dia": "2026-11-14"
+    "por_que_importa": "É só uma aposta de correlação com agentes de IA, mostrando como modelos grandes podem otimizar redes menores usadas no chão de fábrica.",
+    "dia": "2026-11-15"
   },
   {
     "url": "https://www.youtube.com/watch?v=9ujhRFpAFXw",
@@ -223,5 +147,33 @@
     ],
     "por_que_importa": "É apenas uma aposta de correlação, visto que o conteúdo específico do vídeo não foi lido ou analisado.",
     "dia": "2026-11-14"
+  },
+  {
+    "url": "https://www.crissyfield.de/research/lovable-en/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "seguranca de dados",
+    "tipo": "discussao",
+    "categoria": "adjacente",
+    "nota": 7.18,
+    "titulo": "Lovable apps expose passport details and more than 200K private messages",
+    "paragrafos": [
+      "O conteúdo completo desta fonte não foi lido e, portanto, nenhum detalhe adicional foi inventado."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente no seu trabalho de engenharia mecânica.",
+    "dia": "2026-11-15"
+  },
+  {
+    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "codigo aberto",
+    "tipo": "discussao",
+    "categoria": "adjacente",
+    "nota": 4.7,
+    "titulo": "All AI-generated code should be Open Source",
+    "paragrafos": [
+      "O conteúdo completo desta fonte não foi lido e nenhum detalhe foi adicionado além do título."
+    ],
+    "por_que_importa": "É só uma aposta de correlação sem conexão direta com a sua rotina de manutenção industrial ou consultoria de dados.",
+    "dia": "2026-11-15"
   }
 ]

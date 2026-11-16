@@ -1,121 +1,99 @@
 [
   {
-    "url": "https://www.youtube.com/watch?v=bwqpYTUYMsc",
-    "fonte": "IA em 6 Minutos (YouTube)",
+    "url": "https://www.youtube.com/watch?v=PlcWAvfyeyU",
+    "fonte": "Matheus Battisti (YouTube)",
     "tema": "agentes de ia",
     "tipo": "video",
     "categoria": "perfil",
     "nota": 10,
-    "titulo": "A nova era da Engenharia de Software começou! Agentes de IA não são mais suficientes.",
+    "titulo": "O Google criou um CHEFE para a IA: testei o Orchestrator (Antigravity)",
     "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
+      "O conteúdo completo deste vídeo não foi lido a partir da fonte original.",
+      "Portanto, nenhum detalhe adicional foi inventado ou incluído nesta resposta."
     ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
+    "por_que_importa": "Isso é só uma aposta de correlação para o seu perfil.",
+    "dia": "2026-11-16"
   },
   {
-    "url": "https://brave.com/blog/search-api-agentic-payments/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "Brave Search API now accepts agentic payments via the x402 protocol",
-    "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.14256",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents",
-    "paragrafos": [
-      "Recent work shows that multimodal agents increasingly self-improve without recurring human annotation. However, each self-improvement mechanism is designed and evaluated within a single scenario, leaving its preconditions unverified under cross-scenario transfer. This survey investigates the structural source of asymmetric mechanism transfer across four scenarios: multimodal reasoning, multimodal generation, GUI and Web navigation, and embodied manipulation. We first formalize the self-evolving …"
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=IvHwiECBh94",
-    "fonte": "IA em 6 Minutos (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "Como os Devs Top 1% Usam o Claude Code! E o Que Eles Fazem de Diferente?",
-    "paragrafos": [
-      "Este item possui apenas o título e a fonte disponíveis, portanto o conteúdo completo não foi lido e nenhum detalhe adicional foi inventado."
-    ],
-    "por_que_importa": "Como você trabalha com engenharia mecânica, este resumo sem conteúdo é apenas uma aposta de correlação com termos de tecnologia que não alteram sua rotina de manutenção.",
-    "dia": "2026-11-13"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=JqPjDPlPfvs",
+    "url": "https://www.youtube.com/watch?v=iSGK7Tb4GPE",
     "fonte": "Maestros da IA (YouTube)",
     "tema": "agentes de ia",
     "tipo": "video",
     "categoria": "perfil",
     "nota": 10,
-    "titulo": "Conselhos de Andrej Karpathy para o Uso Eficaz de IA",
+    "titulo": "Seus Agentes de IA Estão Escondendo Erros de Você",
     "paragrafos": [
-      "Andrej Karpathy, figura influente na inteligência artificial e cofundador da OpenAI, oferece conselhos práticos para otimizar o uso de ferramentas de IA no dia a dia. Entre suas recomendações, ele destaca a importância de escolher o nível de esforço adequado para cada tarefa, preferindo esforço médio para garantir velocidade e evitar análises excessivas desnecessárias.",
-      "Outro ponto central abordado é a estruturação de comandos, sugerindo evitar listas longas de instruções contraditórias e optar por objetivos claros, permitindo que a IA trabalhe de forma mais eficiente. Karpathy também recomenda a criação de habilidades ('skills') baseadas na experiência prática e no fluxo de trabalho concluído, evitando tentar prever todas as possibilidades de antemão.",
-      "No contexto de manipulação de grandes volumes de dados e análise de bancos de dados, o vídeo ressalta a importância de utilizar filtros prévios para descartar informações irrelevantes antes de enviar dados para os modelos de IA, economizando tokens e recursos computacionais.",
-      "Por fim, o vídeo discute a necessidade de manter a compreensão e o pensamento crítico sobre os sistemas construídos, enfatizando que a IA deve ser utilizada para expandir horizontes e tornar o impossível acessível, sem terceirizar o entendimento fundamental dos processos."
+      "O conteúdo completo deste vídeo não foi lido a partir da fonte original.",
+      "Portanto, nenhum detalhe adicional foi inventado ou incluído nesta resposta."
     ],
-    "por_que_importa": "Isso importa para um engenheiro mecânico porque demonstra como aplicar inteligência artificial em fluxos de manutenção industrial e análise de dados operacionais sem perder o controle crítico dos sistemas.",
-    "dia": "2026-11-15"
+    "por_que_importa": "Isso é só uma aposta de correlação para o seu perfil.",
+    "dia": "2026-11-16"
   },
   {
-    "url": "https://www.youtube.com/watch?v=mQnsUQ8UooA",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "comparativo de modelos",
+    "url": "https://www.youtube.com/watch?v=Xi5PZEBOH5Y",
+    "fonte": "IA em 6 Minutos (YouTube)",
+    "tema": "agentes de ia",
     "tipo": "video",
     "categoria": "perfil",
-    "nota": 9.66,
-    "titulo": "Claude Fable 5.2 x Gemini 4 Carbon: o MESMO pedido nos dois (um custa 4x menos)",
+    "nota": 10,
+    "titulo": "O Guia Definitivo da Anthropic [Always On Agents]",
     "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
+      "O conteúdo completo deste vídeo não foi lido a partir da fonte original.",
+      "Portanto, nenhum detalhe adicional foi inventado ou incluído nesta resposta."
     ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
+    "por_que_importa": "Isso é só uma aposta de correlação para o seu perfil.",
+    "dia": "2026-11-16"
   },
   {
-    "url": "https://www.deeplearning.ai/the-batch/retrieval-for-rag-resistant-docs/",
-    "fonte": "The Batch (DeepLearning.AI)",
-    "tema": "recuperacao de informacao",
+    "url": "https://huggingface.co/papers/2611.17440",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
     "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 9.51,
-    "titulo": "Retrieval for RAG-Resistant Docs",
+    "nota": 10,
+    "titulo": "Interpreting Coding Agents Through Their Behavioral Trajectories",
     "paragrafos": [
-      "O método tradicional de busca em documentos para IA usa a técnica de 'chunk-and-embed' (fatiamento e incorporação), onde textos grandes são divididos em pequenos pedaços chamados de pedaços ou 'chunks', transformados em representações numéricas e buscados por similaridade. No entanto, isso falha quando o contexto depende de informações distantes, como unidades de medida em tabelas que ficam em páginas diferentes dos números.",
-      "Para resolver isso, pesquisadores desenvolveram o READ (Reliable Embedding-free Agentic Document-search). Em vez de usar apenas pedaços isolados, o sistema emprega um agente de IA equipado com ferramentas especializadas, permitindo que ele navegue pelo documento inteiro como um humano faria.",
-      "O sistema teve acesso a três ferramentas principais: busca por palavras-chave com números de linha, um gerador de sumário com os títulos das seções e um leitor de texto para buscar intervalos específicos de linhas. Usando essas ferramentas em um loop de refinamento automático, o agente ajustava seus termos de busca quando encontrava resultados excessivos, escassos ou insuficientes.",
-      "Em testes práticos respondendo a perguntas sobre um relatório financeiro complexo de 780 páginas, o método READ acertou 58,8 por cento das perguntas, superando drasticamente a busca tradicional por pedaços (15,7 por cento) e a busca tradicional combinada com agentes (27,5 por cento)."
+      "Pesquisadores analisaram 143.209 execuções de agentes de programação (softwares de IA que escrevem código) para entender como eles trabalham. Normalmente, os testes apenas olham se o resultado final deu certo ou errado, tratando o processo como uma caixa-preta. Para enxergar dentro desse processo, a equipe desenvolveu um analisador baseado em regras que traduz os passos brutos em ações compreensíveis, como buscar em repositórios, editar arquivos e rodar testes.",
+      "O estudo descobriu que agentes com a mesma taxa de sucesso final podem ter comportamentos completamente diferentes na hora de explorar e modificar o código. Além disso, as escolhas de estrutura do agente e o esforço de raciocínio mudam de forma sistemática a forma como ele busca e testa as soluções.",
+      "Para um engenheiro mecânico, entender a trajetória comportamental de um sistema automatizado é o equivalente a analisar os ciclos de falha ou a instrumentação de uma linha de montagem automatizada, em vez de olhar apenas se a peça final saiu no tamanho certo.",
+      "Isso importa diretamente para o seu foco em agentes de IA, ajudando a auditar o comportamento interno dessas ferramentas em vez de confiar cegamente apenas no resultado final."
     ],
-    "por_que_importa": "Isso importa para o seu perfil em agentes de IA, pois melhora muito a capacidade de sistemas autônomos lerem manuais técnicos extensos e normas de engenharia sem perder detalhes vitais que ficam separados no texto.",
-    "dia": "2026-11-15"
+    "por_que_importa": "Conecta-se diretamente ao seu interesse em agentes de IA, permitindo avaliar a confiabilidade operacional desses sistemas de software.",
+    "dia": "2026-11-16"
   },
   {
-    "url": "https://www.youtube.com/watch?v=26oVTOeyc0E",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "lancamentos de modelos",
-    "tipo": "video",
+    "url": "https://huggingface.co/papers/2611.17780",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "analise de dados",
+    "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 8.55,
-    "titulo": "A Anthropic LANÇOU o Claude Whiteboards e Sheets e é ABSURDO! (Claude Data)",
+    "nota": 8.96,
+    "titulo": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
     "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
+      "Consultas a bancos de dados usando grandes modelos de linguagem (LLM, que são inteligências artificiais treinadas para processar linguagem natural) costumam ser caras, lentas e dependentes de APIs externas na nuvem. Para resolver isso, criaram o LuthorSQL, um modelo menor e local (com 7 bilhões de parâmetros) que funciona como um filtro rápido. Ele responde a perguntas simples convertendo texto em comandos SQL (linguagem padrão para banco de dados) de forma imediata.",
+      "Esse modelo local age como um Sistema 1 rápido, resolvendo grande parte das consultas no próprio hardware da empresa e escalando para um modelo maior e mais lento (Sistema 2) apenas quando há dúvida. O resultado é uma redução de um terço nos custos de API, mantendo a mesma precisão e mantendo dados sensíveis dentro da infraestrutura local.",
+      "No contexto de consultoria de dados, essa arquitetura híbrida lembra um sistema de controle em cascata na engenharia mecânica: um atuador rápido e de baixo custo faz a regulação fina do dia a dia, enquanto um controlador central mais pesado intervém apenas em situações complexas.",
+      "Isso importa para o seu perfil em consultoria de dados, pois mostra como otimizar custos computacionais e manter a segurança de dados corporativos usando hardware local."
     ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-13"
+    "por_que_importa": "Interliga-se ao seu trabalho em consultoria de dados, mostrando como otimizar custos operacionais e arquitetura de servidores de IA.",
+    "dia": "2026-11-16"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.17878",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "energia solar",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.64,
+    "titulo": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
+    "paragrafos": [
+      "Cidades consomem a maior parte da energia mundial e geram a maioria das emissões de carbono, mas dados mensais detalhados sobre energia urbana costumam ser escassos. Para preencher essa lacuna, pesquisadores criaram o DySENSE, uma inteligência artificial generativa multimodal que combina imagens de satélite estáticas com mapas dinâmicos de consumo de energia de edifícios.",
+      "O modelo consegue separar a morfologia urbana de longo prazo do consumo energético de curto prazo. Com isso, ele gera mapas realistas de consumo energético mensal usando menos de 25% de dados rotulados, superando métodos tradicionais em termos de precisão e reduzindo o erro de previsão de consumo segundo padrões de engenharia (como os da ASHRAE, associação americana de engenheiros de aquecimento e refrigeração).",
+      "Para um engenheiro mecânico voltado à energia solar e eficiência, essa ferramenta funciona como um gêmeo digital em larga escala, capaz de simular o comportamento térmico e energético de edifícios e cidades inteiras cruzando dados geoespaciais.",
+      "Isso importa muito para o seu foco em energia solar e manutenção industrial, oferecendo uma base preditiva avançada para simulação de desempenho de edifícios e análise de pico de carga."
+    ],
+    "por_que_importa": "Conecta-se diretamente ao seu perfil em energia solar e eficiência energética, servindo de base para simulações avançadas de consumo em edificações.",
+    "dia": "2026-11-16"
   },
   {
     "url": "https://www.deeplearning.ai/the-batch/llms-can-fine-tune-neural-networks/",
@@ -149,6 +127,21 @@
     "dia": "2026-11-14"
   },
   {
+    "url": "https://huggingface.co/papers/2611.17169",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "modelos abertos",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 7.88,
+    "titulo": "Parsed, Plausible, Wrong: Output Format Controls Silent Errors in Small-Model Semantic Parsing",
+    "paragrafos": [
+      "Um modelo de linguagem pequeno ajustado para tarefas específicas pode gerar uma resposta estruturada que está sintaticamente correta, mas semanticamente errada, falhando de forma silenciosa sem que sistemas posteriores percebam. A pesquisa investigou se a escolha do formato de saída afeta essa taxa de erros. Utilizando os modelos Qwen3.5-0.8B e LFM2.5-350M em um benchmark de pedidos, foram testadas seis codificações diferentes da mesma árvore de dados.",
+      "O estudo concluiu que apenas encurtar o texto não ajuda, mas escrevê-lo em palavras comuns faz muita diferença. A codificação em formato de palavras comuns foi a mais precisa em ambos os modelos e reduziu a taxa de erros silenciosos em até 2,3 vezes no Qwen. Além disso, os modelos aprenderam a recusar entradas fora do menu, embora essa rigidez tenha rejeitado entre 2,1% e 10,1% de pedidos reais válidos."
+    ],
+    "por_que_importa": "Isso é só uma aposta de correlação para o seu dia a dia, a menos que você comece a usar pequenos modelos de linguagem para automatizar a leitura de manuais técnicos ou especificações de projeto.",
+    "dia": "2026-11-16"
+  },
+  {
     "url": "https://www.crissyfield.de/research/lovable-en/",
     "fonte": "Hacker News (descoberta)",
     "tema": "seguranca de dados",
@@ -161,6 +154,21 @@
     ],
     "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente no seu trabalho de engenharia mecânica.",
     "dia": "2026-11-15"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.17194",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "modelos abertos",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 6.05,
+    "titulo": "eDMD: Endpoint Distribution Matching for Few-Step Diffusion Distillation",
+    "paragrafos": [
+      "A destilação de modelos de difusão – processo de comprimir modelos complexos de geração de imagens em versões menores e mais rápidas de poucos passos – costuma sofrer com distorções porque o modelo auxiliar de avaliação ('fake score model') analisa passos intermediários do processo de remoção de ruído. Isso gera sinais de atualização confusos que podem permanecer mesmo quando o resultado final já está correto.",
+      "Para resolver isso, os autores propõem o eDMD (Endpoint Distribution Matching Distillation), que treina o modelo auxiliar exclusivamente com os outputs finais dos estudantes, corrigindo todas as etapas anteriores. Análises teóricas provam que isso garante que o erro só zera quando a distribuição final do modelo comprimido emparelha exatamente com a do modelo original. Testes em modelos como FLUX.2-klein e Qwen-Image-2.1 mostraram superioridade consistente na geração em quatro passos."
+    ],
+    "por_que_importa": "Isso importa para agentes de IA que precisam gerar esquemas mecânicos, fluxogramas industriais ou diagramas de painéis solares em tempo real com alta precisão e baixo custo computacional.",
+    "dia": "2026-11-16"
   },
   {
     "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",

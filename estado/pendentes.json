@@ -107,6 +107,40 @@
     "dia": "2026-11-17"
   },
   {
+    "url": "https://huggingface.co/papers/2611.22563",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "projetos cad e ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.63,
+    "titulo": "CADMAGEDDON: High-Fidelity CAD Reconstruction with Local Inference",
+    "paragrafos": [
+      "Profissionais que trabalham com CAD (desenho técnico assistido por computador, softwares usados para projetar peças em 3D) frequentemente lidam com peças proprietárias e sigilosas que não podem ser enviadas para serviços externos na nuvem. Para pequenas empresas, rodar essa tecnologia internamente costuma esbarrar no alto custo de computação.",
+      "O CADMAGEDDON surge como um agente de código aberto que reconstrói arquivos CAD editáveis a partir de malhas poligonais 3D. A grande vantagem é que ele roda localmente em computadores comuns e placas de vídeo únicas, sem precisar de infraestrutura pesada.",
+      "A ferramenta divide a tarefa complexa em decisões visuais simples sobre o que construir e corrigir, usando ferramentas geométricas para precisão. O sistema foca no raciocínio visual e utiliza um modelo de inteligência artificial de médio porte chamado Qwen3.8-27B.",
+      "Com essa arquitetura, a ferramenta supera abordagens anteriores baseadas em modelos de fronteira muito maiores, mantendo a qualidade de reconstrução em principais benchmarks e integrando-se diretamente ao software de CAD livre FreeCAD para uso prático na rotina."
+    ],
+    "por_que_importa": "Isso importa diretamente para sua rotina de manutenção industrial e projetos mecânicos, permitindo rodar engenharia reversa de malhas para CAD localmente e com segurança de dados, sem depender de nuvens externas.",
+    "dia": "2026-11-18"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.22565",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "manutencao industrial",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.62,
+    "titulo": "MillBill: A Machining Agent with Geometric Feedback",
+    "paragrafos": [
+      "Transformar um modelo CAD em um programa de usinagem real exige conhecimento profundo de processos de fabricação e precisão geométrica rigorosa. Modelos de linguagem conseguem gerar códigos de percurso de ferramentas, mas isso costuma misturar a execução numérica diretamente com as decisões do modelo.",
+      "O MillBill é um agente de inteligência artificial que separa as decisões de usinagem da execução e verificação geométrica. Dado um modelo tridimensional bruto e o material, um modelo de IA de médio porte hospedado localmente propõe as operações e os parâmetros de corte para usinagem em três eixos.",
+      "Uma ferramenta de suporte geométrico gera os percursos das ferramentas, simula a remoção de material e devolve um feedback para o refinamento do plano. O planejamento do setup considera o alcance físico real das ferramentas de corte disponíveis, indo muito além da simples visibilidade visual.",
+      "Nos testes de simulação medidos pela tolerância da superfície alvo após a usinagem, o MillBill usando o modelo Qwen3.8-27B superou abordagens tradicionais que tentavam calcular toda a geometria e os caminhos de corte sozinhos."
+    ],
+    "por_que_importa": "Isso importa para a sua prática em engenharia mecânica, pois automatiza o planejamento de usinagem e caminhos de corte com validação física real, integrando inteligência artificial direto ao chão de fábrica.",
+    "dia": "2026-11-18"
+  },
+  {
     "url": "https://www.deeplearning.ai/the-batch/gemini-4-hydrogen-balances-accuracy-and-speed/",
     "fonte": "The Batch (DeepLearning.AI)",
     "tema": "lancamento de modelos",
@@ -124,18 +158,64 @@
     "dia": "2026-11-17"
   },
   {
-    "url": "https://www.crissyfield.de/research/lovable-en/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "seguranca de dados",
-    "tipo": "discussao",
-    "categoria": "adjacente",
-    "nota": 7.18,
-    "titulo": "Lovable apps expose passport details and more than 200K private messages",
+    "url": "https://huggingface.co/papers/2611.21938",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "robotica industrial",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 7.52,
+    "titulo": "HubEgo-100K: In-the-Wild Egocentric Video of Skilled Work for Robot Learning",
     "paragrafos": [
-      "O conteúdo completo desta fonte não foi lido e, portanto, nenhum detalhe adicional foi inventado."
+      "Políticas de controle para robôs treinadas por imitação costumam falhar ao operar fora dos ambientes emulador de treinamento. Estudos mostram que a generalização de robôs depende da diversidade de cenários do mundo real, mas coletar dados de robótica diretamente no campo é extremamente custoso.",
+      "Para resolver essa escassez, a solução é usar vídeos egocêntricos (gravados do ponto de vista da própria pessoa) de trabalho qualificado humano. O novo conjunto de dados HubEgo-100K traz mais de 10 mil horas de vídeos em alta definição capturados por câmeras de cabeça com sensores inerciais (IMU) sincronizados a 100 Hz.",
+      "A base reúne mais de 12 mil colaboradores gravando seu próprio trabalho real e não scriptado em oficinas, cozinhas e ambientes industriais, totalizando dezenas de milhares de episódios com anotações automáticas de ações e linguagem para treinar robôs com eficiência."
     ],
-    "por_que_importa": "É só uma aposta de correlação sem impacto direto evidente no seu trabalho de engenharia mecânica.",
-    "dia": "2026-11-15"
+    "por_que_importa": "Isso é só uma aposta de correlação para o seu perfil, já que o foco da pesquisa é aprendizado por reforço para robótica móvel e autônoma, áreas distantes do seu escopo atual.",
+    "dia": "2026-11-18"
+  },
+  {
+    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "lancamento de modelos",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 7.4,
+    "titulo": "Microsoft AI: Seven new world-class models at scalable price-performance",
+    "paragrafos": [
+      "O conteúdo completo deste artigo não foi lido a partir da fonte original, portanto nenhum detalhe técnico ou dado adicional foi inventado para este resumo."
+    ],
+    "por_que_importa": "Isso é só uma aposta de correlação, já que o título aponta para lançamentos genéricos de modelos de IA da Microsoft sem conexão direta imediata com as suas ferramentas de engenharia.",
+    "dia": "2026-11-18"
+  },
+  {
+    "url": "https://energy-based-reasoners.github.io/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "eficiencia de inferencia",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 7.3,
+    "titulo": "Energy-Based Reasoners: 385x more efficient inference",
+    "paragrafos": [
+      "O conteúdo completo deste artigo não foi lido a partir da fonte original, logo nenhum detalhe técnico ou número específico além do título foi inventado."
+    ],
+    "por_que_importa": "Isso é só uma aposta de correlação, pois a promessa de ganho de eficiência em inferência de IA não traz contexto prático aplicável à sua atuação na engenharia mecânica.",
+    "dia": "2026-11-18"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.21925",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "eficiencia de inferencia",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 6.8,
+    "titulo": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+    "paragrafos": [
+      "A decodificação por difusão especulativa usa um modelo rascunho menor e paralelo para gerar vários tokens (pedaços de texto processados por IA) em uma única passada, que depois são verificados por um modelo principal maior. O sistema acelera a resposta da inteligência artificial se muitos rascunhos passarem juntos na verificação.",
+      "Para melhorar a qualidade do rascunho, arquiteturas anteriores usavam um mecanismo de codificação de características do modelo principal, mas que sofria com perdas de informação, ausência de memória dos erros passados e seleção homogênea de camadas. O novo método DNeo introduz o Mixture-of-Features Attention (MoFA) junto com uma memória de rejeição.",
+      "Essas melhorias arquiteturais permitem que o DNeo alcance uma velocidade de geração 1.3 vezes mais rápida que o estado da arte anterior, mantendo a mesma pegada computacional e sem perder a qualidade de geração de texto dos modelos de linguagem."
+    ],
+    "por_que_importa": "Isso importa diretamente para o seu trabalho com agentes de IA, pois otimiza a velocidade de execução de modelos de linguagem grandes de forma local, reduzindo gargalidades de processamento.",
+    "dia": "2026-11-18"
   },
   {
     "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
@@ -150,80 +230,5 @@
     ],
     "por_que_importa": "Apenas uma aposta de correlação: novidades em linhas de modelos de ponta podem sinalizar novos saltos de capacidade para agentes de análise autônoma de dados e automação de processos.",
     "dia": "2026-11-17"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.09825",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "otimizacao de modelos",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 5.65,
-    "titulo": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
-    "paragrafos": [
-      "Ao processar grandes volumes de texto técnico ou manuais operacionais extensos, os modelos de IA consomem muita memória armazenando o histórico recente por meio do chamado 'KV Cache' (uma memória de acesso rápido que guarda o contexto da conversa). Para reduzir esse gargalo, pesquisadores desenvolveram o BitDecoding-FP4, uma técnica que comprime esses dados para 4 bits de precisão em ponto flutuante (formato FP4) sem degradar a exatidão das respostas.",
-      "A solução combina ajustes matemáticos para evitar erros de arredondamento em contextos longos com melhorias na execução física dos chips gráficos. Em testes com placas NVIDIA B300 rodando modelos da família Qwen3, o método atingiu precisão equivalente ao formato padrão de 16 bits (BF16), mas entregou entre 2,4 e 3,0 vezes mais capacidade de processamento simultâneo (throughput)."
-    ],
-    "por_que_importa": "Importa para consultoria de dados e manutenção industrial: viabiliza rodar agentes de IA com leitura simultânea de centenas de páginas de manuais de máquinas ou relatórios solares gastando até um terço da memória de servidor necessária.",
-    "dia": "2026-11-17"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.16694",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "pesquisa em ia",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 5.46,
-    "titulo": "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision",
-    "paragrafos": [
-      "Modelos de linguagem grande (LLM, do inglês Large Language Models, que são sistemas de inteligência artificial treinados para processar e gerar texto) frequentemente revisam suas decisões iniciais quando outro agente discorda deles. Um novo estudo testou se essas revisões corrigem erros ou apenas abandonam respostas certas, usando perguntas da medicina, ciência e lei.",
-      "O experimento variou o contexto da discordância entre reflexão neutra, anônima ou atribuída a um especialista humano. Os resultados mostram que nenhum dos cinco modelos testados atingiu o nível de seletividade necessário para que a revisão melhorasse a precisão sob a discordância de um especialista, fazendo com que a acurácia caísse até 16,1 pontos.",
-      "Além disso, o rótulo de especialista fez com que os modelos mudassem mais de ideia, mas a alteração na acurácia variou entre uma perda de 5,2 pontos e um ganho de 2,4 pontos, provando que a contagem de reversões é um indicador ruim de dano."
-    ],
-    "por_que_importa": "Isso importa muito se você desenvolve agentes de IA para o chão de fábrica, pois mostra que confiar cegamente em rótulos de autoridades ou inputs externos pode piorar a tomada de decisão automatizada dos seus sistemas.",
-    "dia": "2026-11-17"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.06238",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "lancamento de modelos",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 5.46,
-    "titulo": "Zuse: A Decision Model for European Languages",
-    "paragrafos": [
-      "Modelos de decisão são sistemas de IA que leem um documento e retornam uma probabilidade para opções fixas, em vez de gerarem texto livre. O Zuse é uma família de três modelos de decisão (4B, 9B e 27B parâmetros) focados em 27 línguas europeias, construídos sobre bases abertas congeladas.",
-      "O modelo maior, de 27 bilhões de parâmetros, atingiu 87,5% de acurácia em um conjunto diversificado de testes. A análise pós-perícia mostrou que a calibração incorreta depende mais da tarefa do que do idioma, e que o alcance do modelo em línguas fora do treinamento depende fundamentalmente do modelo base utilizado.",
-      "Os autores também relataram armadilhas na construção dos dados de treinamento, como colisões de palavras-rótulo e aumento por injeção que gerou atalhos indesejados."
-    ],
-    "por_que_importa": "Para o seu perfil de consultoria de dados e manutenção industrial, serve como um lembrete técnico de que mudar dados de entrada de forma errada cria atalhos falsos em modelos preditivos.",
-    "dia": "2026-11-17"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.21605",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "visao computacional",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 4.89,
-    "titulo": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
-    "paragrafos": [
-      "Agentes visuais respondem a perguntas sobre fotos de altíssima resolução dando zoom em regiões específicas. Para evitar que esses agentes respondam baseados apenas no senso comum em vez de lerem as evidências reais da imagem, pesquisadores criaram o método CrossRPO (Otimização de Política Relativa entre Entradas). Esse método treina a IA usando conjuntos de contraste, onde imagens quase idênticas mudam apenas em uma pequena região com a evidência, punindo o palpite cego. Como resultado, os novos modelos ViRA superaram concorrentes comerciais importantes em resolução máxima."
-    ],
-    "por_que_importa": "É uma aposta de correlação para o seu trabalho com visão computacional ou monitoramento de equipamentos industriais por imagem de alta definição.",
-    "dia": "2026-11-17"
-  },
-  {
-    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "codigo aberto",
-    "tipo": "discussao",
-    "categoria": "adjacente",
-    "nota": 4.7,
-    "titulo": "All AI-generated code should be Open Source",
-    "paragrafos": [
-      "O conteúdo completo desta fonte não foi lido e nenhum detalhe foi adicionado além do título."
-    ],
-    "por_que_importa": "É só uma aposta de correlação sem conexão direta com a sua rotina de manutenção industrial ou consultoria de dados.",
-    "dia": "2026-11-15"
   }
 ]

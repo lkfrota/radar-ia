@@ -1,50 +1,5 @@
 [
   {
-    "url": "https://www.youtube.com/watch?v=PlcWAvfyeyU",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "O Google criou um CHEFE para a IA: testei o Orchestrator (Antigravity)",
-    "paragrafos": [
-      "O conteúdo completo deste vídeo não foi lido a partir da fonte original.",
-      "Portanto, nenhum detalhe adicional foi inventado ou incluído nesta resposta."
-    ],
-    "por_que_importa": "Isso é só uma aposta de correlação para o seu perfil.",
-    "dia": "2026-11-16"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=iSGK7Tb4GPE",
-    "fonte": "Maestros da IA (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "Seus Agentes de IA Estão Escondendo Erros de Você",
-    "paragrafos": [
-      "O conteúdo completo deste vídeo não foi lido a partir da fonte original.",
-      "Portanto, nenhum detalhe adicional foi inventado ou incluído nesta resposta."
-    ],
-    "por_que_importa": "Isso é só uma aposta de correlação para o seu perfil.",
-    "dia": "2026-11-16"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Xi5PZEBOH5Y",
-    "fonte": "IA em 6 Minutos (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "O Guia Definitivo da Anthropic [Always On Agents]",
-    "paragrafos": [
-      "O conteúdo completo deste vídeo não foi lido a partir da fonte original.",
-      "Portanto, nenhum detalhe adicional foi inventado ou incluído nesta resposta."
-    ],
-    "por_que_importa": "Isso é só uma aposta de correlação para o seu perfil.",
-    "dia": "2026-11-16"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=8u3T6apnOrw",
     "fonte": "Matheus Battisti (YouTube)",
     "tema": "agentes de ia",
@@ -124,6 +79,62 @@
     "dia": "2026-11-18"
   },
   {
+    "url": "https://huggingface.co/papers/2611.21553",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.15,
+    "titulo": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
+    "paragrafos": [
+      "Streaming video understanding is becoming increasingly important for real-world interactive systems. Such systems must be proactive for natural and useful human interaction: they should respond as soon as sufficient evidence becomes available while avoiding premature, redundant, or incorrect responses. We present BLIP-Live, a framework unifying data, metrics, harness, and training around a shared formulation of proactivity as effective causal response decisions balancing the two competing object…"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-19"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=euedSKcZemA",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "comparativo de modelos",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 9.05,
+    "titulo": "O novo GPT-6.2 Astra contra o Claude Fable 5.2: o MESMO pedido nos dois (um custou 5x mais)",
+    "paragrafos": [
+      "Resumo automático indisponível nesta rodada."
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-19"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.17600",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "analise de dados",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.88,
+    "titulo": "LightTAR: Light and Fast Target-Aware Representations for Multimodal Tabular Learning",
+    "paragrafos": [
+      "Multimodal tabular learning involves classification and regression on tables combining structured numerical and categorical features with unstructured text and images. These unstructured fields are commonly represented by pretrained encoder embeddings reduced with principal component analysis (PCA). This reduction prioritizes input variance but may overlook information relevant to predicting the target. We introduce LightTAR, a simple, inexpensive method that adapts dimensionality reduction to t…"
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-19"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=wR62Ka2faHc",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "automacao com ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.77,
+    "titulo": "12 Efeitos Visuais em 5 Segundos: Nossa IA Fez Tudo Só com Código",
+    "paragrafos": [
+      "Resumo automático indisponível nesta rodada."
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-19"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.22565",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "manutencao industrial",
@@ -139,6 +150,48 @@
     ],
     "por_que_importa": "Isso importa para a sua prática em engenharia mecânica, pois automatiza o planejamento de usinagem e caminhos de corte com validação física real, integrando inteligência artificial direto ao chão de fábrica.",
     "dia": "2026-11-18"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=C2M1pou0hjM",
+    "fonte": "IA em 6 Minutos (YouTube)",
+    "tema": "automacao com ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.56,
+    "titulo": "Fable 5.2 é Insano! Um Prompt Gera um Jogo Multiplayer Completo",
+    "paragrafos": [
+      "Resumo automático indisponível nesta rodada."
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-19"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=sFB1bN06ktI",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "lancamento de modelos",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.49,
+    "titulo": "LANÇOU o Gemini 4 Neon! Testei pesado (7 projetos de primeira)",
+    "paragrafos": [
+      "Resumo automático indisponível nesta rodada."
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-19"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=X3ooT7IySaw",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "lancamento de modelos",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 8.49,
+    "titulo": "A OpenAI LANÇOU o GPT-6.2 Astra! Testei pesado (o modelo mais forte deles)",
+    "paragrafos": [
+      "Resumo automático indisponível nesta rodada."
+    ],
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-19"
   },
   {
     "url": "https://www.deeplearning.ai/the-batch/gemini-4-hydrogen-balances-accuracy-and-speed/",
@@ -158,77 +211,17 @@
     "dia": "2026-11-17"
   },
   {
-    "url": "https://huggingface.co/papers/2611.21938",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "robotica industrial",
-    "tipo": "artigo",
+    "url": "https://www.youtube.com/watch?v=pyzjAWApO40",
+    "fonte": "Maestros da IA (YouTube)",
+    "tema": "comparativo de modelos",
+    "tipo": "video",
     "categoria": "perfil",
-    "nota": 7.52,
-    "titulo": "HubEgo-100K: In-the-Wild Egocentric Video of Skilled Work for Robot Learning",
+    "nota": 8.24,
+    "titulo": "GPT-6.2 Astra x Claude Fable 5.2: Qual ganhou de verdade?",
     "paragrafos": [
-      "Políticas de controle para robôs treinadas por imitação costumam falhar ao operar fora dos ambientes emulador de treinamento. Estudos mostram que a generalização de robôs depende da diversidade de cenários do mundo real, mas coletar dados de robótica diretamente no campo é extremamente custoso.",
-      "Para resolver essa escassez, a solução é usar vídeos egocêntricos (gravados do ponto de vista da própria pessoa) de trabalho qualificado humano. O novo conjunto de dados HubEgo-100K traz mais de 10 mil horas de vídeos em alta definição capturados por câmeras de cabeça com sensores inerciais (IMU) sincronizados a 100 Hz.",
-      "A base reúne mais de 12 mil colaboradores gravando seu próprio trabalho real e não scriptado em oficinas, cozinhas e ambientes industriais, totalizando dezenas de milhares de episódios com anotações automáticas de ações e linguagem para treinar robôs com eficiência."
+      "Resumo automático indisponível nesta rodada."
     ],
-    "por_que_importa": "Isso é só uma aposta de correlação para o seu perfil, já que o foco da pesquisa é aprendizado por reforço para robótica móvel e autônoma, áreas distantes do seu escopo atual.",
-    "dia": "2026-11-18"
-  },
-  {
-    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "lancamento de modelos",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 7.4,
-    "titulo": "Microsoft AI: Seven new world-class models at scalable price-performance",
-    "paragrafos": [
-      "O conteúdo completo deste artigo não foi lido a partir da fonte original, portanto nenhum detalhe técnico ou dado adicional foi inventado para este resumo."
-    ],
-    "por_que_importa": "Isso é só uma aposta de correlação, já que o título aponta para lançamentos genéricos de modelos de IA da Microsoft sem conexão direta imediata com as suas ferramentas de engenharia.",
-    "dia": "2026-11-18"
-  },
-  {
-    "url": "https://energy-based-reasoners.github.io/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "eficiencia de inferencia",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 7.3,
-    "titulo": "Energy-Based Reasoners: 385x more efficient inference",
-    "paragrafos": [
-      "O conteúdo completo deste artigo não foi lido a partir da fonte original, logo nenhum detalhe técnico ou número específico além do título foi inventado."
-    ],
-    "por_que_importa": "Isso é só uma aposta de correlação, pois a promessa de ganho de eficiência em inferência de IA não traz contexto prático aplicável à sua atuação na engenharia mecânica.",
-    "dia": "2026-11-18"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.21925",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "eficiencia de inferencia",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 6.8,
-    "titulo": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
-    "paragrafos": [
-      "A decodificação por difusão especulativa usa um modelo rascunho menor e paralelo para gerar vários tokens (pedaços de texto processados por IA) em uma única passada, que depois são verificados por um modelo principal maior. O sistema acelera a resposta da inteligência artificial se muitos rascunhos passarem juntos na verificação.",
-      "Para melhorar a qualidade do rascunho, arquiteturas anteriores usavam um mecanismo de codificação de características do modelo principal, mas que sofria com perdas de informação, ausência de memória dos erros passados e seleção homogênea de camadas. O novo método DNeo introduz o Mixture-of-Features Attention (MoFA) junto com uma memória de rejeição.",
-      "Essas melhorias arquiteturais permitem que o DNeo alcance uma velocidade de geração 1.3 vezes mais rápida que o estado da arte anterior, mantendo a mesma pegada computacional e sem perder a qualidade de geração de texto dos modelos de linguagem."
-    ],
-    "por_que_importa": "Isso importa diretamente para o seu trabalho com agentes de IA, pois otimiza a velocidade de execução de modelos de linguagem grandes de forma local, reduzindo gargalidades de processamento.",
-    "dia": "2026-11-18"
-  },
-  {
-    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "lancamento de modelos",
-    "tipo": "discussao",
-    "categoria": "adjacente",
-    "nota": 6.65,
-    "titulo": "GPT‑6.2 Astra and Sol",
-    "paragrafos": [
-      "A publicação continha apenas o título disponibilizado no fórum Hacker News, sem acesso ao corpo do texto; dessa forma, o conteúdo não pôde ser lido e nenhuma especulação foi incluída."
-    ],
-    "por_que_importa": "Apenas uma aposta de correlação: novidades em linhas de modelos de ponta podem sinalizar novos saltos de capacidade para agentes de análise autônoma de dados e automação de processos.",
-    "dia": "2026-11-17"
+    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
+    "dia": "2026-11-19"
   }
 ]

@@ -1,22 +1,24 @@
 {
   "temas": {
-    "agentes de ia": 0.35,
+    "agentes de ia": 0.13,
     "otimizacao de contextos": 0.08,
     "modelos de linguagem": -0.15,
     "seguranca de dados": 0.08,
-    "manutencao industrial": -0.15,
+    "manutencao industrial": 0.0,
     "otimizacao de modelos": -0.15,
     "recuperacao de informacao": 0.15,
-    "analise de dados": 0.15,
+    "analise de dados": 0.0,
     "energia solar": 0.15,
     "ajuste de modelos": 0.08,
-    "modelos abertos": -0.3
+    "modelos abertos": -0.3,
+    "projetos cad e ia": -0.15,
+    "lancamento de modelos": 0.08
   },
   "fontes": {
-    "Hugging Face Papers (descoberta)": 0.03,
+    "Hugging Face Papers (descoberta)": -0.12,
     "Anthropic News": 0.06,
-    "Matheus Battisti (YouTube)": 0.11,
-    "The Batch (DeepLearning.AI)": 0.24,
+    "Matheus Battisti (YouTube)": 0.14,
+    "The Batch (DeepLearning.AI)": 0.27,
     "Maestros da IA (YouTube)": 0.05,
     "IA em 6 Minutos (YouTube)": 0.05
   },

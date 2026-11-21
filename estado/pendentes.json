@@ -14,6 +14,20 @@
     "dia": "2026-11-20"
   },
   {
+    "url": "https://www.youtube.com/watch?v=UaLWmyswIug",
+    "fonte": "Matheus Battisti (YouTube)",
+    "tema": "agentes de ia",
+    "tipo": "video",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "O Google escondeu um modo que coloca VÁRIOS agentes trabalhando juntos (Antigravity /swarm)",
+    "paragrafos": [
+      "O conteúdo completo deste item não foi lido a partir da fonte fornecida, portanto nenhum detalhe técnico ou funcional foi inventado nesta explicação."
+    ],
+    "por_que_importa": "Como você trabalha com agentes de IA, vale acompanhar se essa ferramenta do Google trará ganhos reais para automatizar fluxos de engenharia.",
+    "dia": "2026-11-21"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=euedSKcZemA",
     "fonte": "Matheus Battisti (YouTube)",
     "tema": "comparativo de modelos",
@@ -112,6 +126,21 @@
     "dia": "2026-11-19"
   },
   {
+    "url": "https://huggingface.co/papers/2611.23875",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 7.45,
+    "titulo": "In Situ Training of Optical Neural Networks by Coding Agents",
+    "paragrafos": [
+      "Redes neurais ópticas prometem computação rápida e eficiente em energia, mas cada dispositivo difere do projeto original e precisa ser treinado diretamente no hardware. Para resolver isso, pesquisadores criaram uma técnica em que agentes de codificação (softwares baseados em inteligência artificial que escrevem e executam programas) treinam a rede óptica usando apenas medições de imagens de câmeras.",
+      "O agente desenvolve uma compreensão física da ótica e reparametriza a rede com elementos ópticos interpretáveis ajustados diretamente no hardware. Esse método supera abordagens tradicionais sem gradiente (métodos de tentativa e erro sem cálculo de derivadas) em classificação e codificação de imagens, aproximando-se do desempenho de modelos calibrados a uma fração do custo."
+    ],
+    "por_que_importa": "É uma aposta de correlação para o seu perfil de energia solar e automação, cruzando hardware físico com otimização via software.",
+    "dia": "2026-11-21"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.21053",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "agentes de ia",
@@ -125,6 +154,21 @@
     ],
     "por_que_importa": "Isso importa para o seu trabalho com agentes de IA, garantindo que sistemas automatizados executem rotinas industriais sem inventar dados críticos.",
     "dia": "2026-11-20"
+  },
+  {
+    "url": "https://www.deeplearning.ai/the-batch/jensen-huang-resigns-as-nvidia-ceo/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "mercado de ia",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 7.24,
+    "titulo": "Jensen Huang Resigns as Nvidia CEO: Nvidia founder Jensen Huang steps down after scandal, succeeded by CFO Colette Kress",
+    "paragrafos": [
+      "Jensen Huang renunciou ao cargo de CEO da Nvidia após uma investigação expor seu relacionamento com uma pessoa que serviços de inteligência dos Estados Unidos concluíram estar repassando informações para a China. A conselho da diretoria, a diretora financeira Colette Kress assumiu como CEO interina, enquanto Harvey Jones se tornou o primeiro presidente do conselho da empresa.",
+      "O escândalo ocorre em meio a tensões geopolíticas sobre o controle de exportação de unidades de processamento gráfico ou GPUs (chips de alto desempenho essenciais para processamento pesado). Apesar das restrições americanas e de acordos de tarifas de exportação, o ecossistema global de chips continuou sob forte escrutínio regulatório e comercial."
+    ],
+    "por_que_importa": "Isso importa porque a cadeia de suprimentos de chips e GPUs da Nvidia dita o ritmo de infraestrutura e computação para qualquer projeto avançado de engenharia ou inteligência artificial.",
+    "dia": "2026-11-21"
   },
   {
     "url": "https://www.deeplearning.ai/the-batch/gpt-6-2-astra-sol-cut-prices-to-match-claude/",
@@ -142,78 +186,33 @@
     "dia": "2026-11-20"
   },
   {
-    "url": "https://huggingface.co/papers/2611.25567",
+    "url": "https://huggingface.co/papers/2611.26232",
     "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "manutencao industrial",
+    "tema": "analise de dados",
     "tipo": "artigo",
     "categoria": "perfil",
-    "nota": 6.16,
-    "titulo": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
+    "nota": 7.04,
+    "titulo": "Time Series Structure Learning with Local Causal Parent Discovery",
     "paragrafos": [
-      "Foi estudada a detecção online de erros em vídeos procedurais egocêntricos (filmagens na perspectiva de quem executa a tarefa). O modelo utiliza apenas o vídeo observado, instruções da tarefa e previsões anteriores para identificar e classificar etapas concluídas como corretas, modificadas, deslizes ou adições em tempo real.",
-      "Os testes mostraram que um modelo conjunto, que prevê todas as saídas de uma só vez, supera abordagens modulares tradicionais e reduz a propagação de erros entre etapas, superando benchmarks anteriores na detecção de falhas."
+      "Aprender e fazer inferências em séries temporais (conjuntos de dados coletados em sequência ao longo do tempo) apresenta grandes desafios estatísticos, como observações autocorrelacionadas e alta dimensionalidade. Para mitigar esses problemas, este estudo introduz a Descoberta Iterativa de Pais Temporais (ITPD), um procedimento para aprendizado de estrutura causal em séries temporais multivariadas.",
+      "A abordagem local para global descobre o grafo global sequencialmente, reduzindo a complexidade computacional. Em simulações de benchmark, a ITPD executou testes muito mais rápido que métodos tradicionais, demonstrando alta eficiência em estruturas com milhares de variáveis."
     ],
-    "por_que_importa": "Conecta-se diretamente com a manutenção industrial, permitindo monitorar operadores em campo por vídeo para evitar falhas de procedimento.",
-    "dia": "2026-11-20"
+    "por_que_importa": "Essa ferramenta é altamente aplicável à sua consultoria de dados e manutenção industrial, onde prever falhas com base em séries temporais de sensores é essencial.",
+    "dia": "2026-11-21"
   },
   {
-    "url": "https://huggingface.co/papers/2611.21885",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "pesquisa em ia",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 5.81,
-    "titulo": "Language Models Can Rewrite Their Own Weights",
-    "paragrafos": [
-      "Pesquisadores demonstraram que modelos de linguagem grandes conseguem editar seus próprios pesos (os parâmetros internos que determinam suas respostas) de forma autônoma, sem precisar de novos ciclos de treinamento ou gradientes. Um modelo de 27 bilhões de parâmetros conseguiu diagnosticar suas próprias falhas e reescrever sua matriz danificada, melhorando sua precisão em testes futuros.",
-      "Essa capacidade de autocorreção surge apenas a partir de uma certa escala de tamanho do modelo e elimina a necessidade de infraestrutura pesada de treinamento, permitindo que a IA melhore conversando e testando a si mesma em uma única placa gráfica (GPU)."
-    ],
-    "por_que_importa": "É só uma aposta de correlação sobre o futuro do aprendizado autônomo de máquinas.",
-    "dia": "2026-11-20"
-  },
-  {
-    "url": "https://www.deeplearning.ai/the-batch/issue-380/",
+    "url": "https://www.deeplearning.ai/the-batch/jensen-huangs-legacy-and-future/",
     "fonte": "The Batch (DeepLearning.AI)",
-    "tema": "modelos de linguagem",
+    "tema": "mercado de ia",
     "tipo": "artigo",
     "categoria": "adjacente",
-    "nota": 5.72,
-    "titulo": "Jensen Huang’s Nvidia legacy, Claude Fable 5.2 and Anthropic’s IPO, World Labs Releases Atlas to Developers",
+    "nota": 6.86,
+    "titulo": "Jensen Huang's Legacy and Future: How Nvidia's founder saw opportunities other people couldn't",
     "paragrafos": [
-      "Jensen Huang renunciou ao cargo de CEO da Nvidia após uma crise gerada por sua relação com um possível agente de inteligência chinesa. Apesar dos erros, ele é reconhecido por transformar a empresa em uma das mais valiosas do mundo, liderando a transição para o uso de GPUs (unidades de processamento gráfico, chips usados para cálculos pesados) em inteligência artificial e criando um ecossistema próspero.",
-      "O autor do texto destaca que Huang refuta a ideia de que pessoas são substituíveis em grandes empresas e lamenta as contribuições futuras que serão perdidas com sua saída. Ele inspira a comunidade a buscar impacto duradouro e indispensável em seus projetos."
+      "O artigo reflete sobre a renúncia de Jensen Huang e destaca seu papel histórico em transformar a Nvidia em uma das empresas mais valiosas do mundo. O texto lembra quando Huang apostou no uso de GPUs para treinar redes neurais muito antes de o mercado enxergar o potencial dessa tecnologia para o aprendizado profundo ou deep learning (subcampo da inteligência artificial baseado em redes neurais multicamadas).",
+      "O autor enfatiza que a liderança visionária de Huang foi indispensável para construir todo o ecossistema atual de inteligência artificial, provando que contribuições individuais podem ser cruciais para grandes revoluções tecnológicas."
     ],
-    "por_que_importa": "Isso importa para a gestão da sua equipe de manutenção industrial e projetos de engenharia, reforçando que lideranças técnicas críticas e o fator humano não são facilmente substituíveis por processos ou automações.",
-    "dia": "2026-11-20"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.26450",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "modelos de linguagem",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 5.68,
-    "titulo": "A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights",
-    "paragrafos": [
-      "Modelos de linguagem (LLMs, sistemas de inteligência artificial baseados em texto) costumam falhar em tarefas exatas de matemática sem precisar de treinamento adicional ou ferramentas externas. Pesquisadores apresentaram uma técnica para compilar circuitos de computação determinística diretamente nos pesos pré-treinados do modelo, sem usar exemplos de treino ou modificações em tempo de execução.",
-      "A construção combina mecanismos analíticos que mantêm a competência da linguagem natural enquanto inserem circuitos lógicos matemáticos exatos. Testes em modelos como IBM Granite e Alibaba Qwen alcançaram alta precisão em operações aritméticas, superando métodos tradicionais de ajuste fino como o LoRA."
-    ],
-    "por_que_importa": "Isso é uma aposta de correlação para consultoria de dados e agentes de IA, sugerindo que futuros modelos poderão executar lógica matemática industrial exata de forma nativa, sem depender de calculadoras externas.",
-    "dia": "2026-11-20"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.25179",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "automacao de processos",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 5.54,
-    "titulo": "Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks",
-    "paragrafos": [
-      "Testes simulados de robótica usam validadores manuais de sucesso para definir se uma tarefa foi concluída ou falhou. Porém, políticas aprendidas por robôs podem executar tarefas de formas diferentes, fazendo com que o validador aprove execuções incompletas (chamado de sucesso fantasma) ou rejeite execuções válidas (falha silenciosa).",
-      "Para resolver isso, os autores criaram o SimAudit, um pipeline baseado em LLM que audita esses validadores comparando-os com as instruções originais. Testes em múltiplos ambientes de simulação revelaram dezenas de defeitos nos validadores, provando que é preciso testar cenários variados e alternativos para garantir avaliações robóticas confiáveis."
-    ],
-    "por_que_importa": "Isso importa diretamente para o seu trabalho com agentes de IA e automação, pois valida a necessidade de testes rigorosos em simulações industriais antes de implantar braços robóticos e sistemas físicos na planta.",
-    "dia": "2026-11-20"
+    "por_que_importa": "É uma reflexão de mercado que mostra como escolhas de infraestrutura de hardware moldam toda a revolução industrial e digital que você acompanha.",
+    "dia": "2026-11-21"
   }
 ]

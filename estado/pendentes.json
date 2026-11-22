@@ -28,74 +28,18 @@
     "dia": "2026-11-21"
   },
   {
-    "url": "https://www.youtube.com/watch?v=euedSKcZemA",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "comparativo de modelos",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 9.05,
-    "titulo": "O novo GPT-6.2 Astra contra o Claude Fable 5.2: o MESMO pedido nos dois (um custou 5x mais)",
-    "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-19"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=wR62Ka2faHc",
+    "url": "https://www.youtube.com/watch?v=8sV6rsGFCS8",
     "fonte": "Maestros da IA (YouTube)",
-    "tema": "automacao com ia",
+    "tema": "agentes de ia",
     "tipo": "video",
     "categoria": "perfil",
-    "nota": 8.77,
-    "titulo": "12 Efeitos Visuais em 5 Segundos: Nossa IA Fez Tudo Só com Código",
+    "nota": 9.47,
+    "titulo": "Guia Definitivo do Hermes Agent para Iniciantes",
     "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
+      "O conteúdo completo deste vídeo do canal Maestros da IA no YouTube não foi lido, portanto nenhum detalhe técnico ou instrução foi inventado."
     ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-19"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=C2M1pou0hjM",
-    "fonte": "IA em 6 Minutos (YouTube)",
-    "tema": "automacao com ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 8.56,
-    "titulo": "Fable 5.2 é Insano! Um Prompt Gera um Jogo Multiplayer Completo",
-    "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-19"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=sFB1bN06ktI",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "lancamento de modelos",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 8.49,
-    "titulo": "LANÇOU o Gemini 4 Neon! Testei pesado (7 projetos de primeira)",
-    "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-19"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=X3ooT7IySaw",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "lancamento de modelos",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 8.49,
-    "titulo": "A OpenAI LANÇOU o GPT-6.2 Astra! Testei pesado (o modelo mais forte deles)",
-    "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
-    ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-19"
+    "por_que_importa": "Isso importa diretamente para o seu interesse em agentes de IA aplicados a fluxos industriais ou de dados.",
+    "dia": "2026-11-22"
   },
   {
     "url": "https://architectlabs.com/blog/frostbite",
@@ -112,18 +56,18 @@
     "dia": "2026-11-20"
   },
   {
-    "url": "https://www.youtube.com/watch?v=pyzjAWApO40",
+    "url": "https://www.youtube.com/watch?v=gWQCFVpVo5A",
     "fonte": "Maestros da IA (YouTube)",
-    "tema": "comparativo de modelos",
+    "tema": "modelos de linguagem",
     "tipo": "video",
     "categoria": "perfil",
-    "nota": 8.24,
-    "titulo": "GPT-6.2 Astra x Claude Fable 5.2: Qual ganhou de verdade?",
+    "nota": 7.5,
+    "titulo": "Gemini 4 Neon, Claude ou GPT: quem deve trocar e quem deve esperar",
     "paragrafos": [
-      "Resumo automático indisponível nesta rodada."
+      "O conteúdo completo deste vídeo do canal Maestros da IA no YouTube não foi lido, portanto nenhum detalhe sobre comparação de modelos foi inventado."
     ],
-    "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte.",
-    "dia": "2026-11-19"
+    "por_que_importa": "É uma aposta de correlação sobre qual inteligência artificial escolher para futuros projetos de consultoria de dados.",
+    "dia": "2026-11-22"
   },
   {
     "url": "https://huggingface.co/papers/2611.23875",
@@ -214,5 +158,33 @@
     ],
     "por_que_importa": "É uma reflexão de mercado que mostra como escolhas de infraestrutura de hardware moldam toda a revolução industrial e digital que você acompanha.",
     "dia": "2026-11-21"
+  },
+  {
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "infraestrutura de ia",
+    "tipo": "discussao",
+    "categoria": "perfil",
+    "nota": 6.7,
+    "titulo": "Data Processing Incidents on Inference Providers",
+    "paragrafos": [
+      "O conteúdo completo desta postagem do Hacker News não foi lido, portanto nenhum detalhe sobre falhas de processamento de dados foi inventado."
+    ],
+    "por_que_importa": "Isso importa para avaliar a confiabilidade de servidores externos ao integrar agentes de IA na sua rotina.",
+    "dia": "2026-11-22"
+  },
+  {
+    "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "modelos de linguagem",
+    "tipo": "discussao",
+    "categoria": "adjacente",
+    "nota": 4.84,
+    "titulo": "Inkling-2-Mini in 5.4 GB Memory",
+    "paragrafos": [
+      "O conteúdo completo desta descoberta do Hacker News não foi lido, portanto nenhum detalhe sobre consumo de memória ou software foi inventado."
+    ],
+    "por_que_importa": "É uma aposta de correlação sobre modelos leves que possam rodar em hardware limitado de campo.",
+    "dia": "2026-11-22"
   }
 ]

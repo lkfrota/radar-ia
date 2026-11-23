@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://www.youtube.com/watch?v=8Ofrox5ycgQ",
-    "fonte": "Matheus Battisti (YouTube)",
-    "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 10,
-    "titulo": "O Claude Code ganhou um modo ESCONDIDO que corta metade dos tokens (Code Mode)",
-    "paragrafos": [
-      "Este resumo baseia-se apenas no título e na fonte informados, portanto o conteúdo completo do vídeo não foi lido e detalhes adicionais não serão inventados para manter a precisão."
-    ],
-    "por_que_importa": "É só uma aposta de correlação para o seu dia a dia na engenharia.",
-    "dia": "2026-11-20"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=UaLWmyswIug",
     "fonte": "Matheus Battisti (YouTube)",
     "tema": "agentes de ia",
@@ -42,20 +28,6 @@
     "dia": "2026-11-22"
   },
   {
-    "url": "https://architectlabs.com/blog/frostbite",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "ia na engenharia",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 8.3,
-    "titulo": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-    "paragrafos": [
-      "Este resumo baseia-se apenas no título e na fonte informados, portanto o conteúdo completo do artigo não foi lido e detalhes adicionais não serão inventados para manter a precisão."
-    ],
-    "por_que_importa": "Interessante para quem trabalha com agentes de IA e projeto de hardware.",
-    "dia": "2026-11-20"
-  },
-  {
     "url": "https://www.youtube.com/watch?v=gWQCFVpVo5A",
     "fonte": "Maestros da IA (YouTube)",
     "tema": "modelos de linguagem",
@@ -68,96 +40,6 @@
     ],
     "por_que_importa": "É uma aposta de correlação sobre qual inteligência artificial escolher para futuros projetos de consultoria de dados.",
     "dia": "2026-11-22"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.23875",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 7.45,
-    "titulo": "In Situ Training of Optical Neural Networks by Coding Agents",
-    "paragrafos": [
-      "Redes neurais ópticas prometem computação rápida e eficiente em energia, mas cada dispositivo difere do projeto original e precisa ser treinado diretamente no hardware. Para resolver isso, pesquisadores criaram uma técnica em que agentes de codificação (softwares baseados em inteligência artificial que escrevem e executam programas) treinam a rede óptica usando apenas medições de imagens de câmeras.",
-      "O agente desenvolve uma compreensão física da ótica e reparametriza a rede com elementos ópticos interpretáveis ajustados diretamente no hardware. Esse método supera abordagens tradicionais sem gradiente (métodos de tentativa e erro sem cálculo de derivadas) em classificação e codificação de imagens, aproximando-se do desempenho de modelos calibrados a uma fração do custo."
-    ],
-    "por_que_importa": "É uma aposta de correlação para o seu perfil de energia solar e automação, cruzando hardware físico com otimização via software.",
-    "dia": "2026-11-21"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.21053",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "agentes de ia",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 7.24,
-    "titulo": "System 1 agents: a method for local, reliable and fast agentic AI",
-    "paragrafos": [
-      "Pesquisadores criaram agentes de Inteligência Artificial do Sistema 1, focados em tarefas locais e confiáveis sem gerar texto livre. Usando um compilador determinístico e um modelo de decisão, esses agentes respondem a perguntas de múltipla escolha baseadas em esquemas de ferramentas. O resultado atingiu 97% de precisão em chamadas a ferramentas biomédicas sem inventar dados, superando modelos de linguagem tradicionais locais que sofrem com alucinações (quando o modelo inventa informações falsas).",
-      "O código foi disponibilizado como software de código aberto (open-source) no GitHub, permitindo o uso prático dessa tecnologia de forma isolada e sem expor dados confidenciais na nuvem."
-    ],
-    "por_que_importa": "Isso importa para o seu trabalho com agentes de IA, garantindo que sistemas automatizados executem rotinas industriais sem inventar dados críticos.",
-    "dia": "2026-11-20"
-  },
-  {
-    "url": "https://www.deeplearning.ai/the-batch/jensen-huang-resigns-as-nvidia-ceo/",
-    "fonte": "The Batch (DeepLearning.AI)",
-    "tema": "mercado de ia",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 7.24,
-    "titulo": "Jensen Huang Resigns as Nvidia CEO: Nvidia founder Jensen Huang steps down after scandal, succeeded by CFO Colette Kress",
-    "paragrafos": [
-      "Jensen Huang renunciou ao cargo de CEO da Nvidia após uma investigação expor seu relacionamento com uma pessoa que serviços de inteligência dos Estados Unidos concluíram estar repassando informações para a China. A conselho da diretoria, a diretora financeira Colette Kress assumiu como CEO interina, enquanto Harvey Jones se tornou o primeiro presidente do conselho da empresa.",
-      "O escândalo ocorre em meio a tensões geopolíticas sobre o controle de exportação de unidades de processamento gráfico ou GPUs (chips de alto desempenho essenciais para processamento pesado). Apesar das restrições americanas e de acordos de tarifas de exportação, o ecossistema global de chips continuou sob forte escrutínio regulatório e comercial."
-    ],
-    "por_que_importa": "Isso importa porque a cadeia de suprimentos de chips e GPUs da Nvidia dita o ritmo de infraestrutura e computação para qualquer projeto avançado de engenharia ou inteligência artificial.",
-    "dia": "2026-11-21"
-  },
-  {
-    "url": "https://www.deeplearning.ai/the-batch/gpt-6-2-astra-sol-cut-prices-to-match-claude/",
-    "fonte": "The Batch (DeepLearning.AI)",
-    "tema": "modelos de linguagem",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 7.23,
-    "titulo": "GPT-6.2 Astra & Sol cut prices to match Claude: Alibaba updates to Qwen4; developers await open models",
-    "paragrafos": [
-      "O mercado de inteligência artificial passou por atualizações de preços e novos modelos. O OpenAI GPT-6.2 Astra lidera em trabalhos científicos e reduziu custos, enquanto o modelo Qwen4-Max da Alibaba foi lançado com arquitetura de 2,4 trilhões de parâmetros que ativa apenas uma fração deles por vez, reduzindo a necessidade de hardware.",
-      "Apesar dos avanços na eficiência e em tarefas científicas, os modelos ainda apresentam taxas significativas de alucinação em perguntas factuais e mantêm desempenho estável em programação, o que indica que atualizações focam mais em custos e ciências do que em codificação pura."
-    ],
-    "por_que_importa": "Útil para a sua consultoria de dados, oferecendo opções mais baratas para processamento pesado e análises técnicas.",
-    "dia": "2026-11-20"
-  },
-  {
-    "url": "https://huggingface.co/papers/2611.26232",
-    "fonte": "Hugging Face Papers (descoberta)",
-    "tema": "analise de dados",
-    "tipo": "artigo",
-    "categoria": "perfil",
-    "nota": 7.04,
-    "titulo": "Time Series Structure Learning with Local Causal Parent Discovery",
-    "paragrafos": [
-      "Aprender e fazer inferências em séries temporais (conjuntos de dados coletados em sequência ao longo do tempo) apresenta grandes desafios estatísticos, como observações autocorrelacionadas e alta dimensionalidade. Para mitigar esses problemas, este estudo introduz a Descoberta Iterativa de Pais Temporais (ITPD), um procedimento para aprendizado de estrutura causal em séries temporais multivariadas.",
-      "A abordagem local para global descobre o grafo global sequencialmente, reduzindo a complexidade computacional. Em simulações de benchmark, a ITPD executou testes muito mais rápido que métodos tradicionais, demonstrando alta eficiência em estruturas com milhares de variáveis."
-    ],
-    "por_que_importa": "Essa ferramenta é altamente aplicável à sua consultoria de dados e manutenção industrial, onde prever falhas com base em séries temporais de sensores é essencial.",
-    "dia": "2026-11-21"
-  },
-  {
-    "url": "https://www.deeplearning.ai/the-batch/jensen-huangs-legacy-and-future/",
-    "fonte": "The Batch (DeepLearning.AI)",
-    "tema": "mercado de ia",
-    "tipo": "artigo",
-    "categoria": "adjacente",
-    "nota": 6.86,
-    "titulo": "Jensen Huang's Legacy and Future: How Nvidia's founder saw opportunities other people couldn't",
-    "paragrafos": [
-      "O artigo reflete sobre a renúncia de Jensen Huang e destaca seu papel histórico em transformar a Nvidia em uma das empresas mais valiosas do mundo. O texto lembra quando Huang apostou no uso de GPUs para treinar redes neurais muito antes de o mercado enxergar o potencial dessa tecnologia para o aprendizado profundo ou deep learning (subcampo da inteligência artificial baseado em redes neurais multicamadas).",
-      "O autor enfatiza que a liderança visionária de Huang foi indispensável para construir todo o ecossistema atual de inteligência artificial, provando que contribuições individuais podem ser cruciais para grandes revoluções tecnológicas."
-    ],
-    "por_que_importa": "É uma reflexão de mercado que mostra como escolhas de infraestrutura de hardware moldam toda a revolução industrial e digital que você acompanha.",
-    "dia": "2026-11-21"
   },
   {
     "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",

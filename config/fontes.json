@@ -3,18 +3,70 @@
     "nome": "Matheus Battisti (YouTube)",
     "tipo": "youtube",
     "canal": "MatheusBattisti",
-    "limite": 4
+    "limite": 4,
+    "ativo": false,
+    "obs": "desativado em 2026-11-24: o YouTube devolve 429 à nuvem desde ~20/11 e o resumo saía só do título; trocado por fontes escritas"
   },
   {
     "nome": "Maestros da IA (YouTube)",
     "tipo": "youtube",
     "canal": "maestrosdaia",
-    "limite": 4
+    "limite": 4,
+    "ativo": false,
+    "obs": "desativado em 2026-11-24: o YouTube devolve 429 à nuvem desde ~20/11 e o resumo saía só do título; trocado por fontes escritas"
   },
   {
     "nome": "IA em 6 Minutos (YouTube)",
     "tipo": "youtube",
     "canal": "iaem6minutos",
+    "limite": 4,
+    "ativo": false,
+    "obs": "desativado em 2026-11-24: o YouTube devolve 429 à nuvem desde ~20/11 e o resumo saía só do título; trocado por fontes escritas"
+  },
+  {
+    "nome": "Simon Willison",
+    "tipo": "rss",
+    "url": "https://simonwillison.net/atom/entries/",
+    "limite": 4,
+    "obs": "IA prática, ferramentas e agentes; feed Atom com texto completo (só posts longos)"
+  },
+  {
+    "nome": "One Useful Thing (Ethan Mollick)",
+    "tipo": "rss",
+    "url": "https://www.oneusefulthing.org/feed",
+    "limite": 3,
+    "obs": "uso de IA em trabalho e empresas, para quem não é programador"
+  },
+  {
+    "nome": "Import AI",
+    "tipo": "rss",
+    "url": "https://jack-clark.net/feed/",
+    "limite": 2,
+    "obs": "newsletter semanal sobre pesquisa e cenário de IA; importai.substack.com dá 403 à nuvem (2026-11-24), usa-se o espelho do autor"
+  },
+  {
+    "nome": "Latent Space",
+    "tipo": "rss",
+    "url": "https://www.latent.space/feed",
+    "limite": 3,
+    "obs": "engenharia de IA e agentes na prática"
+  },
+  {
+    "nome": "Hugging Face Blog",
+    "tipo": "rss",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "limite": 4
+  },
+  {
+    "nome": "OpenAI News",
+    "tipo": "rss",
+    "url": "https://openai.com/news/rss.xml",
+    "limite": 4
+  },
+  {
+    "nome": "Google AI Blog",
+    "tipo": "rss",
+    "url": "https://blog.google/technology/ai/rss/",
     "limite": 4
   },
   {

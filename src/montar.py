@@ -100,11 +100,8 @@ def _redigir_video(it):
 def _redigir_em_lote(itens):
     blocos = []
     for n, it in enumerate(itens):
-        corpo = it.texto[:CORPO_LOTE] if it.texto else (
-            "(só título e fonte disponíveis: diga em 1 parágrafo curto que o conteúdo "
-            "não foi lido e não invente detalhes)")
         blocos.append(f"[{n}] Título: {it.titulo}\nFonte: {it.fonte}\n"
-                      f"Tamanho: {paragrafos_alvo(it.nota)}\nConteúdo: {corpo}")
+                      f"Tamanho: {paragrafos_alvo(it.nota)}\nConteúdo: {it.texto[:CORPO_LOTE]}")
     res = modelo.gerar_json(INSTRUCAO + "Resuma cada item abaixo no tamanho indicado.\n\n"
                             + "\n\n".join(blocos), ESQUEMA_LOTE, modelo=modelo.MODELO_REDACAO)
     return {r["i"]: r for r in res}
@@ -130,7 +127,9 @@ def redigir_lote(itens):
             except Exception as e:  # vídeo indisponível/travado: cai para o lote, só com título
                 video_ok = False
                 print(f"vídeo não lido ({it.url}): {str(e)[:120]}", flush=True)
-        resto = [i for i in itens if i.url not in out]
+        # sem texto não há o que resumir: o modelo só escreveria "não foi lido" (página de
+        # 23/11/2026). Esses itens saem marcados como "só título", sem gastar chamada.
+        resto = [i for i in itens if i.url not in out and (i.texto or "").strip()]
         for ini in range(0, len(resto), LOTE_REDACAO):
             grupo = resto[ini:ini + LOTE_REDACAO]
             res = _redigir_em_lote(grupo)
@@ -150,6 +149,9 @@ def redigir_lote(itens):
 def _reserva(it):
     """Sem IA: título e trecho original, marcado como tal. Melhor que página vazia."""
     trecho = (it.texto or "").strip()[:500]
-    return {"titulo": it.titulo,
-            "paragrafos": [trecho + "…" if trecho else "Resumo automático indisponível nesta rodada."],
+    if not trecho:
+        return {"titulo": it.titulo,
+                "paragrafos": ["Só o título foi coletado (a fonte não entregou o texto); abra o original."],
+                "por_que_importa": "Sem resumo: não houve texto para resumir."}
+    return {"titulo": it.titulo, "paragrafos": [trecho + "…"],
             "por_que_importa": "Resumo automático indisponível nesta rodada; trecho original da fonte."}

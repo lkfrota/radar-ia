@@ -1,0 +1,37 @@
+name: testar-fontes
+
+# Só coleta (sem Gemini, sem commit): mostra, a partir de um servidor do GitHub, quais fontes
+# respondem e quanto texto cada item traz. Roda ao mudar fontes/coletor num branch ou à mão.
+on:
+  push:
+    branches-ignore: [main]
+    paths: [config/fontes.json, src/coletar.py, .github/workflows/testar-fontes.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+      - name: Coletar e medir texto
+        run: |
+          uv run python -u - <<'PY'
+          import json
+          from collections import defaultdict
+          from src import coletar
+          itens, falhas = coletar.coletar_tudo(json.load(open("config/fontes.json")))
+          por = defaultdict(list)
+          for i in itens:
+              por[i.fonte].append(len(i.texto or ""))
+          print("\nfonte | itens | sem texto | média de caracteres")
+          for f, ns in por.items():
+              print(f"{f} | {len(ns)} | {sum(n == 0 for n in ns)} | {sum(ns) // len(ns)}")
+          for f in falhas:
+              print(f"FALHOU: {f['fonte']}: {f['erro'][:200]}")
+          PY

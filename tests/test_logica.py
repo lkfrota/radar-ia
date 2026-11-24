@@ -148,3 +148,24 @@ def test_rss_prefere_texto_completo_e_le_pagina_se_curto(monkeypatch):
     a, b = coletar.coletar_rss({"nome": "F", "url": "https://feed"}, 5)
     assert a.texto.startswith("palavra") and len(a.texto) > 500
     assert b.texto.startswith("pagina")
+
+
+def test_repeticao_da_rodada():
+    from src.main import precisa_rodar
+    hoje = "2026-11-25"
+    assert precisa_rodar({}, hoje)                                                    # 1ª rodada
+    assert precisa_rodar({"dia": "2026-11-24", "triagem_ok": True, "tentativa": 1}, hoje)  # dia novo
+    assert not precisa_rodar({"dia": hoje, "triagem_ok": True, "tentativa": 1}, hoje)   # já deu certo
+    assert precisa_rodar({"dia": hoje, "triagem_ok": False, "tentativa": 2}, hoje)      # falhou, há tentativa
+    assert not precisa_rodar({"dia": hoje, "triagem_ok": False, "tentativa": 3}, hoje)  # teto do dia
+
+
+def test_variavel_vazia_usa_padrao(monkeypatch):
+    """O workflow passa '' quando não simula falha; '' não pode apagar o modelo nem a reserva."""
+    import importlib
+    from src import modelo
+    monkeypatch.setenv("GEMINI_MODEL_TRIAGEM", "")
+    monkeypatch.setenv("GEMINI_ALTERNATIVOS", "")
+    m = importlib.reload(modelo)
+    assert m.MODELO_TRIAGEM == "gemini-flash-lite-latest" and m.ALTERNATIVOS == ["gemini-flash-latest"]
+    monkeypatch.undo(); importlib.reload(modelo)

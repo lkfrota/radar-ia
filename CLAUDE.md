@@ -16,6 +16,10 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
   Desde 2026-11-13: `modelo.gerar_json` cai para `ALTERNATIVOS` (env `GEMINI_ALTERNATIVOS`, padrão `gemini-flash-latest`) depois de 3 tentativas;
   se a triagem ainda assim falhar, os itens ficam sem nota para a rodada seguinte e a página mostra o aviso, em vez de abortar. Redação sem
   modelo cai no texto original (reserva). Rodada "success" pode, portanto, sair degradada: ver o aviso no topo da página.
+- **Repetição automática (desde 2026-11-24):** `diario.yml` é acionado às 9:17, 15:17 e 21:17 UTC com `--se-preciso`;
+  `estado/rodada.json` (dia UTC, triagem_ok, tentativa) faz os acionamentos seguintes pularem se a triagem do dia deu certo,
+  até 3 tentativas. Rodada manual: `forcar` ignora a checagem; `simular_falha_triagem` usa modelo inexistente (teste sem cota).
+  Motivo: 503 do Gemini piorou desde 13/11 e derrubou a triagem em 23 e 24/11. O usuário recusou uma sonda de horário de pico.
 - Leitura de vídeo pelo Gemini é lenta e instável: no máximo 1 por dia, 1 tentativa. Os demais usam a descrição do vídeo.
 - **The Batch dá 403 nos servidores do GitHub** (IP de nuvem), em qualquer endereço. Funciona na máquina do usuário.
   Solução (2026-11-02): `local/coletar_batch.py` roda no computador dele (timer systemd às 13h — mudado de 6h em 2026-11-02 —, `local/instalar_timer.sh`,

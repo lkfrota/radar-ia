@@ -8,15 +8,15 @@ import re
 import time
 
 FAKE = os.environ.get("RADAR_FAKE") == "1"
-MODELO = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
+MODELO = (os.environ.get("GEMINI_MODEL") or "gemini-flash-latest")
 # a camada gratuita tem cota diária (20 chamadas) separada por modelo: a triagem usa o
 # modelo lite para não competir com a redação
-MODELO_TRIAGEM = os.environ.get("GEMINI_MODEL_TRIAGEM", "gemini-flash-lite-latest")
+MODELO_TRIAGEM = (os.environ.get("GEMINI_MODEL_TRIAGEM") or "gemini-flash-lite-latest")
 # redação também em lite: o Flash completo deu 504 repetido em 2026-10-30 (demanda alta)
-MODELO_REDACAO = os.environ.get("GEMINI_MODEL_REDACAO", MODELO_TRIAGEM)
+MODELO_REDACAO = (os.environ.get("GEMINI_MODEL_REDACAO") or MODELO_TRIAGEM)
 # se o modelo escolhido seguir indisponível (503 de "alta demanda" durou 2 dias seguidos em
 # 11-12/11/2026 e derrubou a rodada), tenta estes na ordem; cada modelo tem cota própria
-ALTERNATIVOS = [m for m in os.environ.get("GEMINI_ALTERNATIVOS", MODELO).split(",") if m]
+ALTERNATIVOS = [m for m in (os.environ.get("GEMINI_ALTERNATIVOS") or MODELO).split(",") if m]
 TIMEOUT_MS = 180_000  # 3 min por chamada
 _PAUSA = 6.5  # a camada gratuita limita requisições por minuto
 

@@ -2,8 +2,22 @@ name: radar-diario
 
 on:
   schedule:
-    - cron: "17 9 * * *"   # 9:17 UTC = 6:17 em Brasília; o GitHub costuma atrasar, e minuto redondo é horário de pico
+    # 3 acionamentos: o 1º faz a rodada; os outros só repetem se a triagem falhou (Gemini 503),
+    # em outra faixa de horário (`--se-preciso`, estado/rodada.json). O GitHub atrasa horas;
+    # minuto redondo é horário de pico.
+    - cron: "17 9 * * *"
+    - cron: "17 15 * * *"
+    - cron: "17 21 * * *"
   workflow_dispatch:
+    inputs:
+      forcar:
+        description: "Rodar mesmo se a rodada de hoje já deu certo"
+        type: boolean
+        default: false
+      simular_falha_triagem:
+        description: "Teste: modelo inexistente na triagem (exercita a repetição sem gastar cota)"
+        type: boolean
+        default: false
 
 concurrency: radar
 
@@ -19,16 +33,22 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
       - run: uv sync --frozen
-      - run: uv run python -u -m src.main
+      - run: uv run python -u -m src.main ${{ inputs.forcar && ' ' || '--se-preciso' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL_TRIAGEM: ${{ inputs.simular_falha_triagem && 'modelo-inexistente' || '' }}
+          GEMINI_ALTERNATIVOS: ${{ inputs.simular_falha_triagem && 'modelo-inexistente' || '' }}
       - name: Commit
+        id: commit
         run: |
           git config user.name "radar-ia"
           git config user.email "radar-ia@users.noreply.github.com"
           git add -A docs estado feedback
-          git diff --cached --quiet || (git commit -m "radar: rodada $(date -u +%F)" && git pull --rebase && git push)
+          if git diff --cached --quiet; then echo "nada a publicar"; exit 0; fi
+          git commit -m "radar: rodada $(date -u +%F)" && git pull --rebase && git push
+          echo "publicou=1" >> "$GITHUB_OUTPUT"
       - name: Conferir publicação do Pages
+        if: steps.commit.outputs.publicou == '1'
         # O build do Pages já falhou sozinho uma vez (2026-11-04) sem a rodada perceber. Espera o build do
         # commit atual, refaz até 3 vezes se der erro e, se persistir, falha o job (o GitHub avisa por e-mail).
         env:

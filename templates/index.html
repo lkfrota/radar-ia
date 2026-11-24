@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block conteudo %}
 <p class="meta">Atualizado em {{ data }} · {{ itens|length }} itens · reaja a um item para dispensá-lo e ensinar o radar; sem reação, ele fica até perder a vaga para itens melhores.</p>
+{% if aviso_triagem %}
+<p class="aviso">{{ aviso_triagem }}</p>
+{% endif %}
 {% if falhas %}
 <p class="aviso">Fontes que falharam nesta rodada: {% for f in falhas %}{{ f.fonte }}{% if not loop.last %}, {% endif %}{% endfor %}.</p>
 {% endif %}

@@ -40,9 +40,9 @@
   {
     "nome": "Import AI",
     "tipo": "rss",
-    "url": "https://importai.substack.com/feed",
+    "url": "https://jack-clark.net/feed/",
     "limite": 2,
-    "obs": "newsletter semanal sobre pesquisa e cenário de IA"
+    "obs": "newsletter semanal sobre pesquisa e cenário de IA; importai.substack.com dá 403 à nuvem (2026-11-24), usa-se o espelho do autor"
   },
   {
     "nome": "Latent Space",

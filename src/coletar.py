@@ -20,6 +20,7 @@ AVISOS = []  # avisos não fatais (ex.: arquivo local desatualizado) que viram f
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) radar-ia/0.1"}
 TIMEOUT = 20
 MAX_TEXTO = 6000  # caracteres de corpo enviados ao modelo por item
+MIN_TEXTO = 500   # abaixo disso o texto do feed é só chamada: lê a página
 
 
 @dataclass
@@ -64,13 +65,35 @@ def _artigo(url, fonte, descoberta=False):
                 descoberta=descoberta)
 
 
+def _corpo(url):
+    """Texto do miolo de uma página (<article>/<main>), ou "" se não der para ler.
+    Usado para fontes que só entregam link (Hacker News) ou resumo curto (alguns RSS)."""
+    try:
+        r = _get(url)
+        if "html" not in r.headers.get("Content-Type", "html"):
+            return ""  # PDF, imagem etc.
+        s, corpo = _texto_pagina(r.text)
+        miolo = s.find("article") or s.find("main")
+        if miolo:
+            corpo = re.sub(r"\s+", " ", miolo.get_text(" ", strip=True))
+        return corpo[:MAX_TEXTO]
+    except Exception as e:
+        print(f"  texto indisponível ({url}): {str(e)[:120]}", file=sys.stderr)
+        return ""
+
+
 def coletar_rss(fonte, limite):
+    """Prefere o texto completo do feed (content:encoded / Atom content); se o feed só traz
+    um resumo curto, lê a página do artigo."""
     feed = feedparser.parse(_get(fonte["url"]).content)
     if not feed.entries:
         raise ValueError("feed sem entradas")
     itens = []
     for e in feed.entries[:limite]:
-        texto = BeautifulSoup(e.get("summary", ""), "html.parser").get_text(" ", strip=True)
+        bruto = max([c.get("value", "") for c in e.get("content", [])] + [e.get("summary", "")], key=len)
+        texto = BeautifulSoup(bruto, "html.parser").get_text(" ", strip=True)
+        if len(texto) < MIN_TEXTO:
+            texto = max(texto, _corpo(e.link), key=len)
         itens.append(Item(e.link, e.title, fonte["nome"], "artigo", texto[:MAX_TEXTO],
                           e.get("published", "")))
     return itens
@@ -136,8 +159,9 @@ def coletar_hackernews(fonte, limite):
     for i in ids:
         d = _get(f"https://hacker-news.firebaseio.com/v0/item/{i}.json").json() or {}
         if d.get("url") and d.get("score", 0) >= fonte.get("score_min", 150):
+            # o HN só dá título e link; o texto vem da página linkada (vazio se ela bloquear)
             itens.append(Item(d["url"], d.get("title", ""), fonte["nome"], "discussao",
-                              descoberta=True))
+                              _corpo(d["url"]), descoberta=True))
         if len(itens) >= limite:
             break
     return itens

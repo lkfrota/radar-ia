@@ -22,6 +22,11 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
   instalado pelo usuário) e grava `entradas/the-batch.json`, lido como fonte do tipo `arquivo`.
 - x.ai/news: 403 (Cloudflare); fonte cadastrada como inativa.
 - RSS do YouTube é instável; usa-se a página do canal + oEmbed + descrição.
+- **YouTube devolve 429 à nuvem** (página "sorry" do Google) na descrição dos vídeos desde ~20/11/2026; somado ao 503 do
+  Gemini, a página de 23/11 saiu só com itens sem texto. Canais desativados em 2026-11-24 (ver Decisões).
+- Hacker News só entrega título e link: desde 2026-11-24 o coletor lê a página linkada (`_corpo`). Item sem texto não vai
+  ao modelo (ele só escrevia "o conteúdo não foi lido"); sai marcado "só o título foi coletado".
+- `testar-fontes.yml`: só coleta, sem Gemini e sem commit; roda em push fora do main que mude fontes/coletor, ou à mão.
 - Cron do GitHub atrasa horas. O usuário disse (2026-11-01) que o horário não importa, só 1 rodada por dia.
 - **O build do GitHub Pages falha sozinho de vez em quando** (4 vezes entre 03 e 07/11, em commits de reação, rodada, The Batch e
   `config/fontes.json`; sem mensagem de erro útil). O build seguinte costuma se recuperar; o dano real é quando o último build
@@ -32,6 +37,10 @@ Estado em `estado/` (vistos, pendentes, pesos). Perfil e fontes editáveis em `c
 - O repositório é público (decisão do usuário): perfil e fontes ficam visíveis.
 
 ## Decisões do usuário
+- 2026-11-24: trocar os canais do YouTube (sem apego; escolhidos por serem conhecidos) por fontes escritas com feed de
+  texto completo, inglês sem problema. Critério: aderência ao perfil, não quantidade. Não refinar o perfil antes: metade
+  do propósito é explorar novidades, e as reações ajustam temas e fontes. Entraram Simon Willison, One Useful Thing,
+  Import AI, Latent Space, Hugging Face Blog, OpenAI News, Google AI Blog.
 - 2026-11-01: sem link no site pessoal (`lkfrota/lincoln`); sem inscrição automática em newsletters.
 - 2026-11-01: reações descritivas (quero mais / útil / já conhecia / fora do foco) no lugar de
   like/dislike/lido. Substitui a 1ª versão (👍/👎 + "lido"), que misturava tema e fonte.

@@ -112,3 +112,39 @@ def test_modelo_alternativo_assume_quando_o_principal_cai(monkeypatch):
     monkeypatch.setattr(modelo, "ALTERNATIVOS", ["flash"])
     assert modelo.gerar_json("p", {}, modelo="lite") == {"ok": 1}
     assert usados == ["lite", "flash"]
+
+
+def test_item_sem_texto_nao_vai_ao_modelo(monkeypatch):
+    """Sem texto o modelo só escrevia 'o conteúdo não foi lido' (página de 23/11/2026)."""
+    from src import modelo
+    enviados = []
+    def falso(prompt, *a, **k):
+        enviados.append(prompt)
+        return [{"i": 0, "titulo": "T", "paragrafos": ["resumo"], "por_que_importa": "x"}]
+    monkeypatch.setattr(modelo, "FAKE", False)
+    monkeypatch.setattr(modelo, "gerar_json", falso)
+    vazio = item("vazio", 9, 5); vazio.titulo = "SO-TITULO"; vazio.nota = 9
+    cheio = item("cheio", 9, 5); cheio.texto = "corpo"; cheio.nota = 8
+    out = montar.redigir_lote([vazio, cheio])
+    assert len(enviados) == 1 and "SO-TITULO" not in enviados[0]
+    assert out["cheio"]["paragrafos"] == ["resumo"]
+    assert "Só o título" in out["vazio"]["paragrafos"][0]
+
+
+def test_rss_prefere_texto_completo_e_le_pagina_se_curto(monkeypatch):
+    from src import coletar
+    longo = "palavra " * 200
+    feed = f"""<?xml version="1.0"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel><title>x</title>
+    <item><title>A</title><link>https://a</link><description>curto</description>
+      <content:encoded><![CDATA[<p>{longo}</p>]]></content:encoded></item>
+    <item><title>B</title><link>https://b</link><description>só a chamada</description></item>
+    </channel></rss>"""
+    class R:
+        def __init__(self, t): self.text = t; self.content = t.encode(); self.headers = {"Content-Type": "text/html"}
+    def get(url, *a, **k):
+        return R(feed) if url == "https://feed" else R(f"<html><article>pagina {longo}</article></html>")
+    monkeypatch.setattr(coletar, "_get", get)
+    a, b = coletar.coletar_rss({"nome": "F", "url": "https://feed"}, 5)
+    assert a.texto.startswith("palavra") and len(a.texto) > 500
+    assert b.texto.startswith("pagina")

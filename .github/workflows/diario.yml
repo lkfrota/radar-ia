@@ -48,7 +48,8 @@ jobs:
           git commit -m "radar: rodada $(date -u +%F)" && git pull --rebase && git push
           echo "publicou=1" >> "$GITHUB_OUTPUT"
       - name: Conferir publicação do Pages
-        if: steps.commit.outputs.publicou == '1'
+        # o Pages publica só o main: num branch de teste o build nunca aparece
+        if: steps.commit.outputs.publicou == '1' && github.ref == 'refs/heads/main'
         # O build do Pages já falhou sozinho uma vez (2026-11-04) sem a rodada perceber. Espera o build do
         # commit atual, refaz até 3 vezes se der erro e, se persistir, falha o job (o GitHub avisa por e-mail).
         env:

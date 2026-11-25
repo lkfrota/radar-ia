@@ -1,58 +1,46 @@
 [
   {
-    "url": "https://www.youtube.com/watch?v=8sV6rsGFCS8",
-    "fonte": "Maestros da IA (YouTube)",
+    "url": "https://huggingface.co/papers/2611.30017",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "engenharia e agentes",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 7.27,
+    "titulo": "OWE-Bench: Um teste de longo prazo para engenharia do mundo real",
+    "paragrafos": [
+      "O OWE-Bench é um novo conjunto de testes de referência criado por especialistas para avaliar a capacidade de inteligências artificiais em realizar 26 tarefas complexas de engenharia de longo prazo, variando desde a otimização de códigos de programação (software) até o projeto de aeronaves e análise de falhas em terremotos. As soluções geradas pelas IAs são avaliadas por critérios práticos como velocidade, custo e precisão, utilizando tanto casos de teste fornecidos quanto casos ocultos que simulam demandas reais de projeto.",
+      "O melhor modelo atual atingiu 54,6% de aproveitamento, consumindo centenas de milhões de tokens — unidades básicas de processamento de texto usadas por modelos de linguagem. O estudo destacou duas descobertas: dar mais tempo de processamento às IAs aumenta suas notas, e existe uma lacuna de desempenho de cerca de 18 pontos entre o que a IA acerta nos testes conhecidos e o que ela consegue nos cenários ocultos de implantação real."
+    ],
+    "por_que_importa": "Isso é importante para o seu trabalho com agentes de IA, pois mostra os limites atuais dessas ferramentas em lidar com projetos de engenharia complexos e a necessidade de validar o comportamento delas antes de confiar em aplicações críticas.",
+    "dia": "2026-11-25"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.31358",
+    "fonte": "Hugging Face Papers (descoberta)",
     "tema": "agentes de ia",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 9.47,
-    "titulo": "Guia Definitivo do Hermes Agent para Iniciantes",
-    "paragrafos": [
-      "O conteúdo completo deste vídeo do canal Maestros da IA no YouTube não foi lido, portanto nenhum detalhe técnico ou instrução foi inventado."
-    ],
-    "por_que_importa": "Isso importa diretamente para o seu interesse em agentes de IA aplicados a fluxos industriais ou de dados.",
-    "dia": "2026-11-22"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=gWQCFVpVo5A",
-    "fonte": "Maestros da IA (YouTube)",
-    "tema": "modelos de linguagem",
-    "tipo": "video",
-    "categoria": "perfil",
-    "nota": 7.5,
-    "titulo": "Gemini 4 Neon, Claude ou GPT: quem deve trocar e quem deve esperar",
-    "paragrafos": [
-      "O conteúdo completo deste vídeo do canal Maestros da IA no YouTube não foi lido, portanto nenhum detalhe sobre comparação de modelos foi inventado."
-    ],
-    "por_que_importa": "É uma aposta de correlação sobre qual inteligência artificial escolher para futuros projetos de consultoria de dados.",
-    "dia": "2026-11-22"
-  },
-  {
-    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "infraestrutura de ia",
-    "tipo": "discussao",
-    "categoria": "perfil",
-    "nota": 6.7,
-    "titulo": "Data Processing Incidents on Inference Providers",
-    "paragrafos": [
-      "O conteúdo completo desta postagem do Hacker News não foi lido, portanto nenhum detalhe sobre falhas de processamento de dados foi inventado."
-    ],
-    "por_que_importa": "Isso importa para avaliar a confiabilidade de servidores externos ao integrar agentes de IA na sua rotina.",
-    "dia": "2026-11-22"
-  },
-  {
-    "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
-    "fonte": "Hacker News (descoberta)",
-    "tema": "modelos de linguagem",
-    "tipo": "discussao",
+    "tipo": "artigo",
     "categoria": "adjacente",
-    "nota": 4.84,
-    "titulo": "Inkling-2-Mini in 5.4 GB Memory",
+    "nota": 5.63,
+    "titulo": "Nemotron-Labs-VisualCreation: Criação visual autônoma baseada em pixels como código",
     "paragrafos": [
-      "O conteúdo completo desta descoberta do Hacker News não foi lido, portanto nenhum detalhe sobre consumo de memória ou software foi inventado."
+      "Foi apresentado o Nemotron-Labs-VisualCreation, um sistema de inteligência artificial voltado para a criação visual que une o controle preciso de textos, layouts e estruturas por meio de uma abordagem chamada 'Pixel as Code' (Pixel como Código). A tecnologia integra imagens rasterizadas — formadas por matrizes de pontos, equivalentes a fotografias digitais comuns — e artefatos estruturados, como gráficos vetoriais e páginas web, utilizando uma interface unificada para geração e feedback visual.",
+      "O sistema demonstrou alta eficiência e velocidade em processamento de imagem em comparação a tecnologias anteriores. Em testes padronizados, a configuração completa do Nemotron alcançou desempenho competitivo com modelos avançados do mercado na geração de gráficos, designs e estruturas visuais."
     ],
-    "por_que_importa": "É uma aposta de correlação sobre modelos leves que possam rodar em hardware limitado de campo.",
-    "dia": "2026-11-22"
+    "por_que_importa": "É só uma aposta de correlação sem aplicação direta imediata na sua rotina de manutenção industrial ou consultoria de dados.",
+    "dia": "2026-11-25"
+  },
+  {
+    "url": "https://huggingface.co/papers/2611.32816",
+    "fonte": "Hugging Face Papers (descoberta)",
+    "tema": "visão computacional 3d",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 4.7,
+    "titulo": "SpatialArena: Padronização na avaliação de modelos geométricos de visão computacional",
+    "paragrafos": [
+      "O SpatialArena é uma plataforma aberta desenvolvida para unificar a avaliação de modelos geométricos de fundação — inteligências artificiais focadas em percepção tridimensional, como redes de profundidade monocular (que estimam a distância de objetos a partir de uma única imagem em 2D) e reconstrução 3D. A ferramenta resolve o problema da falta de padronização nas pesquisas anteriores, aplicando métricas idênticas a 52 modelos diferentes utilizando centenas de milhares de imagens em cenários internos, externos, aéreos e dinâmicos."
+    ],
+    "por_que_importa": "Isso se conecta diretamente com a sua atuação em energia solar e manutenção industrial ao expor o estado da arte de sistemas que interpretam geometrias e ambientes em 3D, fundamentais para inspeções visuais automatizadas e mapeamento de campo.",
+    "dia": "2026-11-25"
   }
 ]

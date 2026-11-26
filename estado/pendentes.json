@@ -1,5 +1,155 @@
 [
   {
+    "url": "https://www.deeplearning.ai/the-batch/adaptive-memory-management/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 10,
+    "titulo": "Adaptive Memory Management: MEMCON para agentes de IA",
+    "paragrafos": [
+      "Agentes de inteligência artificial costumam salvar experiências passadas como texto em um armazenamento externo para consultar depois. Geralmente, os desenvolvedores definem regras fixas para buscar ou apagar essas memórias, o que nem sempre é eficiente.",
+      "Pesquisadores criaram o MEMCON (Memory as a Controlled Process), uma camada que envolve o sistema de memória existente e aprende a gerenciar as buscas com base no sucesso ou falha das tarefas anteriores.",
+      "No início de uma série de tarefas, quando há pouca memória acumulada, o sistema aprende que buscar por similaridade pode atrapalhar. O ideal é buscar por tipos de tarefas iguais.",
+      "Com o tempo e o acúmulo de dados, o MEMCON pontua as decisões do agente, descobre quais configurações funcionam melhor para cada situação e descarta memórias inúteis que competem por espaço."
+    ],
+    "por_que_importa": "Interessante para o seu perfil em agentes de IA, pois otimiza como os sistemas aprendem e recuperam dados históricos de forma autônoma.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://openai.com/business/customer-stories/ifood",
+    "fonte": "OpenAI News",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.9,
+    "titulo": "Como o iFood escala agentes de programação em 15.000 repositórios",
+    "paragrafos": [
+      "O iFood implementou a Plataforma de Agentes Remotos para automatizar tarefas em mais de 15.000 repositórios de código, dobrando o número de vulnerabilidades de segurança corrigidas.",
+      "O maior desafio não era a complexidade técnica de cada tarefa isolada, mas sim a escala da operação em milhares de projetos diferentes que antes tinham soluções fragmentadas.",
+      "A plataforma funciona de forma simples: o usuário envia uma solicitação por meio de uma API (Application Programming Interface, um conjunto de rotinas que permite a comunicação entre sistemas) com os requisitos do ambiente.",
+      "O processo é executado em um ambiente isolado na nuvem (sandbox, um ambiente de testes fechado e seguro) e o resultado é retornado como uma solicitação de mesclagem de código, com baixo custo computacional."
+    ],
+    "por_que_importa": "É uma aposta de correlação para consultoria de dados e automação em larga escala, mostrando como gerenciar infraestruturas complexas de forma padronizada.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://www.deeplearning.ai/the-batch/amds-world-model-arrives/",
+    "fonte": "The Batch (DeepLearning.AI)",
+    "tema": "automacao e robotica",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.12,
+    "titulo": "Atlas: O modelo mundial da World Labs para geração 3D",
+    "paragrafos": [
+      "A World Labs lançou publicamente o Atlas, um modelo de mundo voltado para desenvolvedores criarem cenas tridimensionais (3D) e vídeos controláveis a partir de textos ou fotos.",
+      "O sistema utiliza uma arquitetura multimodal (capaz de processar diferentes tipos de dados simultaneamente, como texto, imagens e vídeos) chamada transformador de difusão autoregressivo pré-treinado do zero.",
+      "Através de APIs pagas por uso, o Atlas calcula posições de câmera e profundidade a partir de fotos enviadas, preenchendo lacunas do que está fora do enquadramento original.",
+      "Em testes públicos, o modelo liderou o ranking em seguir instruções de movimento de câmera e apresentou taxas de erro menores na reconstrução de ambientes em 3D em comparação a concorrentes."
+    ],
+    "por_que_importa": "É uma aposta de correlação, útil caso você precise integrar geração de gêmeos digitais ou simulações visuais em projetos de engenharia ou energia solar.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://jack-clark.net/2026/11/16/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development/",
+    "fonte": "Import AI",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.1,
+    "titulo": "Import AI: Sistemas de IA que contratam e investem capital em si mesmos",
+    "paragrafos": [
+      "Pesquisadores desenvolveram o FrontierML, um benchmark (conjunto de testes padrão para avaliar desempenho) que mede a capacidade de agentes de IA gastarem dinheiro real para melhorar seu próprio desempenho.",
+      "Nos testes, os agentes receberam um orçamento (como 10, 50 ou 200 dólares) em um ambiente isolado com capacidade de processamento em CPU (Unidade Central de Processamento, o chip principal de computadores) para resolver problemas complexos.",
+      "Com acesso a esse capital, os modelos mais fortes conseguiram decidir arquiteturas, selecionar dados de origem, treinar novos modelos do zero ou otimizar a inferência (o processo do modelo em uso para gerar respostas).",
+      "Os resultados mostraram que os agentes conseguiram usar o dinheiro de forma produtiva para superar desempenhos anteriores em diversas tarefas de aprendizado de máquina."
+    ],
+    "por_que_importa": "Interessante para o seu trabalho com agentes de IA, demonstrando como sistemas autônomos já conseguem alocar recursos computacionais de forma independente para otimizar resultados.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "fonte": "Google AI Blog",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 9.1,
+    "titulo": "Recuperação de Ferramentas na API do Gemini",
+    "paragrafos": [
+      "O Google lançou a funcionalidade 'Tool Retrieval' (Recuperação de Ferramentas) em versão prévia na API do Gemini, permitindo que agentes gerenciem bibliotecas extensas de ferramentas de forma mais eficiente.",
+      "Anteriormente, enviar os esquemas de parâmetros completos de dezenas ou centenas de ferramentas a cada comando aumentava o custo de tokens de entrada (unidades básicas de texto processadas por modelos de linguagem) e gerava latência.",
+      "Com a nova função, o agente mantém um catálogo em espera e carrega os detalhes específicos sob demanda, apenas quando necessário para a tarefa.",
+      "Para ativar o recurso, os desenvolvedores podem adicionar uma ferramenta de busca e definir o parâmetro de carregamento adiado como verdadeiro nas solicitações da API."
+    ],
+    "por_que_importa": "Relevante para o desenvolvimento de agentes de IA, pois reduz custos de processamento e acelera respostas ao lidar com sistemas complexos.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+    "fonte": "Simon Willison",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.86,
+    "titulo": "Três grandes avanços nos modelos de linguagem em doze meses",
+    "paragrafos": [
+      "Especialistas apontam três grandes marcos de evolução na capacidade de agentes de programação e modelos de linguagem nos últimos doze meses.",
+      "Em novembro de 2025, o lançamento de modelos como o Claude Opus 4.5 e o GPT-5.1 marcou uma virada onde os agentes passaram a lidar com ambiguidades e bugs complexos sem precisar de correções constantes.",
+      "Ferramentas associadas a esses modelos tornaram-se pilares confiáveis no fluxo de trabalho diário de programadores, acelerando o desenvolvimento de forma perceptível.",
+      "Esses avanços reduziram a necessidade de supervisão humana minuciosa, tornando a automação de tarefas de engenharia de software muito mais prática e eficiente."
+    ],
+    "por_que_importa": "É uma aposta de correlação, mostrando a rápida evolução das ferramentas de IA que você pode aplicar para automatizar códigos e relatórios na consultoria de dados.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://www.oneusefulthing.org/p/the-dot-and-the-swarm",
+    "fonte": "One Useful Thing (Ethan Mollick)",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.86,
+    "titulo": "The Dot and the Swarm",
+    "paragrafos": [
+      "O autor Ethan Mollick admite que errou ao prever como gerenciaríamos agentes de inteligência artificial. Inicialmente, ele achava que coordenar múltiplos agentes exigiria estruturas rígidas semelhantes à criação de uma empresa humana, com regras complexas definidas passo a passo.",
+      "No entanto, a realidade mostrou o oposto através da chamada 'Lição Amarga': em vez de engenharia humana detalhada, o uso de força bruta em aprendizado de máquina e sistemas avançados resolve problemas complexos de forma autônoma. IAs modernas agora planejam seus próprios passos, buscam informações sozinhas e geram códigos inteiros sem intervenção.",
+      "Isso se aplica até mesmo à organização do trabalho e gestão de tarefas, algo que o autor achava que exigiria forte supervisão humana por muito tempo. Aplicativos como o Muse da Meta e o dots da OpenAI surgem exatamente como agentes pessoais automatizados capazes de executar serviços complexos por conta própria."
+    ],
+    "por_que_importa": "Isso importa para a sua rotina de agentes de IA, pois mostra que você não precisará programar micro-regras complexas para coordenar sistemas; os modelos modernos já sabem planejar e se organizar sozinhos.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+    "fonte": "Hugging Face Blog",
+    "tema": "automacao e robotica",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.7,
+    "titulo": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+    "paragrafos": [
+      "O artigo apresenta um fluxo de trabalho 'Sim2Real' (transição da simulação para o mundo real) focado em adicionar desvio de obstáculos a um robô quadrúpede chamado Microduck, mantendo sua política de caminhada original inalterada. Utiliza-se o framework Isaac Lab para treinamento em GPU e o motor Newton para simulação física de sensores.",
+      "Para a implementação, treina-se um controlador auxiliar de desvio baseado em dados de sensores ToF (Time-of-Flight, que medem distância através do tempo de voo da luz). O operador usa um controle de videogame para direcionar a velocidade, enquanto o sistema ajusta a rota automaticamente para desviar dos obstáculos detectados.",
+      "O tutorial abrange desde a instalação via Linux com o gerenciador de pacotes uv e clonagem de repositório Git, até a exportação do modelo treinado para testes físicos no robô real em campo."
+    ],
+    "por_que_importa": "Isso importa diretamente para a sua experiência em manutenção industrial e robótica, pois demonstra como testar algoritmos de controle de movimento em ambiente virtual antes de aplicá-los em máquinas físicas reais.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+    "fonte": "Simon Willison",
+    "tema": "agentes de ia",
+    "tipo": "artigo",
+    "categoria": "perfil",
+    "nota": 8.38,
+    "titulo": "Locating the source of a mysterious beep with Claude",
+    "paragrafos": [
+      "O desenvolvedor Simon Willison usou o assistente Claude Code para criar um sistema de software chamado Beep Locator, projetado para triangular a fonte de um bipe intermitente e irritante escondido em um quarto cheio de caixas empacotadas.",
+      "O sistema roda um servidor web em Python e conecta vários dispositivos espalhados pelo ambiente (como tablets, celulares e notebooks) para servirem de ouvintes. Inicialmente, os aparelhos tentavam estimar distâncias emitindo sons entre si, mas o autor adicionou um modo manual onde é possível arrastar ícones em um mapa e calibrar batendo palmas.",
+      "Após a calibração, o sistema analisou a frequência e o intervalo do bipe misterioso, localizando a origem com precisão de cerca de 40 centímetros. O foco levou direto a um velho detector de monóxido de carbono com bateria fraca."
+    ],
+    "por_que_importa": "Esta é uma demonstração prática de consultoria de dados e prototipagem rápida usando ferramentas de IA para resolver problemas físicos do dia a dia.",
+    "dia": "2026-11-26"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.30017",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "engenharia e agentes",
@@ -15,6 +165,36 @@
     "dia": "2026-11-25"
   },
   {
+    "url": "https://jack-clark.net/2026/11/23/import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-labs-ai-science-benchmark/",
+    "fonte": "Import AI",
+    "tema": "modelos de linguagem",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 6.14,
+    "titulo": "Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab’s AI science benchmark",
+    "paragrafos": [
+      "Pesquisadores chineses lançaram o AscendGYM, um benchmark (conjunto de testes padronizados) focado na otimização de 'kernels' (núcleos de software que controlam o hardware de baixo nível) para os processadores NPUs (Unidades de Processamento Neural) da Huawei. A ferramenta avalia o desempenho de códigos gerados por inteligência artificial.",
+      "Com restrições de exportação que impedem o acesso a semicondutores ocidentais avançados, o AscendGYM ajuda a medir se IAs conseguem otimizar chips da Huawei para workloads (cargas de trabalho computacional) específicos, automatizando o desenvolvimento de software para esses hardwares."
+    ],
+    "por_que_importa": "Isso é só uma aposta de correlação sobre o mercado global de semicondutores e hardware industrial sob restrições geopolíticas.",
+    "dia": "2026-11-26"
+  },
+  {
+    "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+    "fonte": "Google AI Blog",
+    "tema": "ferramentas de ia",
+    "tipo": "artigo",
+    "categoria": "adjacente",
+    "nota": 5.7,
+    "titulo": "A more tailored Google Search that’s uniquely yours",
+    "paragrafos": [
+      "O Google integrou o Google Wallet e o Google Drive à ferramenta Personal Intelligence no Modo IA do seu mecanismo de buscas. Com isso, o sistema passa a fornecer respostas personalizadas com base nos seus gastos financeiros, documentos salvos e chats recentes.",
+      "Os usuários podem optar por conectar esses aplicativos para organizar projetos, rastrear hábitos financeiros ou continuar tarefas de pesquisa sem precisar repetir contexto, mantendo o controle total dos dados nas configurações de privacidade."
+    ],
+    "por_que_importa": "Isso importa para consultoria de dados, ilustrando como ecossistemas de busca integrados usam dados corporativos e pessoais de forma contextual.",
+    "dia": "2026-11-26"
+  },
+  {
     "url": "https://huggingface.co/papers/2611.31358",
     "fonte": "Hugging Face Papers (descoberta)",
     "tema": "agentes de ia",
@@ -28,6 +208,21 @@
     ],
     "por_que_importa": "É só uma aposta de correlação sem aplicação direta imediata na sua rotina de manutenção industrial ou consultoria de dados.",
     "dia": "2026-11-25"
+  },
+  {
+    "url": "https://github.com/lsernau/grh-lean",
+    "fonte": "Hacker News (descoberta)",
+    "tema": "modelos de linguagem",
+    "tipo": "discussao",
+    "categoria": "adjacente",
+    "nota": 5.58,
+    "titulo": "Much shorter version of GRH Lean verification from Anthropic",
+    "paragrafos": [
+      "A Anthropic lançou uma versão compacta e verificada por máquina de uma prova matemática complexa envolvendo a Hipótese de Riemann Generalizada. Utilizando a linguagem de programação e assistente de prova Lean 4, o repositório reduz drasticamente linhas de código para validação lógica estrita.",
+      "A prova passou apenas por verificações formais executadas por computador, sem leitura humana integral por matemáticos até o momento, servindo como um artefato de pesquisa avançada em lógica matemática computacional."
+    ],
+    "por_que_importa": "Isso é só uma aposta de correlação sobre avanços teóricos na verificação formal de algoritmos matemáticos complexos por IA.",
+    "dia": "2026-11-26"
   },
   {
     "url": "https://huggingface.co/papers/2611.32816",

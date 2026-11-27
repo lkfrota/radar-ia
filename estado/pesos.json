@@ -1,8 +1,8 @@
 {
   "temas": {
-    "agentes de ia": 0.14,
+    "agentes de ia": 0.46,
     "otimizacao de contextos": 0.08,
-    "modelos de linguagem": -0.07,
+    "modelos de linguagem": -0.37,
     "seguranca de dados": 0.08,
     "manutencao industrial": 0.0,
     "otimizacao de modelos": -0.15,
@@ -13,18 +13,28 @@
     "modelos abertos": -0.3,
     "projetos cad e ia": -0.15,
     "lancamento de modelos": 0.08,
-    "mercado de ia": -0.15
+    "mercado de ia": -0.15,
+    "automacao e robotica": -0.3,
+    "engenharia e agentes": 0.15,
+    "visão computacional 3d": 0.08
   },
   "fontes": {
-    "Hugging Face Papers (descoberta)": -0.16,
+    "Hugging Face Papers (descoberta)": -0.08,
     "Anthropic News": 0.06,
     "Matheus Battisti (YouTube)": 0.14,
-    "The Batch (DeepLearning.AI)": 0.25,
+    "The Batch (DeepLearning.AI)": 0.23,
     "Maestros da IA (YouTube)": 0.05,
-    "IA em 6 Minutos (YouTube)": 0.05
+    "IA em 6 Minutos (YouTube)": 0.05,
+    "OpenAI News": -0.05,
+    "Import AI": -0.02,
+    "Google AI Blog": 0.03,
+    "Simon Willison": 0.08,
+    "Hugging Face Blog": -0.05,
+    "Hacker News (descoberta)": -0.05
   },
   "conhecido": {
-    "agentes de ia": 2,
-    "mercado de ia": 1
+    "agentes de ia": 3,
+    "mercado de ia": 1,
+    "ferramentas de ia": 1
   }
 }

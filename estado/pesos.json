@@ -1,13 +1,13 @@
 {
   "temas": {
-    "agentes de ia": 0.46,
+    "agentes de ia": 0.17,
     "otimizacao de contextos": 0.08,
     "modelos de linguagem": -0.37,
     "seguranca de dados": 0.08,
     "manutencao industrial": 0.0,
     "otimizacao de modelos": -0.15,
     "recuperacao de informacao": 0.15,
-    "analise de dados": -0.15,
+    "analise de dados": -0.3,
     "energia solar": 0.15,
     "ajuste de modelos": 0.08,
     "modelos abertos": -0.3,
@@ -16,24 +16,30 @@
     "mercado de ia": -0.15,
     "automacao e robotica": -0.3,
     "engenharia e agentes": 0.15,
-    "visão computacional 3d": 0.08
+    "visão computacional 3d": 0.08,
+    "sistemas multi-agentes": -0.07,
+    "extracao de dados": 0.08,
+    "automacao e produtividade": -0.15,
+    "ia para negocios": -0.15,
+    "inferencia local": -0.15
   },
   "fontes": {
-    "Hugging Face Papers (descoberta)": -0.08,
+    "Hugging Face Papers (descoberta)": -0.12,
     "Anthropic News": 0.06,
     "Matheus Battisti (YouTube)": 0.14,
     "The Batch (DeepLearning.AI)": 0.23,
     "Maestros da IA (YouTube)": 0.05,
     "IA em 6 Minutos (YouTube)": 0.05,
-    "OpenAI News": -0.05,
+    "OpenAI News": -0.1,
     "Import AI": -0.02,
     "Google AI Blog": 0.03,
-    "Simon Willison": 0.08,
-    "Hugging Face Blog": -0.05,
-    "Hacker News (descoberta)": -0.05
+    "Simon Willison": 0.03,
+    "Hugging Face Blog": -0.04,
+    "Hacker News (descoberta)": -0.1,
+    "Latent Space": -0.1
   },
   "conhecido": {
-    "agentes de ia": 3,
+    "agentes de ia": 4,
     "mercado de ia": 1,
     "ferramentas de ia": 1
   }
